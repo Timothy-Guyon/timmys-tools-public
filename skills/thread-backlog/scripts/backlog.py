@@ -18,13 +18,15 @@ Every command takes --project ID (or $TIMMY_BACKLOG_PROJECT): the project's
 fixed id, never its display name.
 
   sweep [FILE]                        weekly: compare the full thread list (JSON) with the record, print the worksheet
-  daily                               check watches, snoozes that end, tasks due soon or past their date
+  daily [FILE]                        check watches, snoozes that end, tasks due soon or past their date;
+                                      with the thread list, also threads that show the wrong state
   report                              the "needs you" list and the weekly numbers, ready to post
   show [ID]                           every open thread with what it waits on, or one object in full
   review                              weekly, after the sweep: every open thread, oldest first, to ask of each whether it is still worth doing
 
   thread add ID --title T [--opened DATE]
   thread ID [--next STEP] [--snooze DATE] [--resolve SUMMARY] [--reopen]
+            [--standing WHAT_WAKES_IT | --not-standing]   a thread kept open on purpose, such as a mail thread
 
   task add --thread ID --kind decide|approve|act --title T
            [--recommend R --ask-kind K] [--due DATE] [--pointless-after DATE] [--todo LINK]
@@ -60,6 +62,11 @@ STOP_ASKING_RATE = 0.95    # kinds of asks he takes the recommendation on this o
 STOP_ASKING_MIN = 10       # ...over at least this many answers are put to him: stop asking?
 KINDS = ("decide", "approve", "act")
 REVIEW_ASK = "drop a thread nobody would start today"   # the ask kind of a drop from the weekly review
+# What a thread shows in the app, from the state words harnesses use in a thread list.
+SHOWN = {"you": ("need_input", "blocked", "waiting", "waiting_on_you", "needs_you", "you"),
+         "working": ("working", "running", "in_progress"),
+         "done": ("done", "completed", "review_ready", "idle", "finished"),
+         "stopped": ("stopped", "failed", "error", "errored")}
 CHECKS = ("date", "url", "mail", "other")
 
 
@@ -148,13 +155,16 @@ class State:
         t = self.threads.setdefault(e["id"], {"id": e["id"], "status": "active", "snoozes": 0,
                                               "next": None, "opened": e.get("opened", e["on"]),
                                               "first_seen": e["on"]})
-        for k in ("title", "opened", "last_activity"):
+        for k in ("title", "opened", "last_activity", "shows"):
             if k in e:
                 t[k] = e[k]
         t["seen"] = e["on"]
 
     def _thread_next(self, e):
         self.threads[e["id"]]["next"] = e["next"]
+
+    def _thread_standing(self, e):
+        self.threads[e["id"]]["standing"] = e.get("standing") or None
 
     def _thread_snooze(self, e):
         t = self.threads[e["id"]]
@@ -177,6 +187,7 @@ class State:
     def _task_add(self, e):
         t = dict(e, status="open", created=e["on"])
         t.pop("op")
+        t.setdefault("thread", None)  # an act can belong to no thread
         self.tasks[e["id"]] = t
 
     def _task_answer(self, e):
@@ -260,6 +271,8 @@ class State:
             return "todo", "; ".join(x["title"] for x in mine)
         if t.get("next"):
             return "claude", t["next"]
+        if t.get("standing"):
+            return "standing", t["standing"]
         return "nothing", ""
 
     def asks_by_kind(self):
@@ -274,7 +287,8 @@ class State:
         week = on - datetime.timedelta(days=7)
         opened = [t for t in self.threads.values() if week < d(t["opened"]) <= on]
         closed = [e for e in self.resolves if week < d(e["on"]) <= on]
-        live = [t for t in self.threads.values() if t["status"] != "resolved"]
+        live = [t for t in self.threads.values() if t["status"] != "resolved"
+                and self.waits_on(t["id"])[0] != "standing"]  # kept open on purpose: not backlog
         waiting = [t for t in live if self.waits_on(t["id"])[0] == "timmy"]
         ages = sorted((on - d(t["opened"])).days for t in live)
         oldest = max(live, key=lambda t: (on - d(t["opened"])).days, default=None)
@@ -361,8 +375,15 @@ def cmd_thread(a, r):
         r.add("thread-resolve", id=a.id, summary=line(a.resolve, "resolve"))
         print("resolved %s: %s" % (title(s, a.id), a.resolve.strip()))
         done = True
+    if a.standing or a.not_standing:
+        if a.standing and a.not_standing:
+            refuse("--standing or --not-standing, not both")
+        r.add("thread-standing", id=a.id, standing=line(a.standing, "standing") if a.standing else "")
+        print(("%s is a standing thread, kept open on purpose: %s" % (title(s, a.id), a.standing.strip()))
+              if a.standing else "%s is no longer a standing thread" % title(s, a.id))
+        done = True
     if not done:
-        refuse("say what changed: --next, --snooze, --resolve or --reopen")
+        refuse("say what changed: --next, --snooze, --resolve, --reopen or --standing")
 
 
 # ---------------------------------------------------------------- tasks
@@ -372,13 +393,16 @@ def cmd_task(a, r):
     if a.action == "add":
         thread = a.thread
         if thread:
-            need_thread(s, thread)
+            if thread not in s.threads:
+                refuse("no thread %s in the record: add it first ('thread add %s --title ...')" % (thread, thread))
             if s.threads[thread]["status"] == "resolved":
-                refuse("thread %s is resolved; reopen it first" % thread)
+                refuse("thread %s is resolved. An ask Timmy still owes needs an open thread: reopen this one "
+                       "('thread %s --reopen'), or start a thread for the ask" % (thread, thread))
         fields = {"thread": thread, "kind": a.kind, "title": line(a.title, "title")}
         if a.kind in ("decide", "approve"):
             if not thread:
-                refuse("a %s task is asked in its thread, so it needs --thread" % a.kind)
+                refuse("decide and approve tasks are asked in their thread, so this needs --thread. If no open "
+                       "thread holds it, reopen the thread it came from or start one for it")
             fields["recommend"] = line(a.recommend, "recommend")
             fields["ask_kind"] = line(a.ask_kind, "ask-kind").lower()
             if fields["ask_kind"] in s.stopped:
@@ -494,6 +518,20 @@ def page_hash(url):
 # ---------------------------------------------------------------- the runs
 
 def cmd_daily(a, r):
+    out = []
+    if a.file:
+        new, still_open = see(r, read_threads(a.file))
+        s = r.state()
+        if new:
+            out.append("New since the last run: give each a next step, a task for Timmy, or a watch:")
+            out += ["- " + title(s, tid) for tid in new]
+        if still_open:
+            out.append("Resolved in the record but still open in the app: resolve each there, or reopen it here:")
+            out += ["- " + title(s, tid) for tid in still_open]
+        wrong = wrong_shown(s)
+        if wrong:
+            out.append("Showing the wrong state: tell each thread, and it fixes what it shows itself:")
+            out += ["- " + row for row in wrong]
     s = r.state()
     wake, by_hand, expired, trouble = [], [], [], []
     for w in sorted(s.live_watches(), key=lambda w: w["id"]):
@@ -527,7 +565,6 @@ def cmd_daily(a, r):
            and not t.get("todo")]
     pointless = [t for t in s.open_tasks() if t.get("pointless_after") and d(t["pointless_after"]) < TODAY]
 
-    out = []
     if wake:
         out.append("Wake these threads now (a watch came true):")
         out += ["- %s: %s (watch %s)" % (title(s, w["thread"]), why, w["id"]) for w, why in wake]
@@ -568,19 +605,40 @@ def read_threads(path):
             "opened": (item.get("opened") or item.get("created_at") or "")[:10] or None,
             "last_activity": (item.get("last_activity") or item.get("last_activity_at") or "")[:10] or None,
             "resolved": bool(item.get("resolved")) or item.get("state") in ("resolved",),
+            "shows": shown_state(item),
+            "resolved_on": (item.get("resolved_on") or item.get("resolved_at") or "")[:10] or None,
         })
     return out
 
 
-def cmd_sweep(a, r):
-    listed = read_threads(a.file)
+def shown_state(item):
+    """What the app shows the thread as: you (waiting on Timmy), working, done or stopped; None if it doesn't say."""
+    for key in ("shows", "status_category", "state"):
+        word = str(item.get(key) or "").strip().lower().replace(" ", "_").replace("-", "_")
+        for shown, words in SHOWN.items():
+            if word in words:
+                return shown
+    return None
+
+
+def see(r, listed):
+    """Bring the record up to date with the thread list: new threads, titles, activity, what each shows,
+    and threads resolved or reopened in the app. Returns the new threads, and those resolved in the
+    record that the app still shows open with nothing new since."""
     s = r.state()
-    new, gone = [], []
+    new, still_open = [], []
     for item in listed:
         known = s.threads.get(item["id"])
         if known is None and item["resolved"]:
-            continue  # resolved before the record knew it: not part of the backlog
-        changes = {k: item[k] for k in ("title", "opened", "last_activity") if item[k]
+            # Resolved before the record knew it: not part of the backlog. One resolved in the past week still
+            # counts in this week's numbers, so a first run (or a thread opened and closed between sweeps) adds up.
+            if item["resolved_on"] and (TODAY - d(item["resolved_on"])).days < 7:
+                r.add("thread-seen", id=item["id"], **{k: item[k] for k in ("title", "opened", "last_activity")
+                                                        if item[k]})
+                r.add("thread-resolve", id=item["id"], summary="resolved in the app")
+                s = r.state()
+            continue
+        changes = {k: item[k] for k in ("title", "opened", "last_activity", "shows") if item[k]
                    and (known is None or known.get(k) != item[k])}
         if known is None:
             new.append(item["id"])
@@ -593,7 +651,36 @@ def cmd_sweep(a, r):
                 r.add("watch-cancel", id=w["id"])
             r.add("thread-resolve", id=item["id"], summary="resolved in the app")
         elif not item["resolved"] and t["status"] == "resolved":
-            r.add("thread-reopen", id=item["id"])
+            if item["last_activity"] and item["last_activity"] > t["resolved_on"]:
+                r.add("thread-reopen", id=item["id"])  # something happened there since: it's back
+            else:
+                still_open.append(item["id"])
+        s = r.state()
+    return new, still_open
+
+
+def wrong_shown(s):
+    """Open threads whose state in the app doesn't match what the record says they wait on."""
+    rows = []
+    for t in s.threads.values():
+        shows = t.get("shows")
+        if t["status"] == "resolved" or not shows:
+            continue
+        kind, words = s.waits_on(t["id"])
+        if shows == "you" and kind != "timmy":
+            rows.append("%s shows it waits on Timmy, but it waits on %s%s: it says what it really waits on, or "
+                        "records the ask it has for him" % (title(s, t["id"]), kind, (": " + words) if words else ""))
+        elif shows == "done" and kind == "timmy":
+            rows.append("%s waits on Timmy (%s) but shows done: it puts the ask back in front of him, on a card "
+                        "where it can, or records his answer" % (title(s, t["id"]), words))
+        elif shows == "stopped":
+            rows.append("%s stopped or failed in the app: restart it, or resolve it" % title(s, t["id"]))
+    return rows
+
+
+def cmd_sweep(a, r):
+    listed = read_threads(a.file)
+    new, still_open = see(r, listed)
     ids = {item["id"] for item in listed}
     s = r.state()
     ended = [t for t in s.threads.values() if t["status"] == "snoozed" and d(t["until"]) <= TODAY]
@@ -642,6 +729,9 @@ def cmd_sweep(a, r):
     section("Past their 'pointless after' date: drop them:",
             ["%s %s" % (t["id"], t["title"]) for t in s.open_tasks()
              if t.get("pointless_after") and d(t["pointless_after"]) < TODAY])
+    section("Resolved in the record but still open in the app: resolve each there (the thread itself, or whoever "
+            "can), or reopen it here if it isn't done:", [title(s, tid) for tid in still_open])
+    section("Showing the wrong state: tell each thread, and it fixes what it shows itself:", wrong_shown(s))
     section("In the record but not in the list: pass the full list, or resolve these if they are gone:",
             [title(s, t["id"]) for t in gone])
     section("Kinds of asks Timmy nearly always approves: put 'stop asking?' to him, and on his yes run 'stop-asking KIND':",
@@ -746,9 +836,13 @@ def cmd_review(a, r):
         extra = [", snoozed %d time(s)" % t["snoozes"] if t["snoozes"] else "",
                  " [on the list]" if any(x["id"] in on for x in s.open_tasks(t["id"])) else "",
                  " [Timmy kept it on %s: don't ask again unless something changed]" % max(kept) if kept else ""]
-        out.append("- %s, %d days old, last active %s. Waits on %s%s%s" % (
-            title(s, t["id"]), (TODAY - d(t["opened"])).days, last, kind, (": " + words) if words else "", "".join(extra)))
+        shows = "; the app shows %s" % {"you": "it waits on Timmy"}.get(t.get("shows"), t.get("shows")) if t.get("shows") else ""
+        out.append("- %s, %d days old, last active %s. Waits on %s%s%s%s" % (
+            title(s, t["id"]), (TODAY - d(t["opened"])).days, last, kind, (": " + words) if words else "", shows,
+            "".join(extra)))
     out.append("")
+    out.append("Read each thread's own status line too. Where it, or the state the app shows, doesn't say what the "
+               "thread waits on, tell the thread, and it fixes what it shows itself.")
     out.append("A thread whose work is done: resolve it with a one-line summary.")
     if REVIEW_ASK in s.stopped:
         out.append("A thread not worth doing: Timmy said to stop asking, so resolve it with a one-line summary "
@@ -839,7 +933,8 @@ def main():
 
     x = sub.add_parser("sweep", help="weekly: compare the thread list with the record")
     x.add_argument("file", nargs="?", help="the thread list as JSON (default: stdin)")
-    sub.add_parser("daily", help="check watches, snoozes and due tasks")
+    x = sub.add_parser("daily", help="check watches, snoozes and due tasks")
+    x.add_argument("file", nargs="?", help="the thread list as JSON, to also catch threads showing the wrong state")
     sub.add_parser("report", help="Timmy's list and the weekly numbers")
     x = sub.add_parser("show", help="open threads, or one object")
     x.add_argument("id", nargs="?")
@@ -854,6 +949,8 @@ def main():
     x.add_argument("--snooze")
     x.add_argument("--resolve")
     x.add_argument("--reopen", action="store_true")
+    x.add_argument("--standing", help="kept open on purpose; say what wakes it, such as its mail doorbell")
+    x.add_argument("--not-standing", dest="not_standing", action="store_true")
 
     x = sub.add_parser("task", help="tasks only Timmy can do")
     ts = x.add_subparsers(dest="action", required=True)

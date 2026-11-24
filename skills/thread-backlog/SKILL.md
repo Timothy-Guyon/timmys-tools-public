@@ -1,6 +1,6 @@
 ---
 name: thread-backlog
-description: The routine that keeps Timmy's open threads from piling up. Each week every thread gets one state and is asked whether it is still worth doing, Timmy gets a ranked "needs you" list of at most seven items, each with a recommendation, and three numbers show whether the backlog is shrinking; each day, what threads wait for is checked. Use when coordinating a project's threads (the weekly sweep, the daily check), whenever a thread asks Timmy something, waits for an event or leaves him an action, and when he says how the routine works for him.
+description: The routine that keeps Timmy's open threads from piling up. Each week every thread gets one state, shows that state truly, and is asked whether it is still worth doing, Timmy gets a ranked "needs you" list of at most seven items, each with a recommendation, and three numbers show whether the backlog is shrinking; each day, what threads wait for is checked. Use when coordinating a project's threads (the weekly sweep, the daily check), whenever a thread asks Timmy something, waits for an event or leaves him an action, and when he says how the routine works for him.
 ---
 
 # Thread backlog
@@ -25,15 +25,16 @@ The record is one file per project, `backlog/<project id>.jsonl` in the mailbox 
 
 ## What the routine holds
 
-1. **Every thread is in one state.** It is resolved, snoozed until a date, waiting on Timmy, waiting on an event, or Claude's to move with a next step. A thread with none of these turns up in the sweep until it has one.
+1. **Every thread is in one state.** It is resolved, snoozed until a date, waiting on Timmy, waiting on an event, Claude's to move with a next step, or standing: kept open on purpose, such as a mail thread its doorbell wakes (`thread <id> --standing "what wakes it"`). A thread with none of these turns up in the sweep until it has one. Standing threads aren't backlog, so the weekly numbers leave them out.
 2. **Timmy's list holds at most seven items.** They are the open decide and approve tasks, ranked by what each blocks and what a week's delay would cost, each with a recommendation. The rest wait in the queue, ranked the same way.
 3. **A task off the list for three weeks is put to Timmy once:** drop it, or snooze it a month. He is asked once, not every week.
 4. **A snooze always ends in a decision.** When it ends, the thread goes to Timmy's list, back to Claude to move, or is resolved. After two snoozes the script refuses a third: the thread is resolved with a one-line summary instead, and it can be reopened any time.
-5. **A decision stays in its thread.** Claude asks it there, on a decision card where the harness has one, and it goes on Timmy's list. **An action only Timmy can take outside Claude goes on his to-do list** wherever the project can reach one, by mail to the project that keeps it if need be. The task records the link, and when it was the thread's only step left, the thread resolves with a summary that links it. Where no to-do list can be reached, the thread stays open until he says it's done (rule 23 of the shared rules).
+5. **A decision stays in its thread.** Claude asks it there, on a decision card where the harness has one, and it goes on Timmy's list. A decision no open thread holds, such as one owed from a thread already resolved, gets a thread: reopen the one it came from, or start one for it (where only a coordinator starts threads, ask it to). Every ask then has a place for its card, its context and the work after he answers, and it counts as open work. **An action only Timmy can take outside Claude goes on his to-do list** wherever the project can reach one, by mail to the project that keeps it if need be. The task records the link, and when it was the thread's only step left, the thread resolves with a summary that links it. Where no to-do list can be reached, the thread stays open until he says it's done (rule 23 of the shared rules).
 6. **Claude goes ahead on steps that can be undone** and doesn't make tasks of them (rules 20 and 21 of the shared rules). A task is only for what only Timmy can do.
 7. **Kinds of asks Timmy almost always approves stop being asked.** When he has taken Claude's recommendation on at least 95% of the asks of one kind, over at least ten answers, the sweep says so. Claude puts "stop asking?" to him, and on his yes runs `stop-asking`. From then on the script refuses that kind of ask, and Claude goes ahead and lists what it did in the weekly report.
 8. **A task past its "pointless after" date is dropped,** not shown as overdue.
 9. **Every week every open thread is looked at, not only the stuck ones.** The worksheet shows only threads that need something, so a thread that looks fine, with a next step and some activity, can live on though nobody would start it today. Each one like that goes to Timmy as a drop, with a recommendation, on its own thread. Once he takes nearly all of these, they stop being asked (point 7): Claude drops them and lists them in the weekly report.
+10. **What a thread shows is what it waits on.** The state the app shows for a thread (such as "waiting on you", "working" or "done") and the line that sums it up say the one thing it waits on now, the same as the record. A thread shows that it waits on Timmy only while it truly does, and shows it every time it does. The routine checks this, so Timmy doesn't have to nudge threads to fix their state: each thread that shows the wrong state is told, and fixes it itself.
 
 ## As a thread works
 
@@ -50,6 +51,8 @@ When he answers, `task answer <task> --took yes` (or `no`, with `--choice` sayin
 
 The thread runs these itself where it can reach the mailbox. Where it can't, it tells the coordinator, who records it.
 
+Whenever what a thread waits on changes, it updates what it shows in the same turn (point 10). Asking Timmy something, it asks on a card where the harness has one, so the app shows it waits on him. Once he answers, or the question no longer matters, nothing it shows still says it waits on him. Its status line, such as the current step of its checklist, names the one thing it waits on now, in words Timmy would use. When the routine tells a thread it shows the wrong state, the thread checks what it really waits on and fixes what it shows, or records the ask the record is missing.
+
 ## Every day
 
 Run `backlog.py daily` from whatever the project already runs each day, such as its scheduled check or mail doorbell. It:
@@ -59,22 +62,23 @@ Run `backlog.py daily` from whatever the project already runs each day, such as 
 - marks watches that ran out. Each one's thread is told once, and decides whether to chase, wait again or drop it.
 - ends snoozes that are due, and lists them for a decision.
 - lists tasks due within three days, to raise with Timmy today (a deadline also goes to his phone, rule 33 of the shared rules), and tasks past their "pointless after" date, to drop.
+- given the project's thread list as in the sweep (`backlog.py daily <file>`), lists the threads showing the wrong state, so each is told the same day rather than at the next sweep.
 
 ## Every week: the sweep
 
 Once a week, on Monday unless Timmy says otherwise:
 
 1. Pull the mailbox.
-2. Get the project's full list of threads from the harness, with each thread's id, title, the day it opened, its last activity and whether it is resolved. Save it as JSON (a list of `{"id", "title", "opened", "last_activity", "resolved"}`; a listing that uses `thread_id`, `created_at` and `last_activity_at` works as it is) and run `backlog.py sweep <file>`. The sweep adds new threads, notes threads resolved or reopened in the app, ends due snoozes, and prints a worksheet.
-3. Work through the worksheet. Give each new or stuck thread a next step, a task or a watch, or resolve it. Decide each ended snooze. Put each three-week task to Timmy once (`task offered-drop`). Drop what is past its date. Resolve threads whose only step is on the to-do list.
-4. Run `backlog.py review`: it lists every open thread, oldest first, with its age, last activity and what it waits on. Ask of each: would Timmy start this today? Resolve a thread whose work is done. For one not worth doing, ask him on its thread, recording it with `--ask-kind "drop a thread nobody would start today"` and the drop as the recommendation, and on his yes resolve it. One he chose to keep isn't asked about again unless something changed; the review marks it. Leave the rest as they are.
+2. Get the project's full list of threads from the harness, with each thread's id, title, the day it opened, its last activity, whether it is resolved, and the state the app shows it in. Save it as JSON (a list of `{"id", "title", "opened", "last_activity", "resolved", "shows"}`, where `shows` is the app's word for its state; a listing that uses `thread_id`, `created_at`, `last_activity_at` and `state` or `status_category` works as it is) and run `backlog.py sweep <file>`. The sweep adds new threads, notes threads resolved or reopened in the app, ends due snoozes, and prints a worksheet. A thread resolved in the record that the app still shows open stays resolved unless something happened in it since; the worksheet lists it to resolve in the app.
+3. Work through the worksheet. Give each new or stuck thread a next step, a task or a watch, or resolve it. Decide each ended snooze. Put each three-week task to Timmy once (`task offered-drop`). Drop what is past its date. Resolve threads whose only step is on the to-do list. Check each open task against its thread, and record any answer Timmy gave there that the thread didn't record. Tell each thread the worksheet lists as showing the wrong state, by a message to it where the harness allows, else through the coordinator, and it fixes what it shows itself.
+4. Run `backlog.py review`: it lists every open thread, oldest first, with its age, last activity, what it waits on and what the app shows. Read each one's status line too, and tell the thread if it doesn't say what the thread waits on. Ask of each: would Timmy start this today? Resolve a thread whose work is done. For one not worth doing, ask him on its thread, recording it with `--ask-kind "drop a thread nobody would start today"` and the drop as the recommendation, and on his yes resolve it. One he chose to keep isn't asked about again unless something changed; the review marks it. Leave the rest as they are.
 5. Rank the open decide and approve tasks: `backlog.py rank <task> <task> ...`, most important first. The first seven are Timmy's list.
 6. Run `backlog.py report` and post it to Timmy in one message, where he reads the project's news. Each item names its thread, where the card waits. A list of one or two is fine; an empty list says so.
 7. Push `backlog/` to the mailbox's `main`.
 
 ## The weekly numbers
 
-The report ends with three numbers next to last week's: threads opened and closed, how many wait on Timmy, and the median and oldest age of open threads. If more open than close two weeks running, the backlog grows however well it is sorted, and the report says so: the fix is to open fewer threads or drop more. The numbers for a past week come from what the record knew then, so the first weeks of a new record start low.
+The report ends with three numbers next to last week's: threads opened and closed, how many wait on Timmy, and the median and oldest age of open threads. If more open than close two weeks running, the backlog grows however well it is sorted, and the report says so: the fix is to open fewer threads or drop more. The numbers for a past week come from what the record knew then, so the first weeks of a new record start low. Threads resolved in the past week that the record never saw open, such as on a first run or opened and closed between two sweeps, still count as closed.
 
 ## How the routine learns
 
