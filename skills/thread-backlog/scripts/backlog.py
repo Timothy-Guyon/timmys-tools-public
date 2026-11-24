@@ -69,7 +69,9 @@ REVIEW_ASK = "drop a thread nobody would start today"   # the ask kind of a drop
 SHOWN = {"you": ("need_input", "blocked", "waiting", "waiting_on_you", "needs_you", "you"),
          "working": ("working", "running", "in_progress"),
          "done": ("done", "completed", "review_ready", "idle", "finished"),
-         "stopped": ("stopped", "failed", "error", "errored")}
+         "stopped": ("stopped", "failed", "error", "errored"),
+         "snoozed": ("reminder_set", "reminder", "snoozed", "set_aside")}
+REMINDER_KEYS = ("reminder_until", "remind_on", "reminder_at", "snoozed_until", "reminder")  # the app's own snooze
 CHECKS = ("date", "url", "mail", "other")
 PINNED = "pinned in the app"   # what a standing thread says when the app's pin made it standing
 
@@ -160,7 +162,7 @@ class State:
         t = self.threads.setdefault(e["id"], {"id": e["id"], "status": "active", "snoozes": 0,
                                               "next": None, "opened": e.get("opened", e["on"]),
                                               "first_seen": e["on"]})
-        for k in ("title", "opened", "last_activity", "shows"):
+        for k in ("title", "opened", "last_activity", "shows", "reminder"):
             if k in e:
                 t[k] = e[k]
         t["seen"] = e["on"]
@@ -176,7 +178,8 @@ class State:
 
     def _thread_snooze(self, e):
         t = self.threads[e["id"]]
-        t.update(status="snoozed", until=e["until"], snoozes=t["snoozes"] + 1)
+        # A reminder the client set in the app themselves isn't one of the routine's snoozes, so it doesn't count
+        t.update(status="snoozed", until=e["until"], snoozes=t["snoozes"] + (0 if e.get("from_app") else 1))
 
     def _thread_wake(self, e):
         t = self.threads[e["id"]]
@@ -373,6 +376,8 @@ def cmd_thread(a, r):
         r.add("thread-snooze", id=a.id, until=until)
         print("snoozed %s until %s (snooze %d of %d). When it ends it needs a decision: the client's list, "
               "Claude's to move, or resolved." % (title(s, a.id), until, t["snoozes"] + 1, MAX_SNOOZES))
+        print("Set the app's own reminder on the thread too, where the harness has one: %d days, or the longest it "
+              "allows, set again when it ends. The app and the record then say the same." % (d(until) - TODAY).days)
         done = True
     if a.resolve:
         if t["status"] == "resolved":
@@ -626,6 +631,8 @@ def read_threads(path):
             "resolved_on": (item.get("resolved_on") or item.get("resolved_at") or "")[:10] or None,
             # None when the list doesn't say: a harness without pins never clears a standing mark
             "pinned": next((bool(item[k]) for k in ("pinned", "is_pinned", "starred") if k in item), None),
+            # the app's reminder date: a date, "" when the list says there is none, None when it doesn't say
+            "reminder": next((str(item[k] or "")[:10] for k in REMINDER_KEYS if k in item), None),
         })
     return out
 
@@ -659,6 +666,8 @@ def see(r, listed):
             continue
         changes = {k: item[k] for k in ("title", "opened", "last_activity", "shows") if item[k]
                    and (known is None or known.get(k) != item[k])}
+        if item["reminder"] is not None and (known is None or known.get("reminder") != item["reminder"]):
+            changes["reminder"] = item["reminder"]
         if known is None:
             new.append(item["id"])
         if changes or known is None:
@@ -669,6 +678,11 @@ def see(r, listed):
             r.add("thread-standing", id=item["id"], standing=PINNED)  # the client pinned it: kept open on purpose
         elif item["pinned"] is False and t.get("standing") == PINNED:
             r.add("thread-standing", id=item["id"], standing="")  # unpinned, and nothing else made it standing
+        s = r.state()
+        t = s.threads[item["id"]]
+        rem = item["reminder"]
+        if rem and not item["resolved"] and d(rem) > TODAY and t["status"] == "active" and not t.get("standing"):
+            r.add("thread-snooze", id=item["id"], until=rem, from_app=True)  # set aside in the app: the record agrees
         s = r.state()
         t = s.threads[item["id"]]
         if item["resolved"] and t["status"] != "resolved":
@@ -698,6 +712,12 @@ def wrong_shown(s):
         elif shows == "done" and kind == "client":
             rows.append("%s waits on the client (%s) but shows done: it puts the ask back in front of them, on a card "
                         "where it can, or records their answer" % (title(s, t["id"]), words))
+        elif t["status"] == "snoozed" and t.get("reminder") == "":  # the list says it has no reminder
+            rows.append("%s is snoozed until %s in the record but has no reminder in the app: set the app's reminder "
+                        "on it, so both say the same" % (title(s, t["id"]), t["until"]))
+        elif shows == "snoozed" and t["status"] != "snoozed":
+            rows.append("%s is set aside in the app but not snoozed in the record (it waits on %s): snooze it here "
+                        "to the app's date, or clear the app's reminder" % (title(s, t["id"]), kind))
         elif shows == "stopped":
             rows.append("%s stopped or failed in the app: restart it, or resolve it" % title(s, t["id"]))
     return rows
