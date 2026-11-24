@@ -21,6 +21,7 @@ fixed id, never its display name.
   daily                               check watches, snoozes that end, tasks due soon or past their date
   report                              the "needs you" list and the weekly numbers, ready to post
   show [ID]                           every open thread with what it waits on, or one object in full
+  review                              weekly, after the sweep: every open thread, oldest first, to ask of each whether it is still worth doing
 
   thread add ID --title T [--opened DATE]
   thread ID [--next STEP] [--snooze DATE] [--resolve SUMMARY] [--reopen]
@@ -58,6 +59,7 @@ DUE_SOON_DAYS = 3          # tasks due this soon are raised by the daily run
 STOP_ASKING_RATE = 0.95    # kinds of asks he takes the recommendation on this often...
 STOP_ASKING_MIN = 10       # ...over at least this many answers are put to him: stop asking?
 KINDS = ("decide", "approve", "act")
+REVIEW_ASK = "drop a thread nobody would start today"   # the ask kind of a drop from the weekly review
 CHECKS = ("date", "url", "mail", "other")
 
 
@@ -648,6 +650,7 @@ def cmd_sweep(a, r):
              if k not in s.stopped and total >= STOP_ASKING_MIN and took / total >= STOP_ASKING_RATE])
     asks = s.ranked()
     out.append("")
+    out.append("Then run 'review' and ask of every open thread whether it is still worth doing.")
     out.append("Then rank the %d open decide and approve tasks by what each blocks and what a week's delay costs "
                "('rank ID ID ...'; the first %d are Timmy's list), and run 'report'." % (len(asks), LIST_CAP))
     print("\n".join(out))
@@ -725,6 +728,37 @@ def cmd_show(a, r):
         rows.append("%s  %s%s%s" % (title(s, t["id"]), kind, (": " + words) if words else "", mark))
     print("\n".join(rows) if rows else "No open threads in the record.")
     print("Record: %s%s" % (r.path, "" if SHARED else " (this place only)"))
+
+
+def cmd_review(a, r):
+    s = r.state()
+    live = sorted((t for t in s.threads.values() if t["status"] != "resolved"), key=lambda t: (t["opened"], t["id"]))
+    if not live:
+        print("No open threads in the record.")
+        return
+    on = s.on_list()
+    out = ["Every open thread, oldest first (%d). Ask of each: would Timmy start this today?" % len(live), ""]
+    for t in live:
+        kind, words = s.waits_on(t["id"])
+        last = t.get("last_activity") or t["opened"]
+        kept = [x["closed"] for x in s.tasks.values() if x.get("thread") == t["id"]
+                and x.get("ask_kind") == REVIEW_ASK and x["status"] == "answered" and x["took"] == "no"]
+        extra = [", snoozed %d time(s)" % t["snoozes"] if t["snoozes"] else "",
+                 " [on the list]" if any(x["id"] in on for x in s.open_tasks(t["id"])) else "",
+                 " [Timmy kept it on %s: don't ask again unless something changed]" % max(kept) if kept else ""]
+        out.append("- %s, %d days old, last active %s. Waits on %s%s%s" % (
+            title(s, t["id"]), (TODAY - d(t["opened"])).days, last, kind, (": " + words) if words else "", "".join(extra)))
+    out.append("")
+    out.append("A thread whose work is done: resolve it with a one-line summary.")
+    if REVIEW_ASK in s.stopped:
+        out.append("A thread not worth doing: Timmy said to stop asking, so resolve it with a one-line summary "
+                   "and list it in the report.")
+    else:
+        out.append("A thread not worth doing: put the drop to Timmy on its thread, "
+                   "'task add --thread ID --kind decide --title \"Drop this thread?\" --recommend \"drop it: <why>\" "
+                   "--ask-kind \"%s\"', and rank it with the rest. On his yes, resolve the thread." % REVIEW_ASK)
+    out.append("Every other thread carries on as it is.")
+    print("\n".join(out))
 
 
 # ---------------------------------------------------------------- how it learns
@@ -809,6 +843,7 @@ def main():
     sub.add_parser("report", help="Timmy's list and the weekly numbers")
     x = sub.add_parser("show", help="open threads, or one object")
     x.add_argument("id", nargs="?")
+    sub.add_parser("review", help="weekly: every open thread, to ask whether it is still worth doing")
 
     x = sub.add_parser("thread", help="add or change a thread")
     x.add_argument("id", help="the thread's id, or 'add'")
@@ -881,7 +916,8 @@ def main():
         refuse("--project (or $TIMMY_BACKLOG_PROJECT) is the project's fixed id")
     r = Record(a.project)
     {"sweep": cmd_sweep, "daily": cmd_daily, "report": cmd_report, "show": cmd_show, "thread": cmd_thread,
-     "task": cmd_task, "rank": cmd_rank, "stop-asking": cmd_stop_asking, "watch": cmd_watch}[a.cmd](a, r)
+     "task": cmd_task, "rank": cmd_rank, "stop-asking": cmd_stop_asking, "watch": cmd_watch,
+     "review": cmd_review}[a.cmd](a, r)
 
 
 if __name__ == "__main__":

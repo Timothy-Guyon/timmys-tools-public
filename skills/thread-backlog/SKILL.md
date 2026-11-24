@@ -1,6 +1,6 @@
 ---
 name: thread-backlog
-description: The routine that keeps Timmy's open threads from piling up. Each week every thread gets one state, Timmy gets a ranked "needs you" list of at most seven items, each with a recommendation, and three numbers show whether the backlog is shrinking; each day, what threads wait for is checked. Use when coordinating a project's threads (the weekly sweep, the daily check), whenever a thread asks Timmy something, waits for an event or leaves him an action, and when he says how the routine works for him.
+description: The routine that keeps Timmy's open threads from piling up. Each week every thread gets one state and is asked whether it is still worth doing, Timmy gets a ranked "needs you" list of at most seven items, each with a recommendation, and three numbers show whether the backlog is shrinking; each day, what threads wait for is checked. Use when coordinating a project's threads (the weekly sweep, the daily check), whenever a thread asks Timmy something, waits for an event or leaves him an action, and when he says how the routine works for him.
 ---
 
 # Thread backlog
@@ -33,6 +33,7 @@ The record is one file per project, `backlog/<project id>.jsonl` in the mailbox 
 6. **Claude goes ahead on steps that can be undone** and doesn't make tasks of them (rules 20 and 21 of the shared rules). A task is only for what only Timmy can do.
 7. **Kinds of asks Timmy almost always approves stop being asked.** When he has taken Claude's recommendation on at least 95% of the asks of one kind, over at least ten answers, the sweep says so. Claude puts "stop asking?" to him, and on his yes runs `stop-asking`. From then on the script refuses that kind of ask, and Claude goes ahead and lists what it did in the weekly report.
 8. **A task past its "pointless after" date is dropped,** not shown as overdue.
+9. **Every week every open thread is looked at, not only the stuck ones.** The worksheet shows only threads that need something, so a thread that looks fine, with a next step and some activity, can live on though nobody would start it today. Each one like that goes to Timmy as a drop, with a recommendation, on its own thread. Once he takes nearly all of these, they stop being asked (point 7): Claude drops them and lists them in the weekly report.
 
 ## As a thread works
 
@@ -66,9 +67,10 @@ Once a week, on Monday unless Timmy says otherwise:
 1. Pull the mailbox.
 2. Get the project's full list of threads from the harness, with each thread's id, title, the day it opened, its last activity and whether it is resolved. Save it as JSON (a list of `{"id", "title", "opened", "last_activity", "resolved"}`; a listing that uses `thread_id`, `created_at` and `last_activity_at` works as it is) and run `backlog.py sweep <file>`. The sweep adds new threads, notes threads resolved or reopened in the app, ends due snoozes, and prints a worksheet.
 3. Work through the worksheet. Give each new or stuck thread a next step, a task or a watch, or resolve it. Decide each ended snooze. Put each three-week task to Timmy once (`task offered-drop`). Drop what is past its date. Resolve threads whose only step is on the to-do list.
-4. Rank the open decide and approve tasks: `backlog.py rank <task> <task> ...`, most important first. The first seven are Timmy's list.
-5. Run `backlog.py report` and post it to Timmy in one message, where he reads the project's news. Each item names its thread, where the card waits. A list of one or two is fine; an empty list says so.
-6. Push `backlog/` to the mailbox's `main`.
+4. Run `backlog.py review`: it lists every open thread, oldest first, with its age, last activity and what it waits on. Ask of each: would Timmy start this today? Resolve a thread whose work is done. For one not worth doing, ask him on its thread, recording it with `--ask-kind "drop a thread nobody would start today"` and the drop as the recommendation, and on his yes resolve it. One he chose to keep isn't asked about again unless something changed; the review marks it. Leave the rest as they are.
+5. Rank the open decide and approve tasks: `backlog.py rank <task> <task> ...`, most important first. The first seven are Timmy's list.
+6. Run `backlog.py report` and post it to Timmy in one message, where he reads the project's news. Each item names its thread, where the card waits. A list of one or two is fine; an empty list says so.
+7. Push `backlog/` to the mailbox's `main`.
 
 ## The weekly numbers
 

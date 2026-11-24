@@ -5,11 +5,11 @@ The tools Timmy uses in every project, minus the private parts, as one Claude Co
 - **Three advisors** (`skills/`, `agents/`): Lean (whether and when to build), Design (what people see and do) and Technical (how it is built), with the team charter that says who owns what and how disagreements get decided. A session-start hook prints what the charter says is due.
 - **Working rules** (`rules/AGENTS.md`): how every thread works with Timmy, printed as a reminder at each session's start.
 - **Write like Timmy** (`skills/write-like-timmy/`): drafts in Timmy's own voice anything he puts his name to: messages, posts, documents. Its `voice.md` holds his rules and only the examples he chose to publish.
-- **Thread backlog** (`skills/thread-backlog/`): the weekly routine that keeps a project's open threads from piling up: one state per thread, a "needs you" list of at most seven with recommendations, a daily check of what threads wait for, and three weekly numbers. Without the private mailbox, its records stay on the machine that runs it.
+- **Thread backlog** (`skills/thread-backlog/`): the weekly routine that keeps a project's open threads from piling up: one state per thread, a "needs you" list of at most seven with recommendations, a daily check of what threads wait for, a weekly look at every open thread, and three weekly numbers. Without the private mailbox, its records stay on the machine that runs it.
 
 Left out: the notes behind the voice and Timmy's own writing, the advisors' source books (copyrighted; each principle still names its source), the phone and menu bar alerts, and anything personal.
 
-This repository is a mirror. Do not change it here: it is rebuilt from a private repository on every change there, and anything changed here is overwritten. Built from commit `2151e07`.
+This repository is a mirror. Do not change it here: it is rebuilt from a private repository on every change there, and anything changed here is overwritten. Built from commit `8cdf32b`.
 
 Issues are the exception: they are how a user of this copy sends a lesson back. Open one with the "Rule candidate" template, one lesson per issue, in general terms only, since this repository is public. Each advisor's skill ends with "Sending a lesson back", which says how a session drafts and files one. A lesson about Timmy's writing voice goes the same way; `skills/write-like-timmy/SKILL.md` says how under "Without the mailbox".
 
