@@ -58,4 +58,4 @@ Habits found in his own messages: his sent email (the latest 50 threads) and a m
 
 ## Examples
 
-None approved yet. An example is one of his real pieces, a message, a post or a passage of a document, added only on his word, and for each he says whether it may ship in the public copy of this skill. Public ones go here; the rest go in `voice/examples.md` of the mailbox repo (`Timothy-Guyon/claude-shared`) and are read from there where it can be reached.
+None public yet. An example is one of his real pieces, a message, a post or a passage of a document, added only on his word, and for each he says whether it may ship in the public copy of this skill. Public ones go here; the rest go in `voice/examples.md` of the mailbox repo (`Timothy-Guyon/claude-shared`) and `scripts/voice.py examples` prints them where it can be reached.

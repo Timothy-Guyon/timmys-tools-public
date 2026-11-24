@@ -15,7 +15,7 @@ Why it is built this way: a description of someone's style, however good, makes 
 
 ## Drafting
 
-1. **Read `voice.md`, all of it,** then run `python3 scripts/voice.py status`. It says whether to show two drafts or one.
+1. **Read `voice.md`, all of it,** then run `python3 scripts/voice.py status` and `python3 scripts/voice.py examples`. The first says whether to show two drafts or one. The second prints the real pieces of his that he approved as examples, where this place can reach them. Read them to hear how he sounds, not as material: no line, fact or story from an example goes into a draft, and a word of his goes in only where it would come by itself.
 
 2. **Get what he wants to say before how to say it.** Note for yourself what the piece has to carry: who it is for, what he wants from them, the facts, the dates, his answer. For a document or a post, also the point it makes and what the reader should know or do at the end. Anything only Timmy knows and has not said, ask him, one plain question at a time. Never fill a gap with something plausible: a made-up detail in a convincing voice is the worst draft there is, because it reads as his. A short ask is fine when everything is in it ("tell Sam I can't make Saturday, offer Sunday").
 
@@ -47,7 +47,7 @@ The log is `voice/LOG.md` in the mailbox repo (`Timothy-Guyon/claude-shared`): p
 2. **A rule says what to do instead.** Every rule in `voice.md` carries what it replaces: the fragment that was wrong and what he did instead, taken from the notes. A rule that only forbids is not ready.
 3. **An accepted rule becomes a pull request** on `voice.md` in Timmy's Tools (`Timothy-Guyon/timmys-tools`) with his decision quoted, and `python3 scripts/voice.py used <note numbers> --rule <rule number>` marks the notes. A struck proposal is marked `--rule struck`, so those notes stop counting. Only Timmy merges.
 4. **A rule that stops fitting goes back to him.** If he overrules a rule twice, log it as a `said` note naming the rule, and put the change or strike to him the same way.
-5. **Examples are his real writing, added only on his word.** A message, a post or a passage of a document. For each he says whether it may ship in the public copy. Public ones go under "Examples" in `voice.md`; the rest go in `voice/examples.md` of the mailbox repo and are read from there where it can be reached.
+5. **Examples are his real writing, added only on his word.** A message, a post or a passage of a document. For each he says whether it may ship in the public copy. Public ones go under "Examples" in `voice.md`; the rest go in `voice/examples.md` of the mailbox repo, one numbered entry each with the kind of writing, the date and his word, pushed straight to its `main`. `voice.py examples` prints them where the mailbox can be reached.
 
 ## Learning from what a place can see
 
@@ -55,7 +55,7 @@ Each place this skill is installed can see different writing of his: sent mail i
 
 ## Checking against his real writing
 
-Timmy wants both: drafts that follow his rules, and drafts that still read as his. `check.md` covers the second: it rewrites a few of his real pieces from their content alone and has a fresh judge say whether the voice file brought the drafts closer to what he wrote. Run it where his real writing can be read, when `status` says a check is due or when he asks.
+Timmy wants both: drafts that follow his rules, and drafts that still read as his. `check.md` covers the second: it rewrites a few of his real pieces from their content alone and has a fresh judge say whether the voice file brought the drafts closer to what he wrote. Where his examples can be reached, it also says whether reading them brought drafts closer than the rules alone; when it does, a rule is missing, and writing it brings the public copy up too. Run it where his real writing can be read, when `status` says a check is due or when he asks.
 
 ## Without the mailbox
 

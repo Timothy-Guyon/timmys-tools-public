@@ -20,8 +20,10 @@ mailbox). Push the mailbox's log straight to its main.
   voice.py note --kind pick|edit|said --for "kind of writing" --draft "what the draft did"
                 --timmy "what he chose, changed or said" [--before "..." --after "..."] [--date YYYY-MM-DD]
   voice.py open                        notes not yet counted toward a rule
+  voice.py examples                    his own writing he approved as examples (private, in the mailbox)
   voice.py used 3,7,9 --rule 8         mark notes as counted toward rule 8 (or --rule struck)
   voice.py check --with N --without N [--ties N] [--note "..."]
+                [--with-examples N --rules-only N --examples-ties N]
                                        record a check against his real writing (check.md)
 """
 import argparse
@@ -117,6 +119,26 @@ def rules_now():
     return len(re.findall(r"^\d+\. \*\*", voice.read_text(), re.M))
 
 
+def examples_file():
+    """His private examples sit beside the shared log; a log for this place only has none."""
+    return LOG.parent / "examples.md" if SHARED else None
+
+
+def examples_count():
+    f = examples_file()
+    if not f or not f.exists():
+        return None
+    return len(ENTRY.findall(f.read_text()))
+
+
+def examples(a):
+    f = examples_file()
+    if not f or not f.exists():
+        print("No private examples can be reached here. Use the public ones under \"Examples\" in voice.md, if any.")
+        return
+    print(f.read_text().rstrip("\n"))
+
+
 def note(a):
     if bool(a.before) != bool(a.after):
         sys.exit("refused: --before and --after go together: every bad fragment is logged with what he did instead")
@@ -165,15 +187,22 @@ def used(a):
 
 
 def check(a):
-    for name in ("with_", "without", "ties"):
-        if getattr(a, name) < 0:
+    second = (a.with_examples, a.rules_only, a.examples_ties)
+    asked = any(x is not None for x in second)
+    second = tuple(x or 0 for x in second)
+    for count in (a.with_, a.without, a.ties) + second:
+        if count < 0:
             sys.exit("refused: counts can't be negative")
     if a.with_ + a.without + a.ties == 0:
         sys.exit("refused: a check compares at least one piece")
+    if asked and sum(second) == 0:
+        sys.exit("refused: the comparison with his examples needs at least one piece")
     lines = [
         "Closer to his real writing: with the voice %d, without it %d, ties %d" % (a.with_, a.without, a.ties),
         "Rules in voice.md: %d" % rules_now(),
     ]
+    if asked:
+        lines.append("Reading his examples, against the rules alone: with examples %d, rules only %d, ties %d" % second)
     if a.note:
         lines.append("Note: %s" % need(a.note, "note"))
     lines.append("Rule: check")
@@ -181,6 +210,8 @@ def check(a):
     print("logged check as note %d%s." % (n, where()))
     if a.without > a.with_:
         print("Drafts without the voice were closer more often. Tell Timmy: a rule may be pulling drafts away from him.")
+    if second[0] > second[1]:
+        print("Drafts that read his examples were closer more often. A rule is missing: find it in the judge's notes and put it to Timmy (check.md, step 6).")
 
 
 def status(a):
@@ -192,6 +223,11 @@ def status(a):
         print("Drafts to show: one (%d picks and edits logged); two when he asks." % taught)
     open_count = sum(1 for _, b in all_ if "\nRule: open" in b)
     print("Open notes: %d%s" % (open_count, ". Three alike make a rule: voice.py open" if open_count >= 3 else "."))
+    shown = examples_count()
+    if shown is None:
+        print("Examples: none of his private ones can be reached here.")
+    else:
+        print("Examples: %d of his own pieces. Read them before drafting: voice.py examples" % shown)
     checks = [b for _, b in all_ if "\nRule: check" in b]
     now = rules_now()
     if not checks:
@@ -202,6 +238,9 @@ def status(a):
         added = now - int(then.group(1)) if then else 0
         due = "; a check is due where his real writing can be read (check.md)" if added >= CHECK_DUE_AFTER else ""
         print("Last check: %s. %s. Rules added since: %d%s." % (last[0].split(". ", 1)[1].split(",")[0], last[1], added, due))
+        plus = [l for l in last if l.startswith("Reading his examples")]
+        if plus:
+            print("  %s." % plus[0])
     print("Log: %s%s" % (LOG, "" if SHARED else " (this place only; lessons travel as SKILL.md says under \"Without the mailbox\")"))
 
 
@@ -221,6 +260,8 @@ def main():
     n.set_defaults(fn=note)
     o = sub.add_parser("open", help="list notes not yet counted toward a rule")
     o.set_defaults(fn=open_)
+    e = sub.add_parser("examples", help="print his own writing he approved as examples")
+    e.set_defaults(fn=examples)
     u = sub.add_parser("used", help="mark notes as counted toward a rule")
     u.add_argument("notes", help="note numbers, comma-separated")
     u.add_argument("--rule", required=True)
@@ -229,6 +270,9 @@ def main():
     c.add_argument("--with", dest="with_", type=int, required=True, help="pairs where the draft written with voice.md was closer")
     c.add_argument("--without", type=int, required=True, help="pairs where the draft written without it was closer")
     c.add_argument("--ties", type=int, default=0, help="pairs where the judge flipped when the order was swapped")
+    c.add_argument("--with-examples", type=int, help="pairs where the draft that also read his examples was closer")
+    c.add_argument("--rules-only", type=int, help="pairs where the draft with voice.md alone was closer")
+    c.add_argument("--examples-ties", type=int, help="ties in that second comparison")
     c.add_argument("--note")
     c.add_argument("--date")
     c.set_defaults(fn=check)
