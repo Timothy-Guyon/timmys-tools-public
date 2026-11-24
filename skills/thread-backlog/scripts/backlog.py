@@ -29,7 +29,7 @@ fixed id, never its display name.
 
   thread add ID --title T [--opened DATE]
   thread ID [--next STEP] [--snooze DATE] [--resolve SUMMARY] [--reopen]
-            [--standing WHAT_WAKES_IT | --not-standing]   a thread kept open on purpose, such as a mail thread
+            [--standing WHY | --not-standing]   kept open for good (a mailbox, a log, a running topic, a pinned thread)
 
   task add --thread ID --kind decide|approve|act --title T
            [--recommend R --ask-kind K] [--due DATE] [--pointless-after DATE] [--todo LINK]
@@ -71,6 +71,7 @@ SHOWN = {"you": ("need_input", "blocked", "waiting", "waiting_on_you", "needs_yo
          "done": ("done", "completed", "review_ready", "idle", "finished"),
          "stopped": ("stopped", "failed", "error", "errored")}
 CHECKS = ("date", "url", "mail", "other")
+PINNED = "pinned in the app"   # what a standing thread says when the app's pin made it standing
 
 
 # ---------------------------------------------------------------- where it lives
@@ -268,6 +269,8 @@ class State:
         here = [x for x in mine if not x.get("todo")]
         if here:
             return "client", "; ".join("%s: %s" % (x["kind"], x["title"]) for x in here)
+        if t.get("standing"):  # kept open on purpose: only an ask for the client says more
+            return "standing", t["standing"]
         watches = self.live_watches(tid)
         if watches:
             return "event", "; ".join(w["check"] for w in watches)
@@ -275,8 +278,6 @@ class State:
             return "todo", "; ".join(x["title"] for x in mine)
         if t.get("next"):
             return "claude", t["next"]
-        if t.get("standing"):
-            return "standing", t["standing"]
         return "nothing", ""
 
     def asks_by_kind(self):
@@ -291,9 +292,9 @@ class State:
         week = on - datetime.timedelta(days=7)
         opened = [t for t in self.threads.values() if week < d(t["opened"]) <= on]
         closed = [e for e in self.resolves if week < d(e["on"]) <= on]
-        live = [t for t in self.threads.values() if t["status"] != "resolved"
-                and self.waits_on(t["id"])[0] != "standing"]  # kept open on purpose: not backlog
-        waiting = [t for t in live if self.waits_on(t["id"])[0] == "client"]
+        unresolved = [t for t in self.threads.values() if t["status"] != "resolved"]
+        live = [t for t in unresolved if not t.get("standing")]  # kept open on purpose: not backlog
+        waiting = [t for t in unresolved if self.waits_on(t["id"])[0] == "client"]
         ages = sorted((on - d(t["opened"])).days for t in live)
         oldest = max(live, key=lambda t: (on - d(t["opened"])).days, default=None)
         return {"opened": len(opened), "closed": len(closed), "open": len(live), "waiting": len(waiting),
@@ -344,6 +345,9 @@ def cmd_thread(a, r):
         return
     t = need_thread(s, a.id)
     done = False
+    if t.get("standing") and not a.not_standing and (a.snooze or a.resolve):
+        refuse("%s is a standing thread, kept open on purpose (%s): the routine never snoozes or resolves it. If the "
+               "client says it can close, run it again with --not-standing" % (title(s, a.id), t["standing"]))
     if a.reopen:
         if t["status"] != "resolved":
             refuse("thread %s isn't resolved" % a.id)
@@ -379,9 +383,11 @@ def cmd_thread(a, r):
         r.add("thread-resolve", id=a.id, summary=line(a.resolve, "resolve"))
         print("resolved %s: %s" % (title(s, a.id), a.resolve.strip()))
         done = True
+    if a.standing and a.not_standing:
+        refuse("--standing or --not-standing, not both")
+    if a.standing and (a.snooze or a.resolve):
+        refuse("a standing thread is kept open: --standing goes with neither --snooze nor --resolve")
     if a.standing or a.not_standing:
-        if a.standing and a.not_standing:
-            refuse("--standing or --not-standing, not both")
         r.add("thread-standing", id=a.id, standing=line(a.standing, "standing") if a.standing else "")
         print(("%s is a standing thread, kept open on purpose: %s" % (title(s, a.id), a.standing.strip()))
               if a.standing else "%s is no longer a standing thread" % title(s, a.id))
@@ -611,6 +617,8 @@ def read_threads(path):
             "resolved": bool(item.get("resolved")) or item.get("state") in ("resolved",),
             "shows": shown_state(item),
             "resolved_on": (item.get("resolved_on") or item.get("resolved_at") or "")[:10] or None,
+            # None when the list doesn't say: a harness without pins never clears a standing mark
+            "pinned": next((bool(item[k]) for k in ("pinned", "is_pinned", "starred") if k in item), None),
         })
     return out
 
@@ -648,6 +656,12 @@ def see(r, listed):
             new.append(item["id"])
         if changes or known is None:
             r.add("thread-seen", id=item["id"], **changes)
+        s = r.state()
+        t = s.threads[item["id"]]
+        if item["pinned"] and not t.get("standing"):
+            r.add("thread-standing", id=item["id"], standing=PINNED)  # the client pinned it: kept open on purpose
+        elif item["pinned"] is False and t.get("standing") == PINNED:
+            r.add("thread-standing", id=item["id"], standing="")  # unpinned, and nothing else made it standing
         s = r.state()
         t = s.threads[item["id"]]
         if item["resolved"] and t["status"] != "resolved":
@@ -701,7 +715,8 @@ def cmd_sweep(a, r):
             out.append(head)
             out.extend("- " + row for row in rows)
 
-    section("New since the last sweep: give each a next step, a task for the client, or a watch:",
+    section("New since the last sweep: give each a next step, a task for the client, or a watch, or mark it standing "
+            "if it is kept open for good, such as a mailbox, a log or a running topic:",
             [title(s, tid) for tid in new if s.waits_on(tid)[0] == "nothing"])
     section("Waiting on nothing and no next step: decide what each waits on, or resolve it:",
             [title(s, t["id"]) for t in s.threads.values() if t["id"] not in new
@@ -742,6 +757,11 @@ def cmd_sweep(a, r):
             ["%s: took the recommendation %d of %d times" % (k, took, total)
              for k, (took, total) in sorted(s.asks_by_kind().items())
              if k not in s.stopped and total >= STOP_ASKING_MIN and took / total >= STOP_ASKING_RATE])
+    standing = [t for t in s.threads.values() if t["status"] != "resolved" and s.waits_on(t["id"])[0] == "standing"]
+    if standing:
+        out.append("")
+        out.append("Standing, kept open on purpose (%d): left as they are, never snoozed, resolved or put up to drop. "
+                   "One shows up above only when it has an ask for the client." % len(standing))
     asks = s.ranked()
     out.append("")
     out.append("Then run 'review' and ask of every open thread whether it is still worth doing.")
@@ -767,8 +787,9 @@ def cmd_report(a, r):
     snoozed = [t for t in s.threads.values() if t["status"] == "snoozed"]
     watching = s.live_watches()
     todo = [t for t in s.open_tasks() if t.get("todo")]
-    out.append("Snoozed: %d threads. Watching for: %d events. On your to-do list: %d." % (
-        len(snoozed), len(watching), len(todo)))
+    standing = [t for t in s.threads.values() if t["status"] != "resolved" and t.get("standing")]
+    out.append("Snoozed: %d threads. Watching for: %d events. On your to-do list: %d. Kept open for good: %d." % (
+        len(snoozed), len(watching), len(todo), len(standing)))
     week = TODAY - datetime.timedelta(days=7)
     done = [e for e in s.resolves if week < d(e["on"]) <= TODAY]
     if done:
@@ -826,8 +847,10 @@ def cmd_show(a, r):
 
 def cmd_review(a, r):
     s = r.state()
-    live = sorted((t for t in s.threads.values() if t["status"] != "resolved"), key=lambda t: (t["opened"], t["id"]))
-    if not live:
+    open_ = sorted((t for t in s.threads.values() if t["status"] != "resolved"), key=lambda t: (t["opened"], t["id"]))
+    standing = [t for t in open_ if t.get("standing")]
+    live = [t for t in open_ if t not in standing]
+    if not open_:
         print("No open threads in the record.")
         return
     on = s.on_list()
@@ -856,6 +879,14 @@ def cmd_review(a, r):
                    "'task add --thread ID --kind decide --title \"Drop this thread?\" --recommend \"drop it: <why>\" "
                    "--ask-kind \"%s\"', and rank it with the rest. On their yes, resolve the thread." % REVIEW_ASK)
     out.append("Every other thread carries on as it is.")
+    if standing:
+        out.append("")
+        out.append("Standing, kept open on purpose (%d): not asked about, never snoozed, resolved or put up to drop. "
+                   "Only the client takes one off ('thread ID --not-standing')." % len(standing))
+        for t in standing:
+            kind, words = s.waits_on(t["id"])
+            ask = ". It has an ask for the client: %s" % words if kind == "client" else ""
+            out.append("- %s: %s%s" % (title(s, t["id"]), t["standing"], ask))
     print("\n".join(out))
 
 
@@ -953,7 +984,8 @@ def main():
     x.add_argument("--snooze")
     x.add_argument("--resolve")
     x.add_argument("--reopen", action="store_true")
-    x.add_argument("--standing", help="kept open on purpose; say what wakes it, such as its mail doorbell")
+    x.add_argument("--standing", help="kept open for good, such as a mailbox, a log or a running topic; say why "
+                   "or what wakes it")
     x.add_argument("--not-standing", dest="not_standing", action="store_true")
 
     x = sub.add_parser("task", help="tasks only the client can do")
