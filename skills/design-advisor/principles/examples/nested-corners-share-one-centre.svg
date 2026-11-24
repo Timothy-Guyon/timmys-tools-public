@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Nested corners share one centre: an album card, 20-point corners, photo set 8 points in</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">An album card: 20-point corners, photo set 8 points in</text>
+  <!-- Pass -->
+  <rect x="40" y="56" width="220" height="190" rx="20" fill="#e5e5ea"/>
+  <rect x="48" y="64" width="204" height="174" rx="12" fill="#5e8fd6"/>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: inner corners 12 (20 − 8)</text>
+  <!-- Fail -->
+  <rect x="300" y="56" width="220" height="190" rx="20" fill="#e5e5ea"/>
+  <rect x="308" y="64" width="204" height="174" rx="20" fill="#5e8fd6"/>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: inner corners also 20</text>
+  <circle cx="312" cy="68" r="14" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+</svg>

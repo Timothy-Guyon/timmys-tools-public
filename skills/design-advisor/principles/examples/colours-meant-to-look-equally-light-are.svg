@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+<title>Colours meant to look equally light are equally light: a calendar's five category tags</title>
+<rect width="560" height="300" fill="#ffffff"/>
+<text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A calendar's five category tags, all meant to be equally light</text>
+<rect x="40" y="56" width="220" height="30" rx="15" fill="#e47c75"/><text x="150" y="76" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1c1e">Work</text>
+<rect x="40" y="94" width="220" height="30" rx="15" fill="#be9a2a"/><text x="150" y="114" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1c1e">Home</text>
+<rect x="40" y="132" width="220" height="30" rx="15" fill="#67b36a"/><text x="150" y="152" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1c1e">Health</text>
+<rect x="40" y="170" width="220" height="30" rx="15" fill="#6e9eef"/><text x="150" y="190" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1c1e">Travel</text>
+<rect x="40" y="208" width="220" height="30" rx="15" fill="#c282d0"/><text x="150" y="228" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1c1e">Family</text>
+<rect x="300" y="56" width="220" height="30" rx="15" fill="#ff6a00"/><text x="410" y="76" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1c1e">Work</text>
+<rect x="300" y="94" width="220" height="30" rx="15" fill="#ffff00"/><text x="410" y="114" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1c1e">Home</text>
+<rect x="300" y="132" width="220" height="30" rx="15" fill="#00ff2b"/><text x="410" y="152" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1c1e">Health</text>
+<rect x="300" y="170" width="220" height="30" rx="15" fill="#0055ff"/><text x="410" y="190" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1c1e">Travel</text>
+<rect x="300" y="208" width="220" height="30" rx="15" fill="#d400ff"/><text x="410" y="228" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1c1e">Family</text>
+<text x="150" y="268" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: same OKLCH lightness</text>
+<text x="150" y="288" text-anchor="middle" font-size="13" fill="#3a3a3c">each tag looks as light as the next</text>
+<text x="410" y="268" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: same HSL lightness</text>
+<text x="410" y="288" text-anchor="middle" font-size="13" fill="#3a3a3c">yellow glares, blue goes dark</text>
+</svg>

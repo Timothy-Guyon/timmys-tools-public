@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+<title>A gradient keeps its colour through the middle: a weather app's blue-to-orange temperature bar</title>
+<defs><linearGradient id="ok"><stop offset="0.0" stop-color="#1f6feb"/><stop offset="0.1" stop-color="#6469ef"/><stop offset="0.2" stop-color="#8e64ea"/><stop offset="0.3" stop-color="#af61dc"/><stop offset="0.4" stop-color="#cb60c7"/><stop offset="0.5" stop-color="#e261ae"/><stop offset="0.6" stop-color="#f36792"/><stop offset="0.7" stop-color="#fd7174"/><stop offset="0.8" stop-color="#ff8057"/><stop offset="0.9" stop-color="#fe9239"/><stop offset="1.0" stop-color="#f5a623"/></linearGradient>
+<linearGradient id="srgb"><stop offset="0" stop-color="#1f6feb"/><stop offset="1" stop-color="#f5a623"/></linearGradient></defs>
+<rect width="560" height="300" fill="#ffffff"/>
+<text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A weather app's temperature bar, cold blue to hot orange</text>
+<rect x="40" y="60" width="480" height="56" rx="28" fill="url(#ok)"/>
+<text x="280" y="140" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: blended in OKLCH, stays colourful through the middle</text>
+<rect x="40" y="176" width="480" height="56" rx="28" fill="url(#srgb)"/>
+<text x="280" y="256" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: blended the default way, goes grey in the middle</text>
+</svg>

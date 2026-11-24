@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+<title>An icon swap blurs as it fades: a Copy button turning into a tick and back, animated</title>
+<desc>Animated. Each half-second swap: on the left both icons blur as they cross-fade; on the right they cross-fade sharp, so two icons show stacked mid-swap.</desc>
+<defs><filter id="fc1" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0"><animate attributeName="stdDeviation" values="0;0;4;4;0;0" keyTimes="0;0.25;0.375;0.75;0.875;1" dur="4s" repeatCount="indefinite"/></feGaussianBlur></filter><filter id="ft1" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"><animate attributeName="stdDeviation" values="4;4;0;0;4;4" keyTimes="0;0.25;0.375;0.75;0.875;1" dur="4s" repeatCount="indefinite"/></feGaussianBlur></filter></defs>
+<rect width="560" height="300" fill="#ffffff"/>
+<text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A Copy button turning into a tick and back</text>
+<rect x="90" y="70" width="120" height="120" rx="24" fill="#f2f2f7"/>
+<rect x="350" y="70" width="120" height="120" rx="24" fill="#f2f2f7"/>
+<g fill="none" stroke="#1c1c1e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#fc1)"><animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.25;0.375;0.75;0.875;1" dur="4s" repeatCount="indefinite"/><g><rect x="128" y="108" width="34" height="40" rx="5"/><path d="M140 108 v-6 a4 4 0 0 1 4 -4 h24 a4 4 0 0 1 4 4 v32 a4 4 0 0 1 -4 4 h-6"/></g></g><g filter="url(#ft1)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.375;0.75;0.875;1" dur="4s" repeatCount="indefinite"/><path d="M128 128 l16 16 l30 -34"/></g><g><animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.25;0.375;0.75;0.875;1" dur="4s" repeatCount="indefinite"/><g><rect x="388" y="108" width="34" height="40" rx="5"/><path d="M400 108 v-6 a4 4 0 0 1 4 -4 h24 a4 4 0 0 1 4 4 v32 a4 4 0 0 1 -4 4 h-6"/></g></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.375;0.75;0.875;1" dur="4s" repeatCount="indefinite"/><path d="M388 128 l16 16 l30 -34"/></g></g>
+<text x="150" y="230" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: both blur as they cross,</text>
+<text x="150" y="250" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">one shape changing</text>
+<text x="410" y="230" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: sharp cross-fade,</text>
+<text x="410" y="250" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">two icons stacked mid-swap</text>
+</svg>

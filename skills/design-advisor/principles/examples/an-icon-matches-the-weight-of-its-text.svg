@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>An icon matches the weight of its text: a recipe app's Save and Share buttons in semibold text</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A recipe app's buttons, labels in semibold</text>
+  <!-- Pass: stroke ~2.4 matches semibold 20px -->
+  <g fill="none" stroke="#0a63d6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M62 86 v24 l9 -6 l9 6 v-24 a2 2 0 0 0 -2 -2 h-14 a2 2 0 0 0 -2 2 z"/>
+    <path d="M71 152 v-18 M64 141 l7 -7 l7 7 M60 148 v10 a2 2 0 0 0 2 2 h18 a2 2 0 0 0 2 -2 v-10"/>
+  </g>
+  <g font-size="20" font-weight="600" fill="#0a63d6"><text x="94" y="104">Save</text><text x="94" y="155">Share</text></g>
+  <!-- Fail: hairline stroke -->
+  <g fill="none" stroke="#0a63d6" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M322 86 v24 l9 -6 l9 6 v-24 a2 2 0 0 0 -2 -2 h-14 a2 2 0 0 0 -2 2 z"/>
+    <path d="M331 152 v-18 M324 141 l7 -7 l7 7 M320 148 v10 a2 2 0 0 0 2 2 h18 a2 2 0 0 0 2 -2 v-10"/>
+  </g>
+  <g font-size="20" font-weight="600" fill="#0a63d6"><text x="354" y="104">Save</text><text x="354" y="155">Share</text></g>
+  <text x="150" y="230" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: icon lines as thick</text>
+  <text x="150" y="250" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">as the letters</text>
+  <text x="410" y="230" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: hairline icons</text>
+  <text x="410" y="250" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">beside bold words</text>
+</svg>

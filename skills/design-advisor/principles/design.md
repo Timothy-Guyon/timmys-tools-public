@@ -1854,7 +1854,7 @@ Example, not part of the claim: A banking app's list of payments. Pass: the paye
 
 Called for by: every screen. Cross-check: Nielsen 4, Consistency and standards.
 
-**Nothing a person must read or tap sits under what covers the edges of the screen: the camera housing, the rounded corners, the home indicator, the status bar and, on a web page, the browser's own bars. The background runs out to the edges.** Apple: "Respecting the safe area is essential to make sure system UI and hardware features like the Dynamic Island don’t obstruct content and controls", and "For full-screen background content, be sure to extend it underneath sidebars, toolbars, and tab bars to fit the entire screen or window." A practice guide that cites no study says the same for a web app: "A native app paints edge to edge" and keeps its content clear of "the notch, Dynamic Island, and home-indicator zones". It names the web page's own trap as well: a screen sized to the tallest view of the page "overflows by the height of that bar", so "a bottom-pinned button sits under it" while the browser's bar is showing. A control along the bottom edge would also sit where the system's swipe home begins, which the held "One place, one gesture" forbids. The held "The keyboard covers nothing being worked on" covers the keyboard, and this claim covers the device's other parts. Check: on a phone with a camera cut-out and a home indicator, and in a phone's browser with its bars showing, is any text or control on this screen under either? Sources: Apple Human Interface Guidelines, Layout (Guides and safe areas; Visual hierarchy: Differentiate controls from content; Adaptability: Design a layout that adapts gracefully and consistently), `reference/hig/layout.md`; Kowalski, Feeling Native On Mobile, emilkowalski/skills (2026) (3. Layout has the wrong height; 7. Content stops at the notch), `reference/kowalski/skills/mobile-native/SKILL.source.md`; Vercel, Web Interface Guidelines (2025) (Layout: Respect safe areas), `reference/vercel/README.md`.
+**Nothing a person must read or tap sits under what covers the edges of the screen: the camera housing, the rounded corners, the home indicator, the status bar and, on a web page, the browser's own bars. The background runs out to the edges.** Apple: "Respecting the safe area is essential to make sure system UI and hardware features like the Dynamic Island don’t obstruct content and controls", and "For full-screen background content, be sure to extend it underneath sidebars, toolbars, and tab bars to fit the entire screen or window." A practice guide that cites no study says the same for a web app: "A native app paints edge to edge" and keeps its content clear of "the notch, Dynamic Island, and home-indicator zones". It names the web page's own trap as well: a screen sized to the tallest view of the page "overflows by the height of that bar", so "a bottom-pinned button sits under it" while the browser's bar is showing. The same guide names the fix: a full-height web screen is sized to the height the person can see, "`100dvh` (app) or `100svh` (hero)", never to the tallest view of the page, `100vh`. A control along the bottom edge would also sit where the system's swipe home begins, which the held "One place, one gesture" forbids. The held "The keyboard covers nothing being worked on" covers the keyboard, and this claim covers the device's other parts. Check: on a phone with a camera cut-out and a home indicator, and in a phone's browser with its bars showing, is any text or control on this screen under either? Sources: Apple Human Interface Guidelines, Layout (Guides and safe areas; Visual hierarchy: Differentiate controls from content; Adaptability: Design a layout that adapts gracefully and consistently), `reference/hig/layout.md`; Kowalski, Feeling Native On Mobile, emilkowalski/skills (2026) (3. Layout has the wrong height; 7. Content stops at the notch), `reference/kowalski/skills/mobile-native/SKILL.source.md`; Vercel, Web Interface Guidelines (2025) (Layout: Respect safe areas), `reference/vercel/README.md`.
 
 Example, not part of the claim: A music app's mini player along the foot of the screen. Pass: Play sits above the home indicator, and the player's colour runs to the bottom edge. Fail: the same Play sits half under the home indicator, where a thumb meant for it swipes the app away.
 
@@ -1865,6 +1865,96 @@ Called for by: sound. Cross-check: Nielsen 1, Visibility of system status.
 **Where the app answers an action by touch or sound as well as on the screen, the answer is felt by default: a haptic of its own is on from the start, and a sound of its own plays only once the person has turned it on.** A sound reaches everyone nearby and is lost in noise, while a haptic reaches only the hand that acted. In an eight-day study, 9 adults aged 23 to 32 used a touchscreen game on a handheld tablet wherever they liked. Each spent two days on the screen alone, two on sound and two on touch, and then chose for themselves: touch for 82 per cent of their games, sound for 18 and the screen alone never. Seven of the nine said they chose touch because it disturbs others less, though they were free to wear headphones, and the thesis concludes that "tactile feedback should be the default setting, as most people preferred it". Touch was also the sturdier of the two in noise. Typing on an underground train, people stopped gaining from sound at about 94 dB, but kept their gain from touch until about 100 dB. A haptic is lost where the device is away from the body, "If the device is not in contact with the user's skin, tactile feedback may not be detected", so the screen still carries the whole of every answer, as the held "A sound says its source" requires. That claim also keeps the rest: one event per sound or haptic, and haptics the person can turn off. The evidence is weak. It comes from a few young university staff and students on 2008 hardware, and it measures what they chose, not how well they did with it. The platform's own controls play their sounds as the platform sets them. Check: for each answer this screen gives beyond the screen, is it a haptic, and does any sound of the app's own play before the person has turned sounds on? Sources: Hoggan, Crossmodal Audio and Tactile Interaction with Mobile Touchscreens, PhD thesis, University of Glasgow (2010) (chapter 7, 7.5 Experiment 6: The Long-Term Use of CrossTrainer; 7.5.2.5 Modality Preference and Location of Interaction; 7.5.2.7 Participant Preference; 7.5.3 Discussion), `reference/papers/hoggan-2010-crossmodal-audio-and-tactile-interaction.md`; Hoggan, Crossmodal Audio and Tactile Interaction with Mobile Touchscreens, PhD thesis, University of Glasgow (2010) (chapter 6, 6.6.6 Discussion; 6.7 Conclusions), `reference/papers/hoggan-2010-crossmodal-audio-and-tactile-interaction.md`; Hoggan, Crossmodal Audio and Tactile Interaction with Mobile Touchscreens, PhD thesis, University of Glasgow (2010) (chapter 8, 8.6 Guidelines: Modality Preference; Social Situation; 8.6.1 Guideline Limitations/Caveats: Device Location versus User Location), `reference/papers/hoggan-2010-crossmodal-audio-and-tactile-interaction.md`; Hoggan et al., Audio or tactile feedback: which modality when?, CHI (2009) (abstract), `reference/papers/hoggan-2009-audio-or-tactile-feedback.md`.
 
 Example, not part of the claim: A banking app's Send button. Pass: on Send the phone gives one short tap and the screen reads Sent £20 to Sam, with no sound unless Sounds is turned on in the app. Fail: the same button plays a loud cash-register chime by default, heard by everyone on the bus.
+
+### Nested corners share one centre
+
+Called for by: every screen. Cross-check: Nielsen 8, Aesthetic and minimalist design.
+
+**Where a rounded shape sits inside another, the inner corner's radius is the outer radius minus the gap between them, so both curves turn around one centre.** Apple: "By aligning radii and margins around a shared center, shapes can comfortably nest within each other", and "concentric shapes calculate their radius by subtracting padding from the parent's." A practice guide that cites no study says the same: "Child radius ≤ parent radius & concentric so curves align." Check: does any rounded shape on this screen sit inside another, and is the gap between them even all the way round each corner? Sources: Apple, Get to know the new design system, WWDC25 session 356 (2025) (3:21 to 3:49), `reference/wwdc/wwdc2025-356.md`; Vercel, Web Interface Guidelines (2025) (Design: Nested radii), `reference/vercel/README.md`.
+
+Example, not part of the claim: A photo app's album card with 20-point corners and the photo set 8 points in. Pass: the photo's corners are 12 points, and the gap is even round each corner. Fail: the photo's corners are also 20 points, so the gap pinches thin at each corner.
+
+Picture of the example: `principles/examples/nested-corners-share-one-centre.svg`.
+
+### A border takes the colour of what it sits on
+
+Called for by: every screen. Cross-check: Nielsen 8, Aesthetic and minimalist design.
+
+**A thin border or dividing line is a see-through shade of the text colour, so it looks the same weight on every background it crosses.** This is taste, and no study backs it: a practice guide that cites none says "semi-transparent borders improve edge clarity". The platform offers both kinds: Apple's dynamic colours include a "Separator" that "allows some underlying content to be visible" and an "Opaque separator" that does not, and they adapt to light and dark on their own. A fixed grey looks heavy on a light card and loud on a dark one, while a see-through shade darkens or lightens whatever is under it by the same amount. Check: does any border or line on this screen cross more than one background, or appear in both light and dark mode, and does it look the same weight on each? Sources: Vercel, Web Interface Guidelines (2025) (Design: Crisp borders), `reference/vercel/README.md`; Apple Human Interface Guidelines, Color (System colors: Separator, Opaque separator), `reference/hig/color.md`.
+
+Example, not part of the claim: A to-do app's list sitting on both a white page and a tinted header. Pass: the lines between tasks are black at 12% strength, so they look equally faint on white and on the tint. Fail: the same lines are a fixed light grey, crisp on white but almost gone on the tinted header.
+
+Picture of the example: `principles/examples/a-border-takes-the-colour-of-what-it-sits-on.svg`.
+
+### Colours meant to look equally light are equally light
+
+Called for by: colour. Cross-check: Nielsen 8, Aesthetic and minimalist design.
+
+**Where a set of colours is meant to sit at one level, such as tags, chart lines or a theme's tints, each is picked at the same perceived lightness, so none glares or sinks and the same text reads on every one.** This is taste, and no study of people using screens backs it. The lightness number in the common HSL format does not follow what the eye sees: "Yellow, magenta and cyan appear much lighter than red and blue." The OKLCH format, the polar form of Oklab that web browsers support, is built so that its L is "perceived lightness". Its author notes that his lightness test data came from a colour model, not from people, so it "can't be used to say which model best matches human perception." Where text sits on these colours, the held contrast claims still set how dark or light it must be. Check: does this screen show a set of colours meant to be equal, and in a greyscale screenshot, do they come out the same grey? Sources: Ottosson, A perceptual color space for image processing (2020) (Comparing Oklab to HSV; Comparison with other color spaces), `reference/essays/ottosson-oklab.md`.
+
+Example, not part of the claim: A calendar's five category tags with dark labels. Pass: all five are picked at the same OKLCH lightness, so each looks as light as the next and every label reads. Fail: the same five are picked at the same HSL lightness, so the yellow glares and the label on the blue almost vanishes.
+
+Picture of the example: `principles/examples/colours-meant-to-look-equally-light-are.svg`.
+
+### A gradient keeps its colour through the middle
+
+Called for by: colour. Cross-check: Nielsen 8, Aesthetic and minimalist design.
+
+**A gradient between two colours is blended so that every colour along it looks like a step between the two ends, as strong as they are, never a grey or muddy middle.** This holds as a rule by the client's decision (2026-11-24), though no study of people using screens backs it. Blending in the default way, by mixing the red, green and blue amounts, drains the colour from the middle of a blend between far-apart hues. A perceptual colour space is built so that "the transition colors should appear to be in between the blended colors", and web browsers can blend a gradient in OKLCH. Blending around the hue wheel can pass through a third hue, such as purple between blue and orange, so a gradient whose colours carry a meaning is checked for that too. Check: does this screen show a gradient, and is any part of it greyer or duller than both its ends? Sources: Ottosson, A perceptual color space for image processing (2020) (Motivation and derivation of Oklab; Blending colors), `reference/essays/ottosson-oklab.md`.
+
+Example, not part of the claim: A weather app's temperature bar from cold blue to hot orange. Pass: it is blended in OKLCH and stays colourful all the way across. Fail: the same bar is blended the default way and turns a dull grey in the middle.
+
+Picture of the example: `principles/examples/a-gradient-keeps-its-colour-through-the-middle.svg`.
+
+### An icon matches the weight of its text
+
+Called for by: controls. Cross-check: Nielsen 4, Consistency and standards.
+
+**An icon beside words is drawn with lines as thick as the letters of those words, and takes their weight when they change, so the icon and its label read as one thing.** Apple: "Because SF Symbols use equivalent weights, you can achieve precise weight matching between symbols and adjacent text, regardless of the size or style you choose." A hairline icon beside bold words looks faint and unfinished, and a heavy icon beside light words shouts over its own label. Check: does any icon on this screen sit beside words, and are its lines as thick as their letters, at every text size the person can set? Sources: Apple Human Interface Guidelines, Typography (Using system fonts), `reference/hig/typography.md`.
+
+Example, not part of the claim: A recipe app's Save and Share buttons with semibold labels. Pass: the bookmark and share icons are drawn in semibold, as thick as the letters. Fail: the same icons are hairline-thin beside the semibold words.
+
+Picture of the example: `principles/examples/an-icon-matches-the-weight-of-its-text.svg`.
+
+### A row that scrolls sideways fades at its edges
+
+Called for by: list. Cross-check: Nielsen 8, Aesthetic and minimalist design.
+
+**Where a row of items runs off the side of the screen, the items fade out over the last stretch before each edge instead of being sliced off, and the next item still shows through the fade.** This is a leaning, not a hard rule (the client, 2026-11-24): a screen without the fade gets a suggestion, never a fail. It is taste, and no study backs it. The platform softens content the same way where it scrolls under its own bars: "Scroll edge effects reinforce that boundary, replacing hard dividers with subtle blur to reduce clutter." A practice guide that cites no study asks for the same at floating controls: "fade a small blur/gradient mask where content meets floating chrome." The fade never hides the next item whole, since the item cut off at the edge is what says the row scrolls, as the held "Signified, not labelled after" requires; a fade that hides it is a fail under that claim. Check: does any row on this screen scroll sideways, and does it fade at each edge it runs off, with part of the next item still in sight? Sources: Apple, Get to know the new design system, WWDC25 session 356 (2025) (11:18), `reference/wwdc/wwdc2025-356.md`; Kowalski, Apple Design, emilkowalski/skills (2026) (Scroll edge effects, not hard dividers), `reference/kowalski/skills/apple-design/SKILL.source.md`.
+
+Example, not part of the claim: A shop's row of product cards under "New arrivals". Pass: the cards fade out at each side, and the next card still peeks through the fade. Fail: the same cards are sliced off by a hard edge.
+
+Picture of the example: `principles/examples/a-row-that-scrolls-sideways-fades-at-its-edges.svg`.
+
+### An icon swap blurs as it fades
+
+Called for by: motion. Cross-check: Nielsen 8, Aesthetic and minimalist design.
+
+**Where one icon or label cross-fades into another in place, both are softened with a slight blur while they cross, so the eye sees one thing change rather than two things stacked.** This is a leaning, not a hard rule (the client, 2026-11-24): a screen without the blur gets a suggestion, never a fail. It is taste, and no study backs it. A practice guide that cites none: "Without blur, you see two distinct objects during a crossfade — the old state and the new state overlapping", and blur "bridges the visual gap by blending the two states together". The blur is slight and lasts only as long as the cross-fade; the held motion claims still set how long the change takes. Check: does any icon or label on this screen swap for another in place, and halfway through, does it read as one softened shape or as two sharp ones? Sources: Kowalski, Design Engineering, emilkowalski/skills (2026) (Use blur to mask imperfect transitions), `reference/kowalski/skills/emil-design-eng/SKILL.source.md`.
+
+Example, not part of the claim: A Copy button that turns into a tick once tapped. Pass: halfway through, both icons are softly blurred into one changing shape. Fail: halfway through, a sharp copy icon and a sharp tick sit on top of each other.
+
+Picture of the example: `principles/examples/an-icon-swap-blurs-as-it-fades.svg`.
+
+### In dark mode a raised surface is lighter
+
+Called for by: covers. Cross-check: Nielsen 8, Aesthetic and minimalist design.
+
+**In dark mode, a surface that sits above another, such as a sheet, a popover or a menu, is a lighter grey than what lies under it, so it reads as on top without relying on a shadow.** Apple: "In Dark Mode, the system uses two sets of background colors — called base and elevated — to enhance the perception of depth when one dark interface is layered above another. The base colors are dimmer, making background interfaces appear to recede, and the elevated colors are brighter, making foreground interfaces appear to advance." A shadow is dark on dark and all but disappears. The system switches to the elevated colours by itself when a view comes forward, and "Using a custom background color can make it harder for people to perceive these system-provided visual distinctions", so the system's own background colours are used where they exist. Check: in dark mode, is every surface on this screen that sits over another lighter than what is under it, and can its edge be seen without its shadow? Sources: Apple Human Interface Guidelines, Dark Mode (iOS, iPadOS; Prefer the system background colors), `reference/hig/dark-mode.md`.
+
+Example, not part of the claim: A notes app in dark mode, with a New folder sheet over the list. Pass: the sheet is a dark grey above the black list, so its top edge is plain. Fail: the sheet is the same black as the list with a shadow, and its edge disappears.
+
+Picture of the example: `principles/examples/in-dark-mode-a-raised-surface-is-lighter.svg`.
+
+### A product photo shows no box of its own
+
+Called for by: list. Cross-check: Nielsen 8, Aesthetic and minimalist design.
+
+**A photo of a thing shot on a plain background sits on the screen without its background showing as a box: on a card of another colour, the background drops away and only the thing shows.** This is a leaning, not a hard rule (the client, 2026-11-24): a screen that shows the box gets a suggestion, never a fail. It is taste, and no source on the shelf says it. In light mode, blending a photo shot on white with a "multiply" blend lets the card's colour show through the white. In dark mode that blend darkens the thing itself, so there the photo is cut out from its background, or set on a white tile of its own that reads as part of the card's design. Check: does any photo on this screen sit on a background of another colour, and does its own background show as a box, in light mode and in dark? Sources: none on the shelf; the client's taste.
+
+Example, not part of the claim: A shop's product tile with a mug shot on white, on a beige card. Pass: the white drops away and the mug sits on the beige. Fail: the mug sits in a white square in the middle of the beige card.
+
+Picture of the example: `principles/examples/a-product-photo-shows-no-box-of-its-own.svg`.
 
 ## Delight: Make it human.
 

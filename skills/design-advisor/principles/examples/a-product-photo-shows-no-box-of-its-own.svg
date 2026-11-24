@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A product photo shows no box of its own: a shop's product tile on a tinted card</title>
+  <defs>
+    <g id="photo">
+      <rect x="0" y="0" width="120" height="120" fill="#ffffff"/>
+      <path d="M32 36 h46 v48 a10 10 0 0 1 -10 10 h-26 a10 10 0 0 1 -10 -10 z" fill="#c0563f"/>
+      <path d="M78 46 h8 a12 12 0 0 1 0 24 h-8" fill="none" stroke="#c0563f" stroke-width="7"/>
+      <ellipse cx="55" cy="100" rx="34" ry="4" fill="#d9d9d9"/>
+    </g>
+  </defs>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="26" text-anchor="middle" font-size="15" fill="#1c1c1e">A shop's product tile: a photo shot on white, on a tinted card</text>
+  <rect x="60" y="44" width="180" height="180" rx="18" fill="#efe9e1"/>
+  <use href="#photo" x="90" y="60" style="mix-blend-mode:multiply"/>
+  <text x="150" y="206" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1c1e">Stoneware mug</text>
+  <rect x="320" y="44" width="180" height="180" rx="18" fill="#efe9e1"/>
+  <use href="#photo" x="350" y="60"/>
+  <text x="410" y="206" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1c1e">Stoneware mug</text>
+  <text x="150" y="256" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: the white drops away,</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">the mug sits on the card</text>
+  <text x="410" y="256" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: a white box</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">around the mug</text>
+</svg>

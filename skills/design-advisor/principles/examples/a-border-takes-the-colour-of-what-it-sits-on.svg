@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A border takes the colour of what it sits on: a to-do list crossing a tinted header and a white page</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A to-do list crossing a tinted header and a white page</text>
+  <g font-size="14" fill="#1c1c1e">
+    <!-- Pass -->
+    <rect x="40" y="50" width="220" height="196" fill="#ffffff" stroke="#c7c7cc"/>
+    <rect x="40" y="50" width="220" height="98" fill="#7a8fb3"/>
+    <text x="56" y="80">Buy milk</text><line x1="40" x2="260" y1="98" y2="98" stroke="rgb(0 0 0 / 0.12)" stroke-width="2"/>
+    <text x="56" y="128">Call Sam</text><line x1="40" x2="260" y1="148" y2="148" stroke="rgb(0 0 0 / 0.12)" stroke-width="2"/>
+    <text x="56" y="176">Book dentist</text><line x1="40" x2="260" y1="196" y2="196" stroke="rgb(0 0 0 / 0.12)" stroke-width="2"/>
+    <text x="56" y="226">Water plants</text>
+    <!-- Fail -->
+    <rect x="300" y="50" width="220" height="196" fill="#ffffff" stroke="#c7c7cc"/>
+    <rect x="300" y="50" width="220" height="98" fill="#7a8fb3"/>
+    <text x="316" y="80">Buy milk</text><line x1="300" x2="520" y1="98" y2="98" stroke="#8a9bba" stroke-width="2"/>
+    <text x="316" y="128">Call Sam</text><line x1="300" x2="520" y1="148" y2="148" stroke="#8a9bba" stroke-width="2"/>
+    <text x="316" y="176">Book dentist</text><line x1="300" x2="520" y1="196" y2="196" stroke="#8a9bba" stroke-width="2"/>
+    <text x="316" y="226">Water plants</text>
+  </g>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: black at 12%, same on both</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: fixed grey, gone on the tint</text>
+</svg>
