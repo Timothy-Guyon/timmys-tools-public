@@ -28,7 +28,7 @@ fixed id, never its display name.
   review                              weekly, after the sweep: every open thread, oldest first, to ask of each whether it is still worth doing
 
   thread add ID --title T [--opened DATE]
-  thread ID [--next STEP] [--snooze DATE] [--resolve SUMMARY] [--reopen]
+  thread ID [--next STEP] [--snooze DATE] [--resolve SUMMARY] [--reopen] [--read]
             [--standing WHY | --not-standing]   kept open for good (a mailbox, a log, a running topic, a pinned thread)
 
   task add --thread ID --kind decide|approve|act --title T
@@ -164,6 +164,9 @@ class State:
             if k in e:
                 t[k] = e[k]
         t["seen"] = e["on"]
+
+    def _thread_read(self, e):
+        self.threads[e["id"]]["read"] = e["on"]
 
     def _thread_next(self, e):
         self.threads[e["id"]]["next"] = e["next"]
@@ -383,6 +386,10 @@ def cmd_thread(a, r):
         r.add("thread-resolve", id=a.id, summary=line(a.resolve, "resolve"))
         print("resolved %s: %s" % (title(s, a.id), a.resolve.strip()))
         done = True
+    if a.read:
+        r.add("thread-read", id=a.id)
+        print("read %s for buried asks; it comes back to the sweep when something new happens there" % title(s, a.id))
+        done = True
     if a.standing and a.not_standing:
         refuse("--standing or --not-standing, not both")
     if a.standing and (a.snooze or a.resolve):
@@ -393,7 +400,7 @@ def cmd_thread(a, r):
               if a.standing else "%s is no longer a standing thread" % title(s, a.id))
         done = True
     if not done:
-        refuse("say what changed: --next, --snooze, --resolve, --reopen or --standing")
+        refuse("say what changed: --next, --snooze, --resolve, --reopen, --standing or --read")
 
 
 # ---------------------------------------------------------------- tasks
@@ -696,6 +703,23 @@ def wrong_shown(s):
     return rows
 
 
+def buried(s):
+    """Open threads, however old, that don't wait on the client in the record and haven't been read since their
+    last activity: any of them may have asked the client something in words without a card, and so show done or
+    sit idle while it waits on them. Oldest activity first, since those have been buried longest."""
+    rows = []
+    for t in sorted(s.threads.values(), key=lambda t: t.get("last_activity") or t["opened"]):
+        last = t.get("last_activity") or t["opened"]
+        if t["status"] != "active" or (t.get("read") and t["read"] >= last):
+            continue
+        kind, words = s.waits_on(t["id"])
+        if kind == "client":
+            continue
+        rows.append("%s, last active %s, shows %s, waits on %s" % (title(s, t["id"]), last, t.get("shows") or "?",
+                                                                    kind))
+    return rows
+
+
 def cmd_sweep(a, r):
     listed = read_threads(a.file)
     new, still_open = see(r, listed)
@@ -751,6 +775,10 @@ def cmd_sweep(a, r):
     section("Resolved in the record but still open in the app: resolve each there (the thread itself, or whoever "
             "can), or reopen it here if it isn't done:", [title(s, tid) for tid in still_open])
     section("Showing the wrong state: tell each thread, and it fixes what it shows itself:", wrong_shown(s))
+    section("Not read since their last activity, however old, with no ask recorded: read each one's last messages. "
+            "A question, a pick, an approval or a step for the client that nothing records is a buried ask: record "
+            "it ('task add') and tell the thread to put it in front of them on a card. Then 'thread ID --read', so "
+            "it comes back only when something new happens there:", buried(s))
     section("In the record but not in the list: pass the full list, or resolve these if they are gone:",
             [title(s, t["id"]) for t in gone])
     section("Kinds of asks the client nearly always approves: put 'stop asking?' to them, and on their yes run 'stop-asking KIND':",
@@ -868,6 +896,10 @@ def cmd_review(a, r):
             title(s, t["id"]), (TODAY - d(t["opened"])).days, last, kind, (": " + words) if words else "", shows,
             "".join(extra)))
     out.append("")
+    out.append("Read each thread's last messages, whatever it waits on in the record. If one asks the client "
+               "something (a question, a pick, an approval, a step only they can take) that no task records, it is a "
+               "buried ask: record it, and tell the thread to put it in front of them on a card, so it shows that it "
+               "waits on them. An old thread is where these hide longest.")
     out.append("Read each thread's own status line too. Where it, or the state the app shows, doesn't say what the "
                "thread waits on, tell the thread, and it fixes what it shows itself.")
     out.append("A thread whose work is done: resolve it with a one-line summary.")
@@ -987,6 +1019,8 @@ def main():
     x.add_argument("--standing", help="kept open for good, such as a mailbox, a log or a running topic; say why "
                    "or what wakes it")
     x.add_argument("--not-standing", dest="not_standing", action="store_true")
+    x.add_argument("--read", action="store_true", help="its last messages were read for a buried ask, and none was "
+                   "left unrecorded")
 
     x = sub.add_parser("task", help="tasks only the client can do")
     ts = x.add_subparsers(dest="action", required=True)

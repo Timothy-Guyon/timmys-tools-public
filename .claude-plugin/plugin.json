@@ -1,6 +1,6 @@
 {
   "name": "timmys-tools",
-  "version": "1.0.97",
+  "version": "1.0.100",
   "displayName": "Timmy's Tools (public)",
   "description": "Three advisors for building a product: Lean (whether and when to build), Design (what people see and do) and Technical (how it is built), with the team charter that ties them together. Also the rules every thread follows when working with Timmy, a skill that writes in Timmy's voice, and a routine that keeps a project's thread backlog from piling up. The advisors' source books are left out; each principle still names its source.",
   "author": {
