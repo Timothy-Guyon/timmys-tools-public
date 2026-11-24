@@ -1,6 +1,7 @@
 ---
 name: team-charter
 description: The team charter of the client's advisors, the Lean Advisor (whether and when, and the client's ideas), the Design Advisor (what people see and do) and the Technical Advisor (how it is built, and the domain model), with who owns what, the order they speak in, how a disagreement is decided and recorded, how the advisors learn from the client's decisions, and the one writer every record goes through. Use before any non-trivial work, to know which advisor to ask and in what order, whenever two advisors' answers pull apart or the client overrules one, and at a session's start to see what is due.
+user-invocable: false
 ---
 
 # The team charter
