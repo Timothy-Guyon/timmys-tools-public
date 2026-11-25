@@ -44,6 +44,11 @@ Each rule says what to do, what it replaces, and where it came from. The "not th
    This: "That was wild haha"
    *From his own edit, November 2026: he took the comma out of a text, then told his dictation app that "haha" as its own sentence is weird.*
 
+7. **No announcements.** State the point itself. A line that frames, previews or labels the next point goes, and the point stands on its own.
+   Not this: "One more thing worth flagging: the deposit is due Friday."
+   This: "The deposit is due Friday."
+   *Stated 2026-11-23: "I generally don't like announcements of any kind."*
+
 ## Seen in his writing
 
 Habits found in his own messages: his sent email (the latest 50 threads) and a month of dictated messages on his Mac, read in November 2026. These are things he has done, not things to do. They all come from messages, so they say little about how he writes a document or a post. Use one only where it would come by itself; a draft stuffed with them is a caricature of him, which is worse than a plain draft. Where a habit and a rule disagree, the rule wins.

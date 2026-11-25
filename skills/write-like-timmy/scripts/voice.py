@@ -22,7 +22,7 @@ mailbox). Push the mailbox's log straight to its main.
   voice.py open                        notes not yet counted toward a rule
   voice.py examples                    his own writing he approved as examples (private, in the mailbox)
   voice.py used 3,7,9 --rule 8         mark notes as counted toward rule 8 (or --rule struck)
-  voice.py check --with N --without N [--ties N] [--note "..."]
+  voice.py check --with N --without N [--ties N] --found N [--note "..."]
                 [--with-examples N --rules-only N --examples-ties N]
                                        record a check against his real writing (check.md)
 """
@@ -35,6 +35,8 @@ import sys
 
 TWO_DRAFTS_UNTIL = 30  # picks and edits logged before one draft becomes the default
 CHECK_DUE_AFTER = 3    # rules added to voice.md since the last check
+CHECK_EVERY_DAYS = 7   # a fresh look at his writing every week at first (Timmy, 2026-11-24),
+CHECK_EVERY_MAX = 28   # the gap doubling after each check that found nothing new, up to four weeks
 FRAGMENT_MAX = 200
 
 
@@ -190,11 +192,9 @@ def check(a):
     second = (a.with_examples, a.rules_only, a.examples_ties)
     asked = any(x is not None for x in second)
     second = tuple(x or 0 for x in second)
-    for count in (a.with_, a.without, a.ties) + second:
+    for count in (a.with_, a.without, a.ties, a.found) + second:
         if count < 0:
             sys.exit("refused: counts can't be negative")
-    if a.with_ + a.without + a.ties == 0:
-        sys.exit("refused: a check compares at least one piece")
     if asked and sum(second) == 0:
         sys.exit("refused: the comparison with his examples needs at least one piece")
     lines = [
@@ -203,6 +203,7 @@ def check(a):
     ]
     if asked:
         lines.append("Reading his examples, against the rules alone: with examples %d, rules only %d, ties %d" % second)
+    lines.append("Found: %d new rules or examples put to Timmy" % a.found)
     if a.note:
         lines.append("Note: %s" % need(a.note, "note"))
     lines.append("Rule: check")
@@ -212,6 +213,18 @@ def check(a):
         print("Drafts without the voice were closer more often. Tell Timmy: a rule may be pulling drafts away from him.")
     if second[0] > second[1]:
         print("Drafts that read his examples were closer more often. A rule is missing: find it in the judge's notes and put it to Timmy (check.md, step 6).")
+
+
+def check_every(checks):
+    """Weekly while checks keep finding new things; each check in a row that
+    found nothing doubles the gap, up to CHECK_EVERY_MAX."""
+    every = CHECK_EVERY_DAYS
+    for block in reversed(checks):
+        m = re.search(r"\nFound: (\d+)", block)
+        if not m or int(m.group(1)) > 0:
+            break
+        every = min(every * 2, CHECK_EVERY_MAX)
+    return every
 
 
 def status(a):
@@ -236,8 +249,16 @@ def status(a):
         last = checks[-1].strip().splitlines()
         then = re.search(r"\nRules in voice.md: (\d+)", checks[-1])
         added = now - int(then.group(1)) if then else 0
-        due = "; a check is due where his real writing can be read (check.md)" if added >= CHECK_DUE_AFTER else ""
-        print("Last check: %s. %s. Rules added since: %d%s." % (last[0].split(". ", 1)[1].split(",")[0], last[1], added, due))
+        when = last[0].split(". ", 1)[1].split(",")[0]
+        days = (datetime.date.today() - datetime.date.fromisoformat(when)).days
+        every = check_every(checks)
+        due = ""
+        if added >= CHECK_DUE_AFTER or days >= every:
+            due = "; a check is due on his writing since then, where it can be read (check.md)"
+        print("Last check: %s (%d days ago). %s. Rules added since: %d%s." % (when, days, last[1], added, due))
+        found = [m.group(1) for m in (re.search(r"\nFound: (\d+)", b) for b in checks) if m]
+        if found:
+            print("  New things found per check, oldest first: %s. Checks come every %d days." % (", ".join(found[-6:]), every))
         plus = [l for l in last if l.startswith("Reading his examples")]
         if plus:
             print("  %s." % plus[0])
@@ -270,6 +291,7 @@ def main():
     c.add_argument("--with", dest="with_", type=int, required=True, help="pairs where the draft written with voice.md was closer")
     c.add_argument("--without", type=int, required=True, help="pairs where the draft written without it was closer")
     c.add_argument("--ties", type=int, default=0, help="pairs where the judge flipped when the order was swapped")
+    c.add_argument("--found", type=int, required=True, help="new rules or examples this check put to Timmy (check.md, steps 6 and 7)")
     c.add_argument("--with-examples", type=int, help="pairs where the draft that also read his examples was closer")
     c.add_argument("--rules-only", type=int, help="pairs where the draft with voice.md alone was closer")
     c.add_argument("--examples-ties", type=int, help="ties in that second comparison")
