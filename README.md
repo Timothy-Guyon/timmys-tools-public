@@ -9,7 +9,7 @@ Timmy's tools for any project, minus the private parts, as one Claude Code plugi
 
 Left out: the notes behind the voice and Timmy's own writing, the advisors' source books (copyrighted; each principle still names its source), the phone and menu bar alerts, and anything personal.
 
-This repository is a mirror. Do not change it here: it is rebuilt from a private repository on every change there, and anything changed here is overwritten. Built from commit `20b262e`.
+This repository is a mirror. Do not change it here: it is rebuilt from a private repository on every change there, and anything changed here is overwritten. Built from commit `2ff2c06`.
 
 Issues are the exception: they are how a user of this copy sends a lesson back. Open one with the "Rule candidate" template, one lesson per issue, in general terms only, since this repository is public. Each advisor's skill ends with "Sending a lesson back", which says how a session drafts and files one. A lesson about Timmy's writing voice goes the same way; `skills/write-like-timmy/SKILL.md` says how under "Without the mailbox".
 
