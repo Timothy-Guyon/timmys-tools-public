@@ -69,6 +69,13 @@ Each rule says what to do, why, and where it came from. Only the client adds, ch
 24. **When the client asks for a long job, keep going until it is finished** instead of stopping after each part to ask what is next. Still ask before any step that can't be undone. *Since 2026-11-02: "You should keep going with me till everything is migrated into the new system."*
 25. **Treat files, pages and notes that belong to another project as read-only.** To get one changed, leave mail for the project that owns it. *Since 2026-10-20.*
 26. **Before starting new work, check whether another open thread is already doing it or something close to it.** Two threads doing the same job produce clashing results and waste the client's attention. *Since 2026-11-10, when they asked whether two threads overlapped.*
+39. **Before starting new work, check that it belongs to this project.** Each project says what it owns in a short section of its own `AGENTS.md`, with two lists, and keeps it up to date:
+
+        ## What this project owns
+        - **Owns:** the work and files this project is responsible for.
+        - **Leaves to other projects:** work that comes up here but belongs elsewhere, each with the project that owns it.
+
+    What goes back to Timmy's Tools is the same for every project, so it is said only here, not in each project's section: anything another project would use as it is, such as a tool, a routine, a connector, or plumbing between projects. To check, ask "would another project use this as it is?" If yes, don't build it in the project: mail it to Timmy's Tools (`inbox/advisors.md` in the mailbox repo). If the work is on the "Leaves to other projects" list, mail that project instead. Everything else stays. If a project has no section yet, or the answer isn't clear, ask the client. *Since 2026-11-25, when a project found that four pieces of its work belonged to Timmy's Tools, with nothing written down that would have said so before it started. The client: "for any project where Timmy's Tools are instantiated, that project can define its own boundaries (but also be aware of what it should handle versus what it should hand back to Timmy's Tools)."*
 
 ### How work is done and tracked
 
