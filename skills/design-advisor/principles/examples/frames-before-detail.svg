@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Frames before detail: A rain radar loop on an old phone, animated</title>
+  <desc>Animated, 4-second loop. Left: the rain moves smoothly with no street names. Right: the rain moves in visible jumps under street labels.</desc>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A rain radar loop on an old phone, animated</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <clipPath id="cp219"><rect x="40" y="50" width="220" height="196" rx="14"/></clipPath>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#e8eef2"/>
+  <g clip-path="url(#cp219)"><g><animateTransform attributeName="transform" type="translate" values="-60 0;60 0" dur="4s" repeatCount="indefinite"/><circle cx="150" cy="140" r="50" fill="rgb(0 122 255 / 0.3)"/><circle cx="170" cy="130" r="24" fill="rgb(0 122 255 / 0.5)"/></g></g>
+  <rect x="180" y="216" width="70" height="22" rx="6" fill="#fff"/>
+  <text x="215" y="231" font-size="11" text-anchor="middle" font-weight="600" fill="#248a3d">60 fps</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <clipPath id="cf219"><rect x="300" y="50" width="220" height="196" rx="14"/></clipPath>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#e8eef2"/>
+  <g clip-path="url(#cf219)"><g><animateTransform attributeName="transform" type="translate" values="-60 0;-30 0;0 0;30 0;60 0" keyTimes="0;0.25;0.5;0.75;1" calcMode="discrete" dur="4s" repeatCount="indefinite"/><circle cx="410" cy="140" r="50" fill="rgb(0 122 255 / 0.3)"/><circle cx="430" cy="130" r="24" fill="rgb(0 122 255 / 0.5)"/></g></g>
+  <text x="340" y="90" font-size="9" fill="#8e8e93">High St</text>
+  <text x="430" y="180" font-size="9" fill="#8e8e93">Mill Rd</text>
+  <text x="360" y="200" font-size="9" fill="#8e8e93">Park Ln</text>
+  <text x="450" y="90" font-size="9" fill="#8e8e93">Bridge St</text>
+  <rect x="440" y="216" width="70" height="22" rx="6" fill="#fff"/>
+  <text x="475" y="231" font-size="11" text-anchor="middle" font-weight="600" fill="#d70015">30 fps</text>
+  <text x="150" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#248a3d">Pass: drops street names, steady 60 fps</text>
+  <text x="410" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#d70015">Fail: keeps every label, judders at 30 fps</text>
+</svg>

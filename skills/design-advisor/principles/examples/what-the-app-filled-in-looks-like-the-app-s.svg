@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>What the app filled in looks like the app&#x27;s: A map app after GPS is lost</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A map app after GPS is lost</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#e8eef2"/>
+  <path transform="translate(40 50)" d="M0 60 L220 90 M70 0 L110 196" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="140" cy="140" r="24" fill="rgb(142 142 147 / 0.2)"/>
+  <circle cx="140" cy="140" r="8" fill="#8e8e93" stroke="#fff" stroke-width="2"/>
+  <rect x="80" y="180" width="140" height="26" rx="13" fill="#ffffff"/>
+  <text x="150" y="197" font-size="11" text-anchor="middle" fill="#1c1c1e">Approximate location</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#e8eef2"/>
+  <path transform="translate(300 50)" d="M0 60 L220 90 M70 0 L110 196" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="400" cy="140" r="16" fill="rgb(0 122 255 / 0.15)"/>
+  <circle cx="400" cy="140" r="8" fill="#007aff" stroke="#fff" stroke-width="2"/>
+  <text x="150" y="276" text-anchor="middle" font-size="13.5" font-weight="600" fill="#248a3d">Pass: grey dot, Approximate location</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: dot looks unchanged</text>
+</svg>

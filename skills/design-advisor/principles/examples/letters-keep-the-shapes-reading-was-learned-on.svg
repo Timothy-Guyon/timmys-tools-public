@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Letters keep the shapes reading was learned on: A bus departure board</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A bus departure board</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#1c1c1e"/>
+  <text x="54" y="90" font-size="15" font-weight="400" fill="#ffd60a">Central Station</text>
+  <text x="246" y="90" font-size="13" text-anchor="end" fill="#ffd60a">3 min</text>
+  <text x="54" y="130" font-size="15" font-weight="400" fill="#ffd60a">Airport</text>
+  <text x="246" y="130" font-size="13" text-anchor="end" fill="#ffd60a">7 min</text>
+  <text x="54" y="170" font-size="15" font-weight="400" fill="#ffd60a">Old Town</text>
+  <text x="246" y="170" font-size="13" text-anchor="end" fill="#ffd60a">11 min</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#1c1c1e"/>
+  <text x="314" y="90" font-size="15" font-weight="200" fill="#ffd60a">CENTRAL STATION</text>
+  <text x="506" y="90" font-size="13" text-anchor="end" fill="#ffd60a">3 min</text>
+  <text x="314" y="130" font-size="15" font-weight="200" fill="#ffd60a">AIRPORT</text>
+  <text x="506" y="130" font-size="13" text-anchor="end" fill="#ffd60a">7 min</text>
+  <text x="314" y="170" font-size="15" font-weight="200" fill="#ffd60a">OLD TOWN</text>
+  <text x="506" y="170" font-size="13" text-anchor="end" fill="#ffd60a">11 min</text>
+  <text x="150" y="276" text-anchor="middle" font-size="13" font-weight="600" fill="#248a3d">Pass: Central Station, regular weight</text>
+  <text x="410" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#d70015">Fail: CENTRAL STATION in thin capitals</text>
+</svg>

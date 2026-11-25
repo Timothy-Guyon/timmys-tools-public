@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Wider spacing loses nothing: A train fare button with wider text spacing</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A train fare button with wider text spacing</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Fares</text>
+  <rect x="54" y="110" width="192" height="60" rx="10" fill="#007aff"/>
+  <text x="150" y="134" font-size="13" text-anchor="middle" font-weight="600" fill="#fff">O f f - p e a k  r e t u r n</text>
+  <text x="150" y="156" font-size="13" text-anchor="middle" font-weight="600" fill="#fff">£ 2 4 . 1 0</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Fares</text>
+  <rect x="314" y="110" width="192" height="34" rx="10" fill="#007aff"/>
+  <text x="322" y="132" font-size="13" font-weight="600" fill="#fff">O f f - p e a k  r e t u r n  £ 2</text>
+  <rect x="506" y="108" width="14" height="38" fill="#ffffff"/>
+  <text x="150" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#248a3d">Pass: wraps to two lines, button grows</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#d70015">Fail: fixed height, price cut off</text>
+</svg>

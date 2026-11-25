@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>One direction of scroll at any zoom: A recipe website&#x27;s method at 400% zoom</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A recipe website&#x27;s method at 400% zoom</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="24" fill="#e5e5ea"/>
+  <rect x="70" y="55" width="160" height="14" rx="7" fill="#fff"/>
+  <text x="150" y="66" font-size="9" text-anchor="middle" fill="#8e8e93">recipes.example</text>
+  <text x="54" y="106" font-size="20" fill="#1c1c1e">Whisk the</text>
+  <text x="54" y="132" font-size="20" fill="#1c1c1e">eggs with</text>
+  <text x="54" y="158" font-size="20" fill="#1c1c1e">the sugar</text>
+  <text x="54" y="184" font-size="20" fill="#1c1c1e">until pale</text>
+  <text x="54" y="210" font-size="20" fill="#1c1c1e">and thick.</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="24" fill="#e5e5ea"/>
+  <rect x="330" y="55" width="160" height="14" rx="7" fill="#fff"/>
+  <text x="410" y="66" font-size="9" text-anchor="middle" fill="#8e8e93">recipes.example</text>
+  <text x="314" y="106" font-size="20" fill="#1c1c1e">Whisk the eggs with t</text>
+  <text x="314" y="136" font-size="20" fill="#1c1c1e">until pale and thick.</text>
+  <text x="314" y="166" font-size="20" fill="#1c1c1e">the oven to 180 °C a</text>
+  <rect x="310" y="220" width="200" height="6" rx="3" fill="#e5e5ea"/>
+  <rect x="310" y="220" width="60" height="6" rx="3" fill="#8e8e93"/>
+  <text x="150" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#248a3d">Pass: rewraps, read top to bottom</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: each line scrolls sideways</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Every true answer has a place: travel insurance: Any of these medical conditions?</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">Travel insurance: Any of these medical conditions?</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="70" font-size="12" font-weight="600" fill="#1c1c1e">Do you have any of these?</text>
+  <circle cx="64" cy="92" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="80" y="97" font-size="12" fill="#1c1c1e">Heart condition</text>
+  <circle cx="64" cy="120" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="80" y="125" font-size="12" fill="#1c1c1e">Diabetes</text>
+  <circle cx="64" cy="148" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="80" y="153" font-size="12" fill="#1c1c1e">Asthma</text>
+  <text x="54" y="178" font-size="11" fill="#8e8e93">or</text>
+  <circle cx="64" cy="200" r="9" fill="#007aff"/>
+  <path transform="translate(40 50)" d="M20 150 l3 3 l5 -6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="205" font-size="12" fill="#1c1c1e">No, I have none of these</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="70" font-size="12" font-weight="600" fill="#1c1c1e">Do you have any of these?</text>
+  <circle cx="324" cy="92" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="340" y="97" font-size="12" fill="#1c1c1e">Heart condition</text>
+  <circle cx="324" cy="120" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="340" y="125" font-size="12" fill="#1c1c1e">Diabetes</text>
+  <circle cx="324" cy="148" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="340" y="153" font-size="12" fill="#1c1c1e">Asthma</text>
+  <rect x="314" y="190" width="192" height="30" rx="10" fill="#d1d1d6"/>
+  <text x="410" y="209.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Continue</text>
+  <text x="150" y="276" text-anchor="middle" font-size="13.5" font-weight="600" fill="#248a3d">Pass: last option is No, I have none</text>
+  <text x="410" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#d70015">Fail: no such option, healthy traveller stuck</text>
+</svg>

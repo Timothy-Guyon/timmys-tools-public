@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>One view over the screen at a time: A video call, Share Screen opened while Invite is open</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A video call, Share Screen opened while Invite is open</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#2c2c2e"/>
+  <rect x="40" y="150" width="220" height="96" rx="14" fill="#f2f2f7" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="176" font-size="12" font-weight="600" fill="#1c1c1e">Share Screen</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#2c2c2e"/>
+  <rect x="300" y="110" width="220" height="136" rx="14" fill="#ffffff"/>
+  <text x="314" y="134" font-size="12" font-weight="600" fill="#1c1c1e">Invite</text>
+  <rect x="300" y="150" width="220" height="96" rx="14" fill="#f2f2f7" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="176" font-size="12" font-weight="600" fill="#1c1c1e">Share Screen</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: Invite closes first</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#d70015">Fail: Share Screen stacks on Invite</text>
+</svg>

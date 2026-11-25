@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The first thing sits first in reading order: A taxi app&#x27;s home screen</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A taxi app&#x27;s home screen</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#e8eef2" stroke="#c7c7cc" stroke-width="1"/>
+  <path transform="translate(40 50)" d="M0 70 L220 100 M80 0 L120 196" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="190" width="200" height="44" rx="12" fill="#fff"/>
+  <text x="64" y="218" font-size="14" font-weight="600" fill="#1c1c1e">Where to?</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#e8eef2" stroke="#c7c7cc" stroke-width="1"/>
+  <path transform="translate(300 50)" d="M0 70 L220 100 M80 0 L120 196" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="308" y="58" width="110" height="30" rx="8" fill="#fff"/>
+  <text x="318" y="78" font-size="12" font-weight="600" fill="#1c1c1e">Where to?</text>
+  <rect x="304" y="54" width="118" height="38" rx="8" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="150" y="276" text-anchor="middle" font-size="13.5" font-weight="600" fill="#248a3d">Pass: Where to? low, under the thumb</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#d70015">Fail: Where to? up in the top left</text>
+</svg>

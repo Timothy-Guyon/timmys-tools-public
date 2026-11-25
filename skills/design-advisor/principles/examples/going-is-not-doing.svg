@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Going is not doing: A library app&#x27;s bottom bar, Loans tapped</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A library app&#x27;s bottom bar, Loans tapped</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Loans</text>
+  <text x="54" y="112" font-size="14" fill="#1c1c1e">Dune</text>
+  <text x="246" y="112" font-size="13" text-anchor="end" fill="#8e8e93">Due 3 Dec</text>
+  <line x1="40" y1="124" x2="260" y2="124" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="146" font-size="14" fill="#1c1c1e">The Hobbit</text>
+  <text x="246" y="146" font-size="13" text-anchor="end" fill="#8e8e93">Due 9 Dec</text>
+  <line x1="40" y1="158" x2="260" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="40" y="210" width="220" height="36" fill="#f9f9f9"/>
+  <line x1="40" y1="210" x2="260" y2="210" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="77" y="233" font-size="11" text-anchor="middle" fill="#007aff">Loans</text>
+  <text x="150" y="233" font-size="11" text-anchor="middle" fill="#8e8e93">Search</text>
+  <text x="223" y="233" font-size="11" text-anchor="middle" fill="#8e8e93">Account</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Loans</text>
+  <text x="314" y="112" font-size="14" fill="#1c1c1e">Dune</text>
+  <text x="506" y="112" font-size="13" text-anchor="end" fill="#8e8e93">Renewed</text>
+  <line x1="300" y1="124" x2="520" y2="124" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="146" font-size="14" fill="#1c1c1e">The Hobbit</text>
+  <text x="506" y="146" font-size="13" text-anchor="end" fill="#8e8e93">Renewed</text>
+  <line x1="300" y1="158" x2="520" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="308" y="162" width="204" height="34" rx="8" fill="#1c1c1e"/>
+  <text x="318" y="184" font-size="12" fill="#ffffff">All loans renewed</text>
+  <rect x="300" y="210" width="220" height="36" fill="#f9f9f9"/>
+  <line x1="300" y1="210" x2="520" y2="210" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="337" y="233" font-size="11" text-anchor="middle" fill="#007aff">Loans</text>
+  <text x="410" y="233" font-size="11" text-anchor="middle" fill="#8e8e93">Search</text>
+  <text x="483" y="233" font-size="11" text-anchor="middle" fill="#8e8e93">Account</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: only switches the view</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: also renews every loan</text>
+</svg>

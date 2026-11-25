@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A wait can be abandoned: A streaming app downloading a film</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A streaming app downloading a film</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Downloads</text>
+  <rect x="54" y="100" width="60" height="40" rx="4" fill="#2c3e50"/>
+  <text x="124" y="116" font-size="13" font-weight="600" fill="#1c1c1e">The Long Road</text>
+  <rect x="124" y="128" width="72" height="6" rx="3" fill="#e5e5ea"/>
+  <rect x="124" y="128" width="40" height="6" rx="3" fill="#007aff"/>
+  <text x="246" y="135" font-size="12" text-anchor="end" fill="#007aff">Cancel</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Downloads</text>
+  <rect x="314" y="100" width="60" height="40" rx="4" fill="#2c3e50"/>
+  <text x="384" y="116" font-size="13" font-weight="600" fill="#1c1c1e">The Long Road</text>
+  <rect x="384" y="128" width="122" height="6" rx="3" fill="#e5e5ea"/>
+  <rect x="384" y="128" width="40" height="6" rx="3" fill="#007aff"/>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: Cancel beside the progress</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#d70015">Fail: progress with no way to stop</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Consent is asked, not assumed: A weather app&#x27;s first launch</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A weather app&#x27;s first launch</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Weather</text>
+  <rect x="54" y="96" width="192" height="110" rx="12" fill="#f2f2f7"/>
+  <text x="150" y="124" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">Share your location</text>
+  <text x="150" y="142" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">with advertisers?</text>
+  <rect x="66" y="162" width="80" height="30" rx="10" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="106" y="181.32" font-size="12" text-anchor="middle" fill="#007aff">No</text>
+  <rect x="154" y="162" width="80" height="30" rx="10" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="194" y="181.32" font-size="12" text-anchor="middle" fill="#007aff">Yes</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Weather</text>
+  <text x="410" y="140" font-size="22" text-anchor="middle" font-weight="600" fill="#1c1c1e">14° Sunny</text>
+  <text x="410" y="238" font-size="9" text-anchor="middle" fill="#aeaeb2">Manage choices</text>
+  <rect x="366" y="227" width="88" height="15" rx="4" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="150" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#248a3d">Pass: asks first, Yes and No side by side</text>
+  <text x="410" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#d70015">Fail: shares at once, Manage choices at the foot</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Getting in asks nothing to be remembered: A water company app&#x27;s sign-in</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A water company app&#x27;s sign-in</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Sign in</text>
+  <rect x="54" y="100" width="192" height="34" rx="10" fill="#1c1c1e"/>
+  <text x="150" y="121.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Sign in with passkey</text>
+  <rect x="54" y="142" width="192" height="34" rx="10" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="150" y="163.32" font-size="12" text-anchor="middle" font-weight="600" fill="#1c1c1e">Sign in with Apple</text>
+  <text x="150" y="206" font-size="11" text-anchor="middle" fill="#007aff">Use a password instead</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Sign in</text>
+  <text x="314" y="96" font-size="11" fill="#8e8e93">Password (12+ characters, 1 symbol)</text>
+  <rect x="314" y="101" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="150" font-size="11" fill="#8e8e93">First pet&#x27;s name</text>
+  <rect x="314" y="155" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="314" y="206" width="192" height="30" rx="10" fill="#007aff"/>
+  <text x="410" y="225.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Sign in</text>
+  <text x="150" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#248a3d">Pass: passkey first, password as fallback</text>
+  <text x="410" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#d70015">Fail: 12-character password and a pet&#x27;s name</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>More than one way to do it: A mail app&#x27;s message list</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A mail app&#x27;s message list</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Inbox</text>
+  <text x="250" y="73" font-size="13" text-anchor="end" fill="#007aff">Edit</text>
+  <text x="54" y="109" font-size="14" fill="#1c1c1e">Jo</text>
+  <text x="54" y="124" font-size="11" fill="#8e8e93">Lunch?</text>
+  <line x1="40" y1="130" x2="260" y2="130" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="190" y="130" width="70" height="40" fill="#ff3b30"/>
+  <text x="225" y="154" font-size="11" text-anchor="middle" font-weight="600" fill="#fff">Delete</text>
+  <text x="44" y="146" font-size="13" fill="#1c1c1e">Bank</text>
+  <text x="54" y="189" font-size="14" fill="#1c1c1e">Sam</text>
+  <text x="54" y="204" font-size="11" fill="#8e8e93">Photos</text>
+  <line x1="40" y1="210" x2="260" y2="210" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="210" y="54" width="46" height="28" rx="8" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Inbox</text>
+  <text x="314" y="109" font-size="14" fill="#1c1c1e">Jo</text>
+  <text x="314" y="124" font-size="11" fill="#8e8e93">Lunch?</text>
+  <line x1="300" y1="130" x2="520" y2="130" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="450" y="130" width="70" height="40" fill="#ff3b30"/>
+  <text x="485" y="154" font-size="11" text-anchor="middle" font-weight="600" fill="#fff">Delete</text>
+  <text x="304" y="146" font-size="13" fill="#1c1c1e">Bank</text>
+  <text x="314" y="189" font-size="14" fill="#1c1c1e">Sam</text>
+  <text x="314" y="204" font-size="11" fill="#8e8e93">Photos</text>
+  <line x1="300" y1="210" x2="520" y2="210" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: swipe, or Edit then Delete</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: swipe is the only way</text>
+</svg>

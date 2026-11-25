@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Grouped by activity, and an exception keeps the activity: A home cinema remote: Lights Up for a snack</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A home cinema remote: Lights Up for a snack</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Watch Film</text>
+  <rect x="50" y="110" width="62" height="34" rx="10" fill="#f2f2f7"/>
+  <text x="81" y="130.96" font-size="11" text-anchor="middle" fill="#1c1c1e">Volume</text>
+  <rect x="120" y="110" width="62" height="34" rx="10" fill="#f2f2f7"/>
+  <text x="151" y="130.96" font-size="11" text-anchor="middle" fill="#1c1c1e">Pause</text>
+  <rect x="190" y="110" width="62" height="34" rx="10" fill="#f2f2f7"/>
+  <text x="221" y="130.96" font-size="11" text-anchor="middle" fill="#1c1c1e">Lights Up</text>
+  <rect x="116" y="106" width="70" height="42" fill="none" stroke="#1c1c1e" stroke-width="0"/>
+  <rect x="186" y="106" width="70" height="42" rx="8" fill="none" stroke="#248a3d" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="150" y="190" font-size="13" text-anchor="middle" font-weight="600" fill="#248a3d">Film: playing</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Watch Film</text>
+  <rect x="310" y="110" width="62" height="34" rx="10" fill="#f2f2f7"/>
+  <text x="341" y="130.96" font-size="11" text-anchor="middle" fill="#1c1c1e">Volume</text>
+  <rect x="380" y="110" width="62" height="34" rx="10" fill="#f2f2f7"/>
+  <text x="411" y="130.96" font-size="11" text-anchor="middle" fill="#1c1c1e">Pause</text>
+  <rect x="450" y="110" width="62" height="34" rx="10" fill="#f2f2f7"/>
+  <text x="481" y="130.96" font-size="11" text-anchor="middle" fill="#1c1c1e">Lights Up</text>
+  <rect x="376" y="106" width="70" height="42" fill="none" stroke="#1c1c1e" stroke-width="0"/>
+  <rect x="446" y="106" width="70" height="42" rx="8" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="410" y="190" font-size="13" text-anchor="middle" font-weight="600" fill="#d70015">Film stopped</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: film keeps playing</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: Lights Up stops the film</text>
+</svg>

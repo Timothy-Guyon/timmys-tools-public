@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Each fork offers every goal: A cash machine&#x27;s main menu</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A cash machine&#x27;s main menu</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#1d3557" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="150" y="76" font-size="13" text-anchor="middle" fill="#ffffff">What would you like to do?</text>
+  <rect x="70" y="92" width="160" height="28" rx="10" fill="#457b9d"/>
+  <text x="150" y="110.68" font-size="13" text-anchor="middle" font-weight="600" fill="#ffffff">Withdraw cash</text>
+  <rect x="70" y="128" width="160" height="28" rx="10" fill="#457b9d"/>
+  <text x="150" y="146.68" font-size="13" text-anchor="middle" font-weight="600" fill="#ffffff">Check balance</text>
+  <rect x="70" y="164" width="160" height="28" rx="10" fill="#457b9d"/>
+  <text x="150" y="182.68" font-size="13" text-anchor="middle" font-weight="600" fill="#ffffff">Pay a bill</text>
+  <rect x="70" y="200" width="160" height="28" rx="10" fill="#457b9d"/>
+  <text x="150" y="218.68" font-size="13" text-anchor="middle" font-weight="600" fill="#ffffff">Transfer money</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#1d3557" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="410" y="76" font-size="13" text-anchor="middle" fill="#ffffff">What would you like to do?</text>
+  <rect x="330" y="92" width="160" height="28" rx="10" fill="#457b9d"/>
+  <text x="410" y="110.68" font-size="13" text-anchor="middle" font-weight="600" fill="#ffffff">Withdraw</text>
+  <rect x="330" y="128" width="160" height="28" rx="10" fill="#457b9d"/>
+  <text x="410" y="146.68" font-size="13" text-anchor="middle" font-weight="600" fill="#ffffff">Balance</text>
+  <rect x="330" y="164" width="160" height="28" rx="10" fill="#457b9d"/>
+  <text x="410" y="182.68" font-size="13" text-anchor="middle" font-weight="600" fill="#ffffff">Other services</text>
+  <rect x="326" y="160" width="168" height="36" rx="8" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: an option for every goal</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: Pay a bill hidden in Other</text>
+</svg>

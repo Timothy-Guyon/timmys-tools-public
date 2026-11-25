@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>An end gives before it stops: swiping past the last photo in an album, animated</title>
+  <desc>Animated, 4-second loop. A finger swipes left on the last photo. Left: the photo follows a short way, slowing, and springs back. Right: the photo stays put.</desc>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">Swiping past the last photo in an album, animated</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#000"/>
+  <g><animateTransform attributeName="transform" type="translate" values="0 0;0 0;-22 0;-26 0;0 0;0 0" keyTimes="0;0.2;0.35;0.45;0.6;1" dur="4s" repeatCount="indefinite"/><rect x="60" y="80" width="180" height="130" fill="#3a5a40"/></g>
+  <circle cx="190" cy="150" r="12" fill="rgb(255 255 255 / 0.35)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.19;0.2;0.45;0.47;1" dur="4s" repeatCount="indefinite"/><animate attributeName="cx" values="190;190;130;110;110" keyTimes="0;0.2;0.35;0.45;1" dur="4s" repeatCount="indefinite"/></circle>
+  <text x="150" y="232" font-size="11" text-anchor="middle" fill="#8e8e93">last photo</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#000"/>
+  <g><rect x="320" y="80" width="180" height="130" fill="#3a5a40"/></g>
+  <circle cx="450" cy="150" r="12" fill="rgb(255 255 255 / 0.35)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.19;0.2;0.45;0.47;1" dur="4s" repeatCount="indefinite"/><animate attributeName="cx" values="450;450;390;370;370" keyTimes="0;0.2;0.35;0.45;1" dur="4s" repeatCount="indefinite"/></circle>
+  <text x="410" y="232" font-size="11" text-anchor="middle" fill="#8e8e93">last photo</text>
+  <text x="150" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#248a3d">Pass: drags a little, springs back</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: does not move at all</text>
+</svg>

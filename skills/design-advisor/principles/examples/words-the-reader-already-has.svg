@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Words the reader already has: A streaming app&#x27;s sign-in prompt</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A streaming app&#x27;s sign-in prompt</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#2c2c2e"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="rgb(0 0 0 / 0.25)"/>
+  <rect x="65" y="100" width="170" height="100" rx="12" fill="#f2f2f7"/>
+  <text x="150" y="124" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">Your session ended.</text>
+  <text x="150" y="144" font-size="11" text-anchor="middle" fill="#1c1c1e">Sign in again.</text>
+  <line x1="65" y1="166" x2="235" y2="166" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="188" font-size="13" text-anchor="middle" fill="#007aff">Sign in</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#2c2c2e"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="rgb(0 0 0 / 0.25)"/>
+  <rect x="325" y="100" width="170" height="100" rx="12" fill="#f2f2f7"/>
+  <text x="410" y="124" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">Token expired.</text>
+  <text x="410" y="144" font-size="11" text-anchor="middle" fill="#1c1c1e">Reauthenticate.</text>
+  <line x1="325" y1="166" x2="495" y2="166" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="188" font-size="13" text-anchor="middle" fill="#007aff">OK</text>
+  <text x="150" y="276" text-anchor="middle" font-size="12" font-weight="600" fill="#248a3d">Pass: Your session ended. Sign in again.</text>
+  <text x="410" y="276" text-anchor="middle" font-size="13.5" font-weight="600" fill="#d70015">Fail: Token expired. Reauthenticate.</text>
+</svg>

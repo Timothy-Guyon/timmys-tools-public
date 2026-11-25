@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A slip costs nothing: A notes app&#x27;s editing toolbar</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A notes app&#x27;s editing toolbar</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Note</text>
+  <text x="250" y="73" font-size="13" text-anchor="end" fill="#007aff">Done</text>
+  <text x="200" y="73" font-size="13" text-anchor="end" fill="#007aff">•••</text>
+  <rect x="136" y="90" width="118" height="56" rx="8" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="146" y="110" font-size="12" fill="#1c1c1e">Share</text>
+  <line x1="136" y1="118" x2="254" y2="118" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="146" y="136" font-size="12" fill="#ff3b30">Delete Note</text>
+  <line x1="54" y1="170" x2="240" y2="170" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="54" y1="190" x2="210" y2="190" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="54" y1="210" x2="180" y2="210" stroke="#d1d1d6" stroke-width="6"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="410" y="56" width="52" height="24" rx="6" fill="#007aff"/>
+  <text x="436" y="71.96" font-size="11" text-anchor="middle" font-weight="600" fill="#ffffff">Delete</text>
+  <rect x="464" y="56" width="48" height="24" rx="6" fill="#007aff"/>
+  <text x="488" y="71.96" font-size="11" text-anchor="middle" font-weight="600" fill="#ffffff">Done</text>
+  <rect x="406" y="53" width="110" height="30" rx="8" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+  <line x1="314" y1="170" x2="500" y2="170" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="314" y1="190" x2="470" y2="190" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="314" y1="210" x2="440" y2="210" stroke="#d1d1d6" stroke-width="6"/>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: Delete in a menu, undoable</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#d70015">Fail: Delete Note right beside Done</text>
+</svg>

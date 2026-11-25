@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>An interruption only where something would be lost: A car insurance claim form, policy number missing</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A car insurance claim form, policy number missing</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="66" font-size="11" fill="#8e8e93">Policy number</text>
+  <rect x="54" y="71" width="192" height="30" rx="6" fill="#ffffff" stroke="#ff3b30" stroke-width="2"/>
+  <text x="54" y="115" font-size="11" fill="#d70015">Enter your policy number</text>
+  <text x="54" y="134" font-size="11" fill="#8e8e93">Date of accident</text>
+  <rect x="54" y="139" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="62" y="159" font-size="13" fill="#1c1c1e">12/11/2026</text>
+  <rect x="54" y="200" width="192" height="32" rx="10" fill="#007aff"/>
+  <text x="150" y="221.04" font-size="14" text-anchor="middle" font-weight="600" fill="#ffffff">Continue</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="66" font-size="11" fill="#8e8e93">Policy number</text>
+  <rect x="314" y="71" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="134" font-size="11" fill="#8e8e93">Date of accident</text>
+  <rect x="314" y="139" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="322" y="159" font-size="13" fill="#1c1c1e">12/11/2026</text>
+  <rect x="314" y="200" width="192" height="32" rx="10" fill="#007aff"/>
+  <text x="410" y="221.04" font-size="14" text-anchor="middle" font-weight="600" fill="#ffffff">Continue</text>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="rgb(0 0 0 / 0.25)"/>
+  <rect x="325" y="110" width="170" height="82" rx="12" fill="#f2f2f7"/>
+  <text x="410" y="134" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">Required field missing</text>
+  <line x1="325" y1="158" x2="495" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="180" font-size="13" text-anchor="middle" fill="#007aff">OK</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: flagged under the field</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: a dialog to dismiss</text>
+</svg>

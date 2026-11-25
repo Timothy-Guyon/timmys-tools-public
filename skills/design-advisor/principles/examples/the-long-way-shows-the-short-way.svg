@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The long way shows the short way: A notes app, after New Note from inside the app</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A notes app, after New Note from inside the app</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">New Note</text>
+  <line x1="54" y1="110" x2="230" y2="110" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="54" y1="130" x2="200" y2="130" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="54" y1="150" x2="170" y2="150" stroke="#d1d1d6" stroke-width="6"/>
+  <rect x="50" y="170" width="200" height="56" rx="10" fill="#f2f2f7"/>
+  <text x="58" y="190" font-size="11" fill="#1c1c1e">Tip: touch and hold the app icon</text>
+  <text x="58" y="208" font-size="11" fill="#1c1c1e">for New Note.</text>
+  <text x="240" y="208" font-size="11" text-anchor="end" fill="#007aff">OK</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">New Note</text>
+  <line x1="314" y1="110" x2="490" y2="110" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="314" y1="130" x2="460" y2="130" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="314" y1="150" x2="430" y2="150" stroke="#d1d1d6" stroke-width="6"/>
+  <text x="150" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#248a3d">Pass: a one-time tip about the icon&#x27;s New Note</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#d70015">Fail: never tells of the shortcut</text>
+</svg>

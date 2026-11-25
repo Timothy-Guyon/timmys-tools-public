@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The aid is the plain way: A recipe app&#x27;s cooking view</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A recipe app&#x27;s cooking view</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="80" font-size="11" fill="#8e8e93">Step 2 of 5</text>
+  <text x="54" y="120" font-size="20" font-weight="600" fill="#1c1c1e">Boil the pasta</text>
+  <text x="54" y="148" font-size="20" font-weight="600" fill="#1c1c1e">for 10 minutes.</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="74" font-size="10" fill="#1c1c1e">1. Boil water</text>
+  <text x="314" y="90" font-size="10" fill="#1c1c1e">2. Add pasta, 10 min</text>
+  <text x="314" y="106" font-size="10" fill="#1c1c1e">3. Fry garlic</text>
+  <text x="314" y="122" font-size="10" fill="#1c1c1e">4. Add lemon</text>
+  <text x="314" y="138" font-size="10" fill="#1c1c1e">5. Drain</text>
+  <text x="314" y="154" font-size="10" fill="#1c1c1e">6. Toss and serve</text>
+  <text x="314" y="200" font-size="12" fill="#1c1c1e">Low Vision Mode</text>
+  <rect x="466" y="186" width="40" height="24" rx="12" fill="#e5e5ea"/>
+  <circle cx="478" cy="198" r="10" fill="#ffffff"/>
+  <text x="150" y="276" text-anchor="middle" font-size="13" font-weight="600" fill="#248a3d">Pass: big one-step screens by default</text>
+  <text x="410" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#d70015">Fail: behind a Low Vision Mode setting</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Told apart by rhythm, not strength: A cooking timer&#x27;s two alerts, felt in a pocket, animated</title>
+  <desc>Animated, 4-second loop. Each pulse lights as the phone would tap. Left: the oven gives two taps and the hob four. Right: each gives one tap, the hob&#x27;s slightly bigger.</desc>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A cooking timer&#x27;s two alerts, felt in a pocket, animated</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Timers</text>
+  <text x="54" y="122" font-size="12" font-weight="600" fill="#1c1c1e">Oven</text>
+  <text x="54" y="182" font-size="12" font-weight="600" fill="#1c1c1e">Hob</text>
+  <circle cx="120" cy="117" r="8" fill="#007aff" opacity="0.15"><animate attributeName="opacity" values="0.15;0.15;1;0.15;0.15" keyTimes="0;0.050;0.070;0.110;1" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="144" cy="117" r="8" fill="#007aff" opacity="0.15"><animate attributeName="opacity" values="0.15;0.15;1;0.15;0.15" keyTimes="0;0.130;0.150;0.190;1" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="120" cy="177" r="8" fill="#007aff" opacity="0.15"><animate attributeName="opacity" values="0.15;0.15;1;0.15;0.15" keyTimes="0;0.500;0.520;0.560;1" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="144" cy="177" r="8" fill="#007aff" opacity="0.15"><animate attributeName="opacity" values="0.15;0.15;1;0.15;0.15" keyTimes="0;0.580;0.600;0.640;1" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="168" cy="177" r="8" fill="#007aff" opacity="0.15"><animate attributeName="opacity" values="0.15;0.15;1;0.15;0.15" keyTimes="0;0.660;0.680;0.720;1" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="192" cy="177" r="8" fill="#007aff" opacity="0.15"><animate attributeName="opacity" values="0.15;0.15;1;0.15;0.15" keyTimes="0;0.740;0.760;0.800;1" dur="4s" repeatCount="indefinite"/></circle>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Timers</text>
+  <text x="314" y="122" font-size="12" font-weight="600" fill="#1c1c1e">Oven</text>
+  <text x="314" y="182" font-size="12" font-weight="600" fill="#1c1c1e">Hob</text>
+  <circle cx="380" cy="117" r="8" fill="#007aff" opacity="0.15"><animate attributeName="opacity" values="0.15;0.15;1;0.15;0.15" keyTimes="0;0.050;0.070;0.110;1" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="380" cy="177" r="10" fill="#007aff" opacity="0.15"><animate attributeName="opacity" values="0.15;0.15;1;0.15;0.15" keyTimes="0;0.500;0.520;0.560;1" dur="4s" repeatCount="indefinite"/></circle>
+  <text x="150" y="276" text-anchor="middle" font-size="13" font-weight="600" fill="#248a3d">Pass: two taps for oven, four for hob</text>
+  <text x="410" y="276" text-anchor="middle" font-size="12" font-weight="600" fill="#d70015">Fail: one tap each, hob&#x27;s a bit stronger</text>
+</svg>

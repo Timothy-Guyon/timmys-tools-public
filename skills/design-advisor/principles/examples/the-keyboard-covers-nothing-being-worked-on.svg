@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The keyboard covers nothing being worked on: A parking app&#x27;s number plate field, keyboard up</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A parking app&#x27;s number plate field, keyboard up</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="154" width="220" height="92" fill="#d1d4da"/>
+  <rect x="44" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="65" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="86" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="107" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="128" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="149" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="170" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="191" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="212" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="233" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="54" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="75" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="96" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="117" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="138" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="159" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="180" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="201" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="222" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="64" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="85" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="106" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="127" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="148" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="169" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="190" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="211" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <text x="54" y="64" font-size="11" fill="#8e8e93">Number plate</text>
+  <rect x="54" y="69" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="62" y="89" font-size="13" fill="#1c1c1e">AB12 CDE</text>
+  <rect x="54" y="114" width="192" height="30" rx="10" fill="#007aff"/>
+  <text x="150" y="133.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Pay £3.20</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="154" width="220" height="92" fill="#d1d4da"/>
+  <rect x="304" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="325" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="346" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="367" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="388" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="409" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="430" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="451" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="472" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="493" y="162" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="314" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="335" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="356" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="377" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="398" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="419" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="440" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="461" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="482" y="188" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="324" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="345" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="366" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="387" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="408" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="429" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="450" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <rect x="471" y="214" width="18" height="20" rx="3" fill="#fff"/>
+  <text x="314" y="90" font-size="11" fill="#8e8e93">Number plate</text>
+  <rect x="314" y="95" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="322" y="115" font-size="13" fill="#1c1c1e">AB12 CDE</text>
+  <rect x="314" y="200" width="192" height="30" rx="10" fill="#007aff" opacity="0.25"/>
+  <rect x="310" y="196" width="200" height="38" rx="8" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="150" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#248a3d">Pass: field and Pay sit above the keyboard</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: keyboard covers Pay</text>
+</svg>

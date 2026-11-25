@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A likely value is offered filled in: an EV charging app; most charge to 80%</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">An EV charging app; most charge to 80%</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Start charging</text>
+  <text x="54" y="100" font-size="11" fill="#8e8e93">Charge to</text>
+  <rect x="54" y="105" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="62" y="125" font-size="13" fill="#1c1c1e">80%</text>
+  <rect x="54" y="200" width="192" height="32" rx="10" fill="#007aff"/>
+  <text x="150" y="220.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Start</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Start charging</text>
+  <text x="314" y="100" font-size="11" fill="#8e8e93">Charge to</text>
+  <rect x="314" y="105" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="314" y="200" width="192" height="32" rx="10" fill="#007aff"/>
+  <text x="410" y="220.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Start</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: Charge to opens at 80%</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: opens empty</text>
+</svg>

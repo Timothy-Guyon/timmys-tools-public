@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Opponent colours kept apart: A bike hire app&#x27;s map pins</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A bike hire app&#x27;s map pins</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#e8eef2"/>
+  <circle cx="90" cy="110" r="16" fill="#2e9e44"/>
+  <text x="90" y="116" font-size="16" text-anchor="middle" font-weight="600" fill="#ffffff">4</text>
+  <circle cx="190" cy="130" r="16" fill="#2e9e44"/>
+  <text x="190" y="136" font-size="16" text-anchor="middle" font-weight="600" fill="#ffffff">7</text>
+  <circle cx="140" cy="190" r="16" fill="#2e9e44"/>
+  <text x="140" y="196" font-size="16" text-anchor="middle" font-weight="600" fill="#ffffff">2</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#e8eef2"/>
+  <circle cx="350" cy="110" r="16" fill="#2e9e44"/>
+  <text x="350" y="116" font-size="16" text-anchor="middle" font-weight="600" fill="#e0262b">4</text>
+  <circle cx="450" cy="130" r="16" fill="#2e9e44"/>
+  <text x="450" y="136" font-size="16" text-anchor="middle" font-weight="600" fill="#e0262b">7</text>
+  <circle cx="400" cy="190" r="16" fill="#2e9e44"/>
+  <text x="400" y="196" font-size="16" text-anchor="middle" font-weight="600" fill="#e0262b">2</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: white numbers on green</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: red numbers on green</text>
+</svg>

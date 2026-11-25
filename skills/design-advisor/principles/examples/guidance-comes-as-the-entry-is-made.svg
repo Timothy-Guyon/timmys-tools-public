@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Guidance comes as the entry is made: an airline app&#x27;s passport field, too few digits</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">An airline app&#x27;s passport field, too few digits</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="66" font-size="11" fill="#8e8e93">Passport number</text>
+  <rect x="54" y="71" width="192" height="30" rx="6" fill="#ffffff" stroke="#ff3b30" stroke-width="2"/>
+  <text x="62" y="91" font-size="13" fill="#1c1c1e">12345</text>
+  <text x="54" y="115" font-size="11" fill="#d70015">Needs 9 digits</text>
+  <text x="54" y="134" font-size="11" fill="#8e8e93">Nationality</text>
+  <rect x="54" y="139" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="54" y="206" width="192" height="32" rx="10" fill="#007aff"/>
+  <text x="150" y="227.04" font-size="14" text-anchor="middle" font-weight="600" fill="#ffffff">Continue</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="66" font-size="11" fill="#8e8e93">Passport number</text>
+  <rect x="314" y="71" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="322" y="91" font-size="13" fill="#1c1c1e">12345</text>
+  <text x="314" y="134" font-size="11" fill="#8e8e93">Nationality</text>
+  <rect x="314" y="139" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="310" y="178" width="200" height="22" rx="4" fill="#fff1f0"/>
+  <text x="410" y="193" font-size="11" text-anchor="middle" fill="#d70015">Fix 1 error above</text>
+  <rect x="314" y="206" width="192" height="32" rx="10" fill="#007aff"/>
+  <text x="410" y="227.04" font-size="14" text-anchor="middle" font-weight="600" fill="#ffffff">Continue</text>
+  <text x="150" y="276" text-anchor="middle" font-size="13.5" font-weight="600" fill="#248a3d">Pass: flagged beside it as it&#x27;s left</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: checked only at Continue</text>
+</svg>

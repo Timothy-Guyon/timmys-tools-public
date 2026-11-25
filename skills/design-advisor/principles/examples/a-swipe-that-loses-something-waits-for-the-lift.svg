@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A swipe that loses something waits for the lift: A mail row swiped past halfway, thumb still down</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A mail row swiped past halfway, thumb still down</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Inbox</text>
+  <text x="54" y="109" font-size="14" fill="#1c1c1e">Jo</text>
+  <text x="54" y="124" font-size="11" fill="#8e8e93">Lunch?</text>
+  <line x1="40" y1="130" x2="260" y2="130" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="40" y="126" width="220" height="40" fill="#ff3b30"/>
+  <text x="240" y="151" font-size="12" text-anchor="end" font-weight="600" fill="#fff">Delete</text>
+  <rect x="40" y="126" width="90" height="40" fill="#ffffff"/>
+  <text x="54" y="142" font-size="13" fill="#1c1c1e">Bank</text>
+  <text x="54" y="156" font-size="11" fill="#8e8e93">Statement</text>
+  <circle cx="120" cy="154" r="12" fill="rgb(0 0 0 / 0.15)"/>
+  <text x="54" y="185" font-size="14" fill="#1c1c1e">Sam</text>
+  <text x="54" y="200" font-size="11" fill="#8e8e93">Photos</text>
+  <line x1="40" y1="206" x2="260" y2="206" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Inbox</text>
+  <text x="314" y="109" font-size="14" fill="#1c1c1e">Jo</text>
+  <text x="314" y="124" font-size="11" fill="#8e8e93">Lunch?</text>
+  <line x1="300" y1="130" x2="520" y2="130" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="145" font-size="14" fill="#1c1c1e">Sam</text>
+  <text x="314" y="160" font-size="11" fill="#8e8e93">Photos</text>
+  <line x1="300" y1="166" x2="520" y2="166" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="380" cy="154" r="12" fill="rgb(0 0 0 / 0.15)"/>
+  <rect x="308" y="200" width="204" height="34" rx="8" fill="#1c1c1e"/>
+  <text x="318" y="222" font-size="12" fill="#ffffff">Bank deleted</text>
+  <text x="150" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#248a3d">Pass: still there until the thumb lifts</text>
+  <text x="410" y="276" text-anchor="middle" font-size="13" font-weight="600" fill="#d70015">Fail: deleted while the thumb is down</text>
+</svg>

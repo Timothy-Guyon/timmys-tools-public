@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Said outright, not deduced: A browser&#x27;s page-failure message</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A browser&#x27;s page-failure message</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="24" fill="#e5e5ea"/>
+  <rect x="70" y="55" width="160" height="14" rx="7" fill="#fff"/>
+  <text x="150" y="130" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">Ad Blocker 2 is stopping</text>
+  <text x="150" y="148" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">this page loading</text>
+  <rect x="110" y="166" width="80" height="28" rx="10" fill="#007aff"/>
+  <text x="150" y="184.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Turn Off</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="24" fill="#e5e5ea"/>
+  <rect x="330" y="55" width="160" height="14" rx="7" fill="#fff"/>
+  <text x="410" y="140" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">An extension may be</text>
+  <text x="410" y="158" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">incompatible.</text>
+  <text x="150" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#248a3d">Pass: names Ad Blocker 2, with Turn Off</text>
+  <text x="410" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#d70015">Fail: An extension may be incompatible</text>
+</svg>

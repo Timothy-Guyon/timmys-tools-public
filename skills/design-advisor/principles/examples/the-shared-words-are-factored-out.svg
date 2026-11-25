@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The shared words are factored out: A phone Settings list of keyboards</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A phone Settings list of keyboards</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Keyboards</text>
+  <text x="54" y="108" font-size="10" fill="#8e8e93">KEYBOARD LAYOUTS</text>
+  <text x="54" y="133" font-size="14" fill="#1c1c1e">English</text>
+  <line x1="40" y1="144" x2="260" y2="144" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="165" font-size="14" fill="#1c1c1e">French</text>
+  <line x1="40" y1="176" x2="260" y2="176" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="197" font-size="14" fill="#1c1c1e">German</text>
+  <line x1="40" y1="208" x2="260" y2="208" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Keyboards</text>
+  <text x="314" y="112" font-size="12" fill="#1c1c1e">Keyboard layout for English</text>
+  <line x1="300" y1="124" x2="520" y2="124" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="146" font-size="12" fill="#1c1c1e">Keyboard layout for French</text>
+  <line x1="300" y1="158" x2="520" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="180" font-size="12" fill="#1c1c1e">Keyboard layout for German</text>
+  <line x1="300" y1="192" x2="520" y2="192" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="276" text-anchor="middle" font-size="13" font-weight="600" fill="#248a3d">Pass: one heading, then the languages</text>
+  <text x="410" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#d70015">Fail: Keyboard layout for… on every row</text>
+</svg>

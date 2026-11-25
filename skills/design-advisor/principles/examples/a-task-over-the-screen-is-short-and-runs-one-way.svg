@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A task over the screen is short and runs one way: A New Contact sheet over the list</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A New Contact sheet over the list</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#c7c7cc"/>
+  <rect x="40" y="70" width="220" height="176" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="135" y="76" width="30" height="4" rx="2" fill="#c7c7cc"/>
+  <text x="54" y="100" font-size="12" fill="#007aff">Cancel</text>
+  <text x="150" y="100" font-size="12" text-anchor="middle" font-weight="600" fill="#1c1c1e">New Contact</text>
+  <text x="246" y="100" font-size="12" text-anchor="end" font-weight="600" fill="#007aff">Done</text>
+  <text x="54" y="120" font-size="11" fill="#8e8e93">Name</text>
+  <rect x="54" y="125" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="170" font-size="11" fill="#8e8e93">Phone</text>
+  <rect x="54" y="175" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#c7c7cc"/>
+  <rect x="300" y="70" width="220" height="176" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="395" y="76" width="30" height="4" rx="2" fill="#c7c7cc"/>
+  <text x="314" y="100" font-size="12" fill="#007aff">Cancel</text>
+  <text x="410" y="100" font-size="12" text-anchor="middle" font-weight="600" fill="#1c1c1e">New Contact</text>
+  <text x="314" y="136" font-size="14" fill="#1c1c1e">Labels ›</text>
+  <line x1="300" y1="148" x2="520" y2="148" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="170" font-size="14" fill="#1c1c1e">Ringtones ›</text>
+  <line x1="300" y1="182" x2="520" y2="182" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="204" font-size="14" fill="#1c1c1e">Groups ›</text>
+  <line x1="300" y1="216" x2="520" y2="216" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: one form, Cancel and Done</text>
+  <text x="410" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#d70015">Fail: opens into Labels, Ringtones, Groups</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>On the way to the goal, or not seen: an airline app&#x27;s fare list</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">An airline app&#x27;s fare list</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Choose a fare</text>
+  <text x="54" y="114" font-size="14" font-weight="600" fill="#1c1c1e">Basic</text>
+  <text x="246" y="114" font-size="14" text-anchor="end" font-weight="600" fill="#1c1c1e">£89</text>
+  <text x="54" y="132" font-size="12" fill="#8e8e93">1 bag, 23 kg</text>
+  <line x1="40" y1="142" x2="260" y2="142" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="166" font-size="14" font-weight="600" fill="#1c1c1e">Standard</text>
+  <text x="246" y="166" font-size="14" text-anchor="end" font-weight="600" fill="#1c1c1e">£119</text>
+  <text x="54" y="184" font-size="12" fill="#8e8e93">1 bag, 23 kg</text>
+  <line x1="40" y1="194" x2="260" y2="194" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="54" y="200" width="192" height="28" rx="10" fill="#007aff"/>
+  <text x="150" y="218.68" font-size="13" text-anchor="middle" font-weight="600" fill="#ffffff">Book</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Choose a fare</text>
+  <text x="314" y="114" font-size="14" font-weight="600" fill="#1c1c1e">Basic</text>
+  <text x="506" y="114" font-size="14" text-anchor="end" font-weight="600" fill="#1c1c1e">£89</text>
+  <line x1="300" y1="142" x2="520" y2="142" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="166" font-size="14" font-weight="600" fill="#1c1c1e">Standard</text>
+  <text x="506" y="166" font-size="14" text-anchor="end" font-weight="600" fill="#1c1c1e">£119</text>
+  <line x1="300" y1="194" x2="520" y2="194" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="314" y="200" width="192" height="24" rx="10" fill="#007aff"/>
+  <text x="410" y="216.68" font-size="13" text-anchor="middle" font-weight="600" fill="#ffffff">Book</text>
+  <text x="410" y="239" font-size="9" text-anchor="middle" fill="#aeaeb2">Terms: 1 bag, 23 kg</text>
+  <rect x="360" y="230" width="100" height="13" rx="4" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: baggage under each fare</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#d70015">Fail: baggage hidden in the footer</text>
+</svg>

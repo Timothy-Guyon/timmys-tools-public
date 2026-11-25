@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A confirmation shows the thing, not only the act: a contacts app asking before Delete</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A contacts app asking before it deletes</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#f2f2f7" stroke="#c7c7cc"/>
+  <circle cx="150" cy="90" r="24" fill="#a2845e"/>
+  <text x="150" y="96" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">AR</text>
+  <text x="150" y="136" text-anchor="middle" font-size="18" font-weight="600" fill="#1c1c1e">Ana Ruiz</text>
+  <line x1="40" x2="260" y1="160" y2="160" stroke="rgb(0 0 0 / 0.12)"/>
+  <text x="150" y="190" text-anchor="middle" font-size="15" font-weight="600" fill="#ff3b30">Delete Contact</text>
+  <line x1="40" x2="260" y1="206" y2="206" stroke="rgb(0 0 0 / 0.12)"/>
+  <text x="150" y="232" text-anchor="middle" font-size="15" fill="#007aff">Cancel</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#f2f2f7" stroke="#c7c7cc"/>
+  <text x="410" y="125" text-anchor="middle" font-size="18" font-weight="600" fill="#1c1c1e">Are you sure?</text>
+  <line x1="300" x2="520" y1="160" y2="160" stroke="rgb(0 0 0 / 0.12)"/>
+  <text x="410" y="190" text-anchor="middle" font-size="15" fill="#007aff">OK</text>
+  <line x1="300" x2="520" y1="206" y2="206" stroke="rgb(0 0 0 / 0.12)"/>
+  <text x="410" y="232" text-anchor="middle" font-size="15" fill="#007aff">Cancel</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: shows who, button says the act</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: no who, OK says nothing</text>
+</svg>

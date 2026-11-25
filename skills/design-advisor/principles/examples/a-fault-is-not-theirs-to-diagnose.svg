@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A fault is not theirs to diagnose: A video call app&#x27;s dropped call</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A video call app&#x27;s dropped call</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#2c2c2e"/>
+  <rect x="54" y="100" width="192" height="96" rx="12" fill="#f2f2f7"/>
+  <text x="150" y="130" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">Your connection dropped.</text>
+  <text x="150" y="150" font-size="12" text-anchor="middle" fill="#1c1c1e">Reconnecting…</text>
+  <rect x="110" y="160" width="80" height="26" rx="8" fill="#007aff"/>
+  <text x="150" y="177.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Retry</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#2c2c2e"/>
+  <rect x="314" y="100" width="192" height="96" rx="12" fill="#f2f2f7"/>
+  <text x="410" y="130" font-size="12" text-anchor="middle" font-weight="600" fill="#1c1c1e">ICE negotiation failed;</text>
+  <text x="410" y="150" font-size="12" text-anchor="middle" fill="#1c1c1e">check NAT and firewall</text>
+  <text x="410" y="168" font-size="12" text-anchor="middle" fill="#1c1c1e">settings.</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: plain words, with Retry</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: network jargon to diagnose</text>
+</svg>

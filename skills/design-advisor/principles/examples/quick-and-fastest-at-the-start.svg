@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Quick, and fastest at the start: A size menu dropping from the Size button, animated</title>
+  <desc>Animated, 4-second loop. Left: the menu grows out of the button in 0.2 s, fastest at the start. Right: the menu starts slowly and takes 0.6 s.</desc>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A size menu dropping from the Size button, animated</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="54" y="64" width="80" height="28" rx="8" fill="#f2f2f7"/>
+  <text x="94" y="82.32" font-size="12" text-anchor="middle" fill="#1c1c1e">Size ▾</text>
+  <g transform="translate(54 96)"><g><animateTransform attributeName="transform" type="scale" values="1 0;1 0;1 1;1 1;1 0" keyTimes="0;0.2;0.25;0.9;1" calcMode="spline" keySplines="0 0 1 1;0.2 0.8 0.3 1;0 0 1 1;0 0 1 1" dur="4s" repeatCount="indefinite"/><rect width="80" height="100" rx="8" fill="#fff" stroke="#c7c7cc"/><text x="12" y="22" font-size="12" fill="#1c1c1e">S</text><text x="12" y="44" font-size="12" fill="#1c1c1e">M</text><text x="12" y="66" font-size="12" fill="#1c1c1e">L</text><text x="12" y="88" font-size="12" fill="#1c1c1e">XL</text></g></g>
+  <text x="150" y="226" font-size="12" text-anchor="middle" font-weight="600" fill="#248a3d">0.2 s, fast start</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="314" y="64" width="80" height="28" rx="8" fill="#f2f2f7"/>
+  <text x="354" y="82.32" font-size="12" text-anchor="middle" fill="#1c1c1e">Size ▾</text>
+  <g transform="translate(314 96)"><g><animateTransform attributeName="transform" type="scale" values="1 0;1 0;1 1;1 1;1 0" keyTimes="0;0.2;0.35;0.9;1" calcMode="spline" keySplines="0 0 1 1;0.7 0 0.9 0.6;0 0 1 1;0 0 1 1" dur="4s" repeatCount="indefinite"/><rect width="80" height="100" rx="8" fill="#fff" stroke="#c7c7cc"/><text x="12" y="22" font-size="12" fill="#1c1c1e">S</text><text x="12" y="44" font-size="12" fill="#1c1c1e">M</text><text x="12" y="66" font-size="12" fill="#1c1c1e">L</text><text x="12" y="88" font-size="12" fill="#1c1c1e">XL</text></g></g>
+  <text x="410" y="226" font-size="12" text-anchor="middle" font-weight="600" fill="#d70015">0.6 s, slow start</text>
+  <text x="150" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#248a3d">Pass: grows in 0.2 s, fast at first</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: creeps out over 0.6 s</text>
+</svg>

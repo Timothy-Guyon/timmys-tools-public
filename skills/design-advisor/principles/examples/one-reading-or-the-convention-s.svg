@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>One reading, or the convention&#x27;s: A smart lights app&#x27;s lamp control</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A smart lights app&#x27;s lamp control</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Lamp</text>
+  <text x="54" y="130" font-size="14" fill="#1c1c1e">Desk lamp</text>
+  <rect x="206" y="114" width="40" height="24" rx="12" fill="#34c759"/>
+  <circle cx="234" cy="126" r="10" fill="#ffffff"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Lamp</text>
+  <text x="314" y="130" font-size="14" fill="#1c1c1e">Desk lamp</text>
+  <rect x="410" y="116" width="96" height="20" rx="10" fill="#e5e5ea"/>
+  <rect x="410" y="116" width="48" height="20" rx="10" fill="#ffcc00"/>
+  <text x="150" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#248a3d">Pass: the platform&#x27;s on-off switch</text>
+  <text x="410" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#d70015">Fail: a half-filled slider, on or half bright?</text>
+</svg>

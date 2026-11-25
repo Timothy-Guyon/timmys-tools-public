@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>One gesture per kind of act: A music app&#x27;s queue</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A music app&#x27;s queue</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Up next</text>
+  <text x="54" y="113" font-size="14" fill="#1c1c1e">Blue Hour</text>
+  <line x1="40" y1="126" x2="260" y2="126" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="190" y="126" width="70" height="36" fill="#ff3b30"/>
+  <text x="225" y="149" font-size="11" text-anchor="middle" font-weight="600" fill="#fff">Remove</text>
+  <text x="44" y="149" font-size="13" fill="#1c1c1e">Night Drive</text>
+  <text x="54" y="185" font-size="14" fill="#1c1c1e">Low Tide</text>
+  <line x1="40" y1="198" x2="260" y2="198" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Up next</text>
+  <text x="314" y="113" font-size="14" fill="#1c1c1e">Blue Hour</text>
+  <line x1="300" y1="126" x2="520" y2="126" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="149" font-size="14" fill="#1c1c1e">Night Drive</text>
+  <line x1="300" y1="162" x2="520" y2="162" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="390" y="140" width="110" height="40" rx="8" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="400" y="165" font-size="11" fill="#ff3b30">Remove from queue</text>
+  <text x="314" y="185" font-size="14" fill="#1c1c1e">Low Tide</text>
+  <line x1="300" y1="198" x2="520" y2="198" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#248a3d">Pass: swipe left removes, as in playlists</text>
+  <text x="410" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#d70015">Fail: long-press here, swipe in playlists</text>
+</svg>

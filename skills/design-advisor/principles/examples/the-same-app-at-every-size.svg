@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The same app at every size: A mail app, held upright and turned sideways</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A mail app, held upright and turned sideways</text>
+  <!-- Pass -->
+  <rect x="42" y="50" width="78" height="176" rx="12" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="81" y="70" font-size="11" text-anchor="middle" font-weight="600" fill="#1c1c1e">Lunch?</text>
+  <line x1="52" y1="90" x2="110" y2="90" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="52" y1="105" x2="94" y2="105" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="52" y1="120" x2="110" y2="120" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="42" y1="150" x2="120" y2="150" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="52" y="170" font-size="11" fill="#007aff">Reply</text>
+  <text x="52" y="190" font-size="11" fill="#007aff">Archive</text>
+  <text x="52" y="210" font-size="11" fill="#007aff">Delete</text>
+  <text x="81" y="242" font-size="11" text-anchor="middle" fill="#8e8e93">Held upright</text>
+  <rect x="128" y="90" width="130" height="96" rx="12" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <line x1="160" y1="90" x2="160" y2="186" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <line x1="136" y1="108" x2="154" y2="108" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="136" y1="126" x2="154" y2="126" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="136" y1="144" x2="154" y2="144" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="136" y1="162" x2="154" y2="162" stroke="#d1d1d6" stroke-width="5"/>
+  <text x="209" y="108" font-size="10" text-anchor="middle" font-weight="600" fill="#1c1c1e">Lunch?</text>
+  <line x1="168" y1="124" x2="248" y2="124" stroke="#d1d1d6" stroke-width="4"/>
+  <line x1="168" y1="136" x2="234" y2="136" stroke="#d1d1d6" stroke-width="4"/>
+  <line x1="160" y1="158" x2="258" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="176.333" y="176" font-size="9" text-anchor="middle" fill="#007aff">Reply</text>
+  <text x="209" y="176" font-size="9" text-anchor="middle" fill="#007aff">Archive</text>
+  <text x="241.667" y="176" font-size="9" text-anchor="middle" fill="#007aff">Delete</text>
+  <text x="193" y="204" font-size="11" text-anchor="middle" fill="#8e8e93">Turned sideways</text>
+  <!-- Fail -->
+  <rect x="302" y="50" width="78" height="176" rx="12" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="341" y="70" font-size="11" text-anchor="middle" font-weight="600" fill="#1c1c1e">Lunch?</text>
+  <line x1="312" y1="90" x2="370" y2="90" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="312" y1="105" x2="354" y2="105" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="312" y1="120" x2="370" y2="120" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="302" y1="150" x2="380" y2="150" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="312" y="170" font-size="11" fill="#007aff">Reply</text>
+  <text x="312" y="190" font-size="11" fill="#007aff">Delete</text>
+  <text x="341" y="242" font-size="11" text-anchor="middle" fill="#8e8e93">Held upright</text>
+  <rect x="388" y="90" width="130" height="96" rx="12" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <line x1="420" y1="90" x2="420" y2="186" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <line x1="396" y1="108" x2="414" y2="108" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="396" y1="126" x2="414" y2="126" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="396" y1="144" x2="414" y2="144" stroke="#d1d1d6" stroke-width="5"/>
+  <line x1="396" y1="162" x2="414" y2="162" stroke="#d1d1d6" stroke-width="5"/>
+  <text x="469" y="108" font-size="10" text-anchor="middle" font-weight="600" fill="#1c1c1e">Lunch?</text>
+  <line x1="428" y1="124" x2="508" y2="124" stroke="#d1d1d6" stroke-width="4"/>
+  <line x1="428" y1="136" x2="494" y2="136" stroke="#d1d1d6" stroke-width="4"/>
+  <line x1="420" y1="158" x2="518" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="436.333" y="176" font-size="9" text-anchor="middle" fill="#007aff">Reply</text>
+  <text x="469" y="176" font-size="9" text-anchor="middle" fill="#007aff">Archive</text>
+  <text x="501.667" y="176" font-size="9" text-anchor="middle" fill="#007aff">Delete</text>
+  <text x="453" y="204" font-size="11" text-anchor="middle" fill="#8e8e93">Turned sideways</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: Archive both ways</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: Archive only when sideways</text>
+</svg>

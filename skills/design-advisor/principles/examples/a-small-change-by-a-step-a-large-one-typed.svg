@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A small change by a step, a large one typed: A printing app&#x27;s Copies setting</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A printing app&#x27;s Copies setting</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Print</text>
+  <text x="54" y="122" font-size="13" fill="#1c1c1e">Copies</text>
+  <rect x="146" y="106" width="40" height="28" rx="6" fill="#fff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="166" y="125" font-size="13" text-anchor="middle" fill="#1c1c1e">1</text>
+  <rect x="192" y="106" width="58" height="28" rx="8" fill="#f2f2f7"/>
+  <text x="206" y="125" font-size="14" text-anchor="middle" fill="#1c1c1e">−</text>
+  <line x1="221" y1="110" x2="221" y2="130" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="236" y="125" font-size="14" text-anchor="middle" fill="#1c1c1e">+</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Print</text>
+  <text x="314" y="122" font-size="13" fill="#1c1c1e">Copies</text>
+  <text x="426" y="125" font-size="13" text-anchor="middle" fill="#1c1c1e">1</text>
+  <rect x="452" y="106" width="58" height="28" rx="8" fill="#f2f2f7"/>
+  <text x="466" y="125" font-size="14" text-anchor="middle" fill="#1c1c1e">−</text>
+  <line x1="481" y1="110" x2="481" y2="130" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="496" y="125" font-size="14" text-anchor="middle" fill="#1c1c1e">+</text>
+  <text x="410" y="180" font-size="12" text-anchor="middle" fill="#d70015">50 copies = 49 taps</text>
+  <text x="150" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#248a3d">Pass: a field you can type 50 in, plus a stepper</text>
+  <text x="410" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#d70015">Fail: stepper only, 49 taps to reach 50</text>
+</svg>

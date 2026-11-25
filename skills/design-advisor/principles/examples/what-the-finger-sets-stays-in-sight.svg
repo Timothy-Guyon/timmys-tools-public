@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>What the finger sets stays in sight: A photo editor&#x27;s stepped Exposure slider, held</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A photo editor&#x27;s stepped Exposure slider, held</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="90" font-size="12" fill="#8e8e93">Exposure</text>
+  <line x1="60" y1="150" x2="240" y2="150" stroke="#c7c7cc" stroke-width="4"/>
+  <line x1="60" y1="140" x2="60" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="78" y1="140" x2="78" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="96" y1="140" x2="96" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="114" y1="140" x2="114" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="132" y1="140" x2="132" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="150" y1="140" x2="150" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="168" y1="140" x2="168" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="186" y1="140" x2="186" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="204" y1="140" x2="204" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="222" y1="140" x2="222" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="240" y1="140" x2="240" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <circle cx="150" cy="150" r="22" fill="rgb(255 255 255 / 0.3)" stroke="#8e8e93" stroke-width="1.5"/>
+  <circle cx="158" cy="186" r="16" fill="#f0c9a8"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="90" font-size="12" fill="#8e8e93">Exposure</text>
+  <line x1="320" y1="150" x2="500" y2="150" stroke="#c7c7cc" stroke-width="4"/>
+  <line x1="320" y1="140" x2="320" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="338" y1="140" x2="338" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="356" y1="140" x2="356" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="374" y1="140" x2="374" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="392" y1="140" x2="392" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="410" y1="140" x2="410" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="428" y1="140" x2="428" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="446" y1="140" x2="446" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="464" y1="140" x2="464" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="482" y1="140" x2="482" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <line x1="500" y1="140" x2="500" y2="160" stroke="#1c1c1e" stroke-width="1.5"/>
+  <circle cx="410" cy="150" r="22" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <circle cx="418" cy="186" r="16" fill="#f0c9a8"/>
+  <text x="150" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#248a3d">Pass: thumb turns into a clear lens</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#d70015">Fail: solid thumb hides the marks</text>
+</svg>

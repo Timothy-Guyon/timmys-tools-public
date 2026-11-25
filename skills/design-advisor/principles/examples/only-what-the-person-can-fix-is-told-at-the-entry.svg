@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Only what the person can fix is told at the entry: A car-sharing sign-up, drivers 21 and over, age 19</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A car-sharing sign-up, drivers 21 and over, age 19</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Sign up</text>
+  <text x="150" y="126" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Members must be 21</text>
+  <text x="150" y="148" font-size="11" text-anchor="middle" fill="#8e8e93">You can join our bike scheme now.</text>
+  <rect x="70" y="170" width="160" height="30" rx="10" fill="#007aff"/>
+  <text x="150" y="189.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Join the bike scheme</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Sign up</text>
+  <text x="314" y="100" font-size="11" fill="#8e8e93">Date of birth</text>
+  <rect x="314" y="105" width="192" height="30" rx="6" fill="#ffffff" stroke="#ff3b30" stroke-width="2"/>
+  <text x="322" y="125" font-size="13" fill="#1c1c1e">14/03/2007</text>
+  <text x="314" y="149" font-size="11" fill="#d70015">Date of birth is invalid</text>
+  <rect x="314" y="200" width="192" height="30" rx="10" fill="#007aff"/>
+  <text x="410" y="219.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Continue</text>
+  <text x="150" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#248a3d">Pass: says members must be 21, offers bikes</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: Date of birth is invalid</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Where it was sent is shown, and it can be sent again: A food delivery app&#x27;s sign-up code</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A food delivery app&#x27;s sign-up code</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Enter code</text>
+  <text x="150" y="114" font-size="12" text-anchor="middle" fill="#1c1c1e">Sent to 07700 900123</text>
+  <rect x="62" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="92" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="122" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="152" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="182" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="212" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="190" font-size="12" fill="#007aff">Send again</text>
+  <text x="246" y="190" font-size="12" text-anchor="end" fill="#007aff">Change number</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Enter code</text>
+  <text x="410" y="114" font-size="12" text-anchor="middle" fill="#1c1c1e">Enter the code we sent you</text>
+  <rect x="322" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="352" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="382" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="412" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="442" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="472" y="130" width="24" height="32" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="150" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#248a3d">Pass: shows the number, Send again</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: no number, no resend</text>
+</svg>

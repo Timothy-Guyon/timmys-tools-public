@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The state and the place are on the screen: A train ticket app&#x27;s booking flow</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A train ticket app&#x27;s booking flow</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="72" font-size="12" font-weight="600" fill="#1c1c1e">Step 2 of 4 · Seats</text>
+  <rect x="54" y="82" width="192" height="26" rx="6" fill="#f2f2f7"/>
+  <text x="62" y="99" font-size="12" fill="#1c1c1e">08:15 London → York</text>
+  <rect x="70" y="124" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="98" y="124" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="126" y="124" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="168" y="124" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="196" y="124" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="224" y="124" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="70" y="150" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="98" y="150" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="126" y="150" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="168" y="150" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="196" y="150" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="224" y="150" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="70" y="176" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="98" y="176" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="126" y="176" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="168" y="176" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="196" y="176" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="224" y="176" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="70" y="202" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="98" y="202" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="126" y="202" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="168" y="202" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="196" y="202" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="224" y="202" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="330" y="88" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="358" y="88" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="386" y="88" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="428" y="88" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="456" y="88" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="484" y="88" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="330" y="114" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="358" y="114" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="386" y="114" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="428" y="114" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="456" y="114" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="484" y="114" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="330" y="140" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="358" y="140" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="386" y="140" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="428" y="140" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="456" y="140" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="484" y="140" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="330" y="166" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="358" y="166" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="386" y="166" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="428" y="166" width="20" height="18" rx="4" fill="#9fc5f8"/>
+  <rect x="456" y="166" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <rect x="484" y="166" width="20" height="18" rx="4" fill="#e5e5ea"/>
+  <text x="150" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#248a3d">Pass: step and chosen train shown</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: only the seat map</text>
+</svg>

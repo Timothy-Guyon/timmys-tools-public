@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>One or two things stand out: A car insurance app&#x27;s home screen</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A car insurance app&#x27;s home screen</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">My policy</text>
+  <rect x="54" y="96" width="192" height="34" rx="10" fill="#007aff"/>
+  <text x="150" y="117.68" font-size="13" text-anchor="middle" font-weight="600" fill="#ffffff">Start a claim</text>
+  <text x="54" y="160" font-size="14" fill="#1c1c1e">Documents</text>
+  <text x="246" y="160" font-size="13" text-anchor="end" fill="#8e8e93">›</text>
+  <line x1="40" y1="170" x2="260" y2="170" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="190" font-size="14" fill="#1c1c1e">Payments</text>
+  <text x="246" y="190" font-size="13" text-anchor="end" fill="#8e8e93">›</text>
+  <line x1="40" y1="200" x2="260" y2="200" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="220" font-size="14" fill="#1c1c1e">Help</text>
+  <text x="246" y="220" font-size="13" text-anchor="end" fill="#8e8e93">›</text>
+  <line x1="40" y1="230" x2="260" y2="230" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">My policy</text>
+  <rect x="314" y="92" width="192" height="26" rx="10" fill="#007aff"/>
+  <text x="410" y="108.96" font-size="11" text-anchor="middle" font-weight="600" fill="#ffffff">Start a claim</text>
+  <circle cx="500" cy="94" r="6" fill="#ff3b30" stroke="#fff" stroke-width="1"/>
+  <rect x="314" y="122" width="192" height="26" rx="10" fill="#34c759"/>
+  <text x="410" y="138.96" font-size="11" text-anchor="middle" font-weight="600" fill="#ffffff">Documents</text>
+  <circle cx="500" cy="124" r="6" fill="#ff3b30" stroke="#fff" stroke-width="1"/>
+  <rect x="314" y="152" width="192" height="26" rx="10" fill="#ff9f0a"/>
+  <text x="410" y="168.96" font-size="11" text-anchor="middle" font-weight="600" fill="#ffffff">Payments</text>
+  <circle cx="500" cy="154" r="6" fill="#ff3b30" stroke="#fff" stroke-width="1"/>
+  <rect x="314" y="182" width="192" height="26" rx="10" fill="#ff3b30"/>
+  <text x="410" y="198.96" font-size="11" text-anchor="middle" font-weight="600" fill="#ffffff">Renew</text>
+  <circle cx="500" cy="184" r="6" fill="#ff3b30" stroke="#fff" stroke-width="1"/>
+  <rect x="314" y="212" width="192" height="26" rx="10" fill="#af52de"/>
+  <text x="410" y="228.96" font-size="11" text-anchor="middle" font-weight="600" fill="#ffffff">Help</text>
+  <circle cx="500" cy="214" r="6" fill="#ff3b30" stroke="#fff" stroke-width="1"/>
+  <text x="150" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#248a3d">Pass: one filled button stands out</text>
+  <text x="410" y="276" text-anchor="middle" font-size="13" font-weight="600" fill="#d70015">Fail: five filled buttons with badges</text>
+</svg>

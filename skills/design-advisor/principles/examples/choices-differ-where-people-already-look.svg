@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Choices differ where people already look: A cloud drive&#x27;s file list</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A cloud drive&#x27;s file list</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Files</text>
+  <rect x="54" y="102" width="90" height="90" rx="8" fill="#f2f2f7"/>
+  <text x="99" y="210" font-size="12" text-anchor="middle" fill="#1c1c1e">Tax 2024.pdf</text>
+  <rect x="154" y="102" width="90" height="90" rx="8" fill="#f2f2f7"/>
+  <text x="199" y="210" font-size="12" text-anchor="middle" fill="#1c1c1e">Tax 2025.pdf</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Files</text>
+  <rect x="314" y="102" width="90" height="90" rx="8" fill="#f2f2f7"/>
+  <text x="359" y="210" font-size="12" text-anchor="middle" fill="#1c1c1e">Tax 20…</text>
+  <rect x="414" y="102" width="90" height="90" rx="8" fill="#f2f2f7"/>
+  <text x="459" y="210" font-size="12" text-anchor="middle" fill="#1c1c1e">Tax 20…</text>
+  <text x="150" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#248a3d">Pass: Tax 2024.pdf and Tax 2025.pdf</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: both cut to Tax 20…</text>
+</svg>

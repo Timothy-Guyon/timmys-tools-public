@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A block is kept for serious mistakes, and kept light: A photo editor closing with unsaved edits</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A photo editor closing with unsaved edits</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#f2f2f7"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="rgb(0 0 0 / 0.25)"/>
+  <rect x="60" y="80" width="180" height="150" rx="12" fill="#f2f2f7"/>
+  <text x="150" y="104" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">Save changes to Beach.jpg?</text>
+  <line x1="60" y1="128" x2="240" y2="128" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="150" font-size="13" text-anchor="middle" fill="#007aff">Save</text>
+  <line x1="60" y1="162" x2="240" y2="162" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="184" font-size="13" text-anchor="middle" fill="#007aff">Don&#x27;t Save</text>
+  <line x1="60" y1="196" x2="240" y2="196" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="218" font-size="13" text-anchor="middle" fill="#007aff">Cancel</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#f2f2f7"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="rgb(0 0 0 / 0.25)"/>
+  <rect x="325" y="110" width="170" height="82" rx="12" fill="#f2f2f7"/>
+  <text x="410" y="134" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">Unsaved changes</text>
+  <line x1="325" y1="158" x2="495" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="180" font-size="13" text-anchor="middle" fill="#007aff">OK</text>
+  <text x="150" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#248a3d">Pass: Save, Don&#x27;t Save and Cancel</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#d70015">Fail: only OK, then hunt for Save</text>
+</svg>

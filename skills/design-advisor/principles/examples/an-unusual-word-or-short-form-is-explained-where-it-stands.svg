@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>An unusual word or short form is explained where it stands: A mortgage offer showing APR 5.9%</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A mortgage offer showing APR 5.9%</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Your offer</text>
+  <text x="54" y="120" font-size="13" font-weight="600" fill="#007aff">APR</text>
+  <text x="246" y="120" font-size="13" text-anchor="end" font-weight="600" fill="#1c1c1e">5.9%</text>
+  <rect x="50" y="134" width="200" height="50" rx="8" fill="#f2f2f7"/>
+  <text x="58" y="154" font-size="11" font-weight="600" fill="#1c1c1e">Annual percentage rate:</text>
+  <text x="58" y="172" font-size="11" fill="#1c1c1e">the yearly cost, fees included</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Your offer</text>
+  <text x="314" y="120" font-size="13" font-weight="600" fill="#1c1c1e">APR</text>
+  <text x="506" y="120" font-size="13" text-anchor="end" font-weight="600" fill="#1c1c1e">5.9%</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: tapping APR explains it</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#d70015">Fail: nowhere to learn what APR is</text>
+</svg>

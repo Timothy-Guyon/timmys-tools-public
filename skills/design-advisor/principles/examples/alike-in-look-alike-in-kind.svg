@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Alike in look, alike in kind: A music app&#x27;s now-playing screen</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A music app&#x27;s now-playing screen</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="90" y="64" width="120" height="90" rx="8" fill="#5e5ce6"/>
+  <text x="150" y="174" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Night Drive</text>
+  <text x="150" y="192" font-size="12" text-anchor="middle" fill="#8e8e93">Lena Park</text>
+  <rect x="66" y="210" width="80" height="26" rx="13" fill="#007aff"/>
+  <text x="106" y="226.96" font-size="11" text-anchor="middle" fill="#ffffff">♥ Like</text>
+  <rect x="154" y="210" width="80" height="26" rx="13" fill="#007aff"/>
+  <text x="194" y="226.96" font-size="11" text-anchor="middle" fill="#ffffff">+ Playlist</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="350" y="64" width="120" height="90" rx="8" fill="#5e5ce6"/>
+  <text x="410" y="174" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Night Drive</text>
+  <rect x="370" y="180" width="80" height="20" rx="10" fill="#007aff"/>
+  <text x="410" y="193.96" font-size="11" text-anchor="middle" fill="#ffffff">Lena Park</text>
+  <rect x="326" y="210" width="80" height="26" rx="13" fill="#007aff"/>
+  <text x="366" y="226.96" font-size="11" text-anchor="middle" fill="#ffffff">♥ Like</text>
+  <rect x="414" y="210" width="80" height="26" rx="13" fill="#007aff"/>
+  <text x="454" y="226.96" font-size="11" text-anchor="middle" fill="#ffffff">+ Playlist</text>
+  <text x="150" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#248a3d">Pass: buttons look like buttons, artist plain</text>
+  <text x="410" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#d70015">Fail: artist in a pill like the buttons</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The default is never the loss: A password manager&#x27;s Delete Vault prompt</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A password manager&#x27;s Delete Vault prompt</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#f2f2f7"/>
+  <rect x="54" y="90" width="192" height="110" rx="12" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="150" y="120" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Delete Vault?</text>
+  <text x="150" y="140" font-size="11" text-anchor="middle" fill="#8e8e93">All 212 passwords will go.</text>
+  <rect x="66" y="158" width="78" height="30" rx="10" fill="#f2f2f7"/>
+  <text x="105" y="177.32" font-size="12" text-anchor="middle" fill="#007aff">Cancel</text>
+  <rect x="156" y="158" width="78" height="30" rx="10" fill="#f2f2f7"/>
+  <text x="195" y="177.32" font-size="12" text-anchor="middle" fill="#ff3b30">Delete</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#f2f2f7"/>
+  <rect x="314" y="90" width="192" height="110" rx="12" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="410" y="120" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Delete Vault?</text>
+  <text x="410" y="140" font-size="11" text-anchor="middle" fill="#8e8e93">All 212 passwords will go.</text>
+  <rect x="326" y="158" width="78" height="30" rx="10" fill="#f2f2f7"/>
+  <text x="365" y="177.32" font-size="12" text-anchor="middle" fill="#007aff">Cancel</text>
+  <rect x="416" y="158" width="78" height="30" rx="10" fill="#ff3b30"/>
+  <text x="455" y="177.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Delete</text>
+  <text x="455" y="216" font-size="11" text-anchor="middle" fill="#d70015">⏎ Return</text>
+  <text x="150" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#248a3d">Pass: Delete is red, Return fires nothing</text>
+  <text x="410" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#d70015">Fail: Delete is the bold default Return fires</text>
+</svg>

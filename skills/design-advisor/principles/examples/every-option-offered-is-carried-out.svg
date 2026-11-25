@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Every option offered is carried out: A dentist app: Send reminders by</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A dentist app: Send reminders by</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Reminders</text>
+  <text x="54" y="110" font-size="12" fill="#8e8e93">Send reminders by</text>
+  <text x="54" y="139" font-size="14" fill="#1c1c1e">Email</text>
+  <line x1="40" y1="150" x2="260" y2="150" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="236" cy="134" r="9" fill="#007aff"/>
+  <path transform="translate(40 50)" d="M192 84 l3 3 l5 -6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="54" y="171" font-size="14" fill="#1c1c1e">Phone call</text>
+  <line x1="40" y1="182" x2="260" y2="182" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="236" cy="166" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Reminders</text>
+  <text x="314" y="110" font-size="12" fill="#8e8e93">Send reminders by</text>
+  <text x="314" y="139" font-size="14" fill="#1c1c1e">Email</text>
+  <line x1="300" y1="150" x2="520" y2="150" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="496" cy="134" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="314" y="171" font-size="14" fill="#1c1c1e">Phone call</text>
+  <line x1="300" y1="182" x2="520" y2="182" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="496" cy="166" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="314" y="203" font-size="14" fill="#1c1c1e">Text message</text>
+  <line x1="300" y1="214" x2="520" y2="214" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="496" cy="198" r="9" fill="#007aff"/>
+  <path transform="translate(300 50)" d="M192 148 l3 3 l5 -6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="314" y="236" font-size="11" fill="#d70015">The app sends no texts</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: only the two it sends</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#d70015">Fail: offers texts it never sends</text>
+</svg>

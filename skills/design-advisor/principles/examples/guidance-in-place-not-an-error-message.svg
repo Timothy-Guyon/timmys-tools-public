@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Guidance in place, not an error message: A doctor&#x27;s surgery app&#x27;s registration form</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A doctor&#x27;s surgery app&#x27;s registration form</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="66" font-size="11" fill="#8e8e93">Full name</text>
+  <rect x="54" y="71" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="62" y="91" font-size="13" fill="#1c1c1e">Ana Ruiz</text>
+  <text x="54" y="118" font-size="11" fill="#8e8e93">Date of birth</text>
+  <rect x="54" y="123" width="192" height="30" rx="6" fill="#ffffff" stroke="#ff3b30" stroke-width="2"/>
+  <text x="54" y="167" font-size="11" fill="#d70015">⚠ Add your date of birth</text>
+  <text x="54" y="186" font-size="11" fill="#8e8e93">Postcode</text>
+  <rect x="54" y="191" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="62" y="211" font-size="13" fill="#1c1c1e">LS1 4AP</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="310" y="58" width="200" height="26" rx="6" fill="#ff3b30"/>
+  <text x="410" y="75" font-size="12" text-anchor="middle" font-weight="600" fill="#fff">Error 422: invalid input</text>
+  <text x="314" y="102" font-size="11" fill="#8e8e93">Full name</text>
+  <rect x="314" y="107" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="150" font-size="11" fill="#8e8e93">Date of birth</text>
+  <rect x="314" y="155" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="198" font-size="11" fill="#8e8e93">Postcode</text>
+  <rect x="314" y="203" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="150" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#248a3d">Pass: help under the empty field, rest kept</text>
+  <text x="410" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#d70015">Fail: error code on top, every field cleared</text>
+</svg>

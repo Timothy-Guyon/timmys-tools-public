@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A long task opens on its parts: A moving-house app, opened again</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A moving-house app, opened again</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Your move</text>
+  <text x="54" y="114" font-size="14" fill="#1c1c1e">Energy</text>
+  <text x="246" y="114" font-size="13" text-anchor="end" fill="#248a3d">Completed</text>
+  <line x1="40" y1="128" x2="260" y2="128" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="152" font-size="14" fill="#1c1c1e">Broadband</text>
+  <text x="246" y="152" font-size="13" text-anchor="end" fill="#b25000">In progress</text>
+  <line x1="40" y1="166" x2="260" y2="166" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="190" font-size="14" fill="#1c1c1e">Post</text>
+  <text x="246" y="190" font-size="13" text-anchor="end" fill="#8e8e93">Not yet started</text>
+  <line x1="40" y1="204" x2="260" y2="204" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Broadband</text>
+  <text x="314" y="100" font-size="11" fill="#8e8e93">Account number</text>
+  <rect x="314" y="105" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="150" font-size="11" fill="#8e8e93">Switch date</text>
+  <rect x="314" y="155" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: opens on the list of parts</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#d70015">Fail: reopens on the last form seen</text>
+</svg>

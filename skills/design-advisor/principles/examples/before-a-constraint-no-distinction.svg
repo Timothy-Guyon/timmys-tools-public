@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Before a constraint, no distinction: A mail app&#x27;s Attach Photo button</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A mail app&#x27;s Attach Photo button</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">New message</text>
+  <text x="250" y="73" font-size="13" text-anchor="end" fill="#007aff">Send</text>
+  <rect x="54" y="100" width="80" height="64" rx="6" fill="#c9d6e8"/>
+  <text x="94" y="138" font-size="10" text-anchor="middle" fill="#1c1c1e">IMG.HEIC</text>
+  <circle cx="130" cy="102" r="9" fill="#34c759"/>
+  <path transform="translate(40 50)" d="M86 52 l3 3 l5 -6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="54" y="186" font-size="12" fill="#248a3d">Attached</text>
+  <rect x="54" y="200" width="192" height="30" rx="10" fill="#f2f2f7"/>
+  <text x="150" y="220.04" font-size="14" text-anchor="middle" font-weight="600" fill="#007aff">Attach Photo</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">New message</text>
+  <text x="510" y="73" font-size="13" text-anchor="end" fill="#007aff">Send</text>
+  <rect x="314" y="100" width="80" height="64" rx="6" fill="#c9d6e8"/>
+  <text x="354" y="138" font-size="10" text-anchor="middle" fill="#1c1c1e">IMG.HEIC</text>
+  <rect x="314" y="100" width="80" height="64" rx="6" fill="rgb(255 255 255 / 0.6)"/>
+  <text x="314" y="186" font-size="12" font-weight="600" fill="#d70015">⚠ JPG only</text>
+  <rect x="314" y="200" width="192" height="30" rx="10" fill="#f2f2f7"/>
+  <text x="410" y="220.04" font-size="14" text-anchor="middle" font-weight="600" fill="#007aff">Attach Photo</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: any photo attaches</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: HEIC refused, JPG only</text>
+</svg>

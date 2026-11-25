@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Nothing folded inside the folded: A mobile network&#x27;s help screen, Billing opened</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A mobile network&#x27;s help screen, Billing opened</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Help</text>
+  <text x="54" y="112" font-size="14" font-weight="600" fill="#1c1c1e">▾ Billing</text>
+  <line x1="40" y1="124" x2="260" y2="124" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <line x1="54" y1="140" x2="230" y2="140" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="54" y1="156" x2="200" y2="156" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="54" y1="172" x2="170" y2="172" stroke="#d1d1d6" stroke-width="6"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Help</text>
+  <text x="314" y="112" font-size="14" font-weight="600" fill="#1c1c1e">▾ Billing</text>
+  <line x1="300" y1="124" x2="520" y2="124" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="328" y="145" font-size="14" fill="#1c1c1e">▸ Paying</text>
+  <line x1="300" y1="156" x2="520" y2="156" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="328" y="177" font-size="14" fill="#1c1c1e">▸ Disputes</text>
+  <line x1="300" y1="188" x2="520" y2="188" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="328" y="209" font-size="14" fill="#1c1c1e">▸ Refunds</text>
+  <line x1="300" y1="220" x2="520" y2="220" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#248a3d">Pass: opens straight to the answer</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#d70015">Fail: opens to more folded topics</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A second press does one thing: A banking app&#x27;s Send payment, tapped twice during a slow reply</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A banking app&#x27;s Send payment, tapped twice during a slow reply</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Payments</text>
+  <text x="54" y="116" font-size="14" fill="#1c1c1e">To Sam</text>
+  <text x="246" y="116" font-size="13" text-anchor="end" fill="#1c1c1e">−£50.00</text>
+  <line x1="40" y1="128" x2="260" y2="128" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="54" y="200" width="192" height="34" rx="10" fill="#a7c8f2"/>
+  <text x="150" y="222.04" font-size="14" text-anchor="middle" font-weight="600" fill="#ffffff">Sending…</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Payments</text>
+  <text x="314" y="116" font-size="14" fill="#1c1c1e">To Sam</text>
+  <text x="506" y="116" font-size="13" text-anchor="end" fill="#1c1c1e">−£50.00</text>
+  <line x1="300" y1="128" x2="520" y2="128" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="150" font-size="14" fill="#1c1c1e">To Sam</text>
+  <text x="506" y="150" font-size="13" text-anchor="end" fill="#1c1c1e">−£50.00</text>
+  <line x1="300" y1="162" x2="520" y2="162" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="304" y="94" width="212" height="70" rx="8" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+  <rect x="314" y="200" width="192" height="34" rx="10" fill="#007aff"/>
+  <text x="410" y="222.04" font-size="14" text-anchor="middle" font-weight="600" fill="#ffffff">Send payment</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: one £50 goes</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: £50 sent twice</text>
+</svg>

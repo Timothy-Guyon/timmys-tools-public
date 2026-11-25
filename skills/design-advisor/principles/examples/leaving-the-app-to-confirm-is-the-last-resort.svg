@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Leaving the app to confirm is the last resort: A note-taking app&#x27;s sign-up</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A note-taking app&#x27;s sign-up</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">New note</text>
+  <line x1="54" y1="110" x2="230" y2="110" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="54" y1="130" x2="200" y2="130" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="54" y1="150" x2="170" y2="150" stroke="#d1d1d6" stroke-width="6"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="410" y="140" font-size="16" text-anchor="middle" font-weight="600" fill="#1c1c1e">Check your inbox</text>
+  <text x="410" y="162" font-size="11" text-anchor="middle" fill="#8e8e93">Click the link to continue.</text>
+  <text x="150" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#248a3d">Pass: write at once, confirm when sharing</text>
+  <text x="410" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#d70015">Fail: Check your inbox and nothing else</text>
+</svg>

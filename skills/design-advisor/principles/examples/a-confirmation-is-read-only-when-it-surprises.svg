@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A confirmation is read only when it surprises: A spreadsheet app: Don&#x27;t Save tapped on the wrong window</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A spreadsheet app: Don&#x27;t Save tapped on the wrong window</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#f2f2f7"/>
+  <rect x="54" y="80" width="192" height="90" rx="8" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="66" y="106" font-size="13" font-weight="600" fill="#1c1c1e">Restore unsaved edits</text>
+  <text x="66" y="126" font-size="13" font-weight="600" fill="#1c1c1e">to Budget.xlsx?</text>
+  <rect x="66" y="138" width="76" height="24" rx="6" fill="#007aff"/>
+  <text x="104" y="154.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Restore</text>
+  <rect x="150" y="138" width="84" height="24" rx="6" fill="#f2f2f7"/>
+  <text x="192" y="154.32" font-size="12" text-anchor="middle" font-weight="600" fill="#007aff">Discard</text>
+  <text x="150" y="200" font-size="11" text-anchor="middle" fill="#8e8e93">Next launch</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#f2f2f7"/>
+  <text x="410" y="140" font-size="13" text-anchor="middle" font-weight="600" fill="#1c1c1e">Budget.xlsx</text>
+  <text x="410" y="162" font-size="12" text-anchor="middle" fill="#d70015">Last saved yesterday</text>
+  <text x="410" y="200" font-size="11" text-anchor="middle" fill="#8e8e93">Next launch</text>
+  <text x="150" y="276" text-anchor="middle" font-size="12" font-weight="600" fill="#248a3d">Pass: edits kept, offered back next time</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: edits gone for good</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The app does not delete or spend on its own: an email app&#x27;s suggested reply</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">An email app&#x27;s suggested reply</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Re: Meeting</text>
+  <text x="54" y="110" font-size="12" fill="#8e8e93">Can we meet at 3?</text>
+  <rect x="50" y="170" width="200" height="34" rx="8" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="58" y="191" font-size="12" fill="#1c1c1e">Sounds good, see you at 3</text>
+  <rect x="190" y="210" width="60" height="26" rx="8" fill="#007aff"/>
+  <text x="220" y="227.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">Send</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Re: Meeting</text>
+  <text x="314" y="110" font-size="12" fill="#8e8e93">Can we meet at 3?</text>
+  <rect x="370" y="140" width="140" height="30" rx="14" fill="#007aff"/>
+  <text x="380" y="160" font-size="11" fill="#fff">Sounds good, see you…</text>
+  <text x="506" y="184" font-size="10" text-anchor="end" fill="#d70015">Sent automatically</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: in the box, waits for Send</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: sent by itself when sure</text>
+</svg>

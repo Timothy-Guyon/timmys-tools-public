@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The keyboard comes when it is asked for: A hotel search screen as it opens</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A hotel search screen as it opens</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="60" font-size="11" fill="#8e8e93">Destination</text>
+  <rect x="54" y="65" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="54" y="110" font-size="11" fill="#8e8e93">Dates</text>
+  <rect x="54" y="115" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="62" y="135" font-size="13" fill="#1c1c1e">12 – 14 Dec</text>
+  <text x="54" y="160" font-size="11" fill="#8e8e93">Guests</text>
+  <rect x="54" y="165" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="62" y="185" font-size="13" fill="#1c1c1e">2</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="60" font-size="11" fill="#8e8e93">Destination</text>
+  <rect x="314" y="65" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="314" y="110" font-size="11" fill="#8e8e93">Dates</text>
+  <rect x="314" y="115" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="322" y="135" font-size="13" fill="#1c1c1e">12 – 14 Dec</text>
+  <text x="314" y="160" font-size="11" fill="#8e8e93">Guests</text>
+  <rect x="314" y="165" width="192" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="322" y="185" font-size="13" fill="#1c1c1e">2</text>
+  <rect x="300" y="108" width="220" height="138" fill="#d1d4da"/>
+  <rect x="304" y="118" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="325" y="118" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="346" y="118" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="367" y="118" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="388" y="118" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="409" y="118" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="430" y="118" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="451" y="118" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="472" y="118" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="493" y="118" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="314" y="148" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="335" y="148" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="356" y="148" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="377" y="148" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="398" y="148" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="419" y="148" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="440" y="148" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="461" y="148" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="482" y="148" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="324" y="178" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="345" y="178" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="366" y="178" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="387" y="178" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="408" y="178" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="429" y="178" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="450" y="178" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="471" y="178" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="334" y="208" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="355" y="208" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="376" y="208" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="397" y="208" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="418" y="208" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="439" y="208" width="18" height="24" rx="3" fill="#fff"/>
+  <rect x="460" y="208" width="18" height="24" rx="3" fill="#fff"/>
+  <text x="150" y="276" text-anchor="middle" font-size="13.5" font-weight="600" fill="#248a3d">Pass: all three in view, no keyboard</text>
+  <text x="410" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#d70015">Fail: keyboard up, covering dates and guests</text>
+</svg>

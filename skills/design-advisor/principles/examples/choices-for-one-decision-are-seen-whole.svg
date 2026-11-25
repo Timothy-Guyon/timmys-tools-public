@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Choices for one decision are seen whole: an e-reader&#x27;s font sheet</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">An e-reader&#x27;s font sheet</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="80" width="220" height="166" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="135" y="86" width="30" height="4" rx="2" fill="#c7c7cc"/>
+  <text x="54" y="115.5" font-size="14" fill="#1c1c1e">Georgia</text>
+  <line x1="40" y1="125" x2="260" y2="125" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="144.5" font-size="14" fill="#1c1c1e">Palatino</text>
+  <line x1="40" y1="154" x2="260" y2="154" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="173.5" font-size="14" fill="#1c1c1e">Iowan</text>
+  <line x1="40" y1="183" x2="260" y2="183" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="202.5" font-size="14" fill="#1c1c1e">Avenir</text>
+  <line x1="40" y1="212" x2="260" y2="212" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="231.5" font-size="14" fill="#1c1c1e">Charter</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="80" width="220" height="166" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="395" y="86" width="30" height="4" rx="2" fill="#c7c7cc"/>
+  <text x="314" y="115.5" font-size="14" fill="#1c1c1e">Georgia</text>
+  <line x1="300" y1="125" x2="520" y2="125" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="144.5" font-size="14" fill="#1c1c1e">Palatino</text>
+  <line x1="300" y1="154" x2="520" y2="154" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="173.5" font-size="14" fill="#1c1c1e">Iowan</text>
+  <line x1="300" y1="183" x2="520" y2="183" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="202.5" font-size="14" fill="#007aff">More…</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: all five fonts at once</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#d70015">Fail: three, two hidden under More</text>
+</svg>

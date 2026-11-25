@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Three to five in mind, nothing carried: A parcel locker app, opening the locker</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A parcel locker app, opening the locker</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="50" y="60" width="200" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="150" y="81" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Code 482 913</text>
+  <rect x="80" y="102" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="100" y="121.68" font-size="13" text-anchor="middle" fill="#1c1c1e">1</text>
+  <rect x="130" y="102" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="150" y="121.68" font-size="13" text-anchor="middle" fill="#1c1c1e">2</text>
+  <rect x="180" y="102" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="200" y="121.68" font-size="13" text-anchor="middle" fill="#1c1c1e">3</text>
+  <rect x="80" y="138" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="100" y="157.68" font-size="13" text-anchor="middle" fill="#1c1c1e">4</text>
+  <rect x="130" y="138" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="150" y="157.68" font-size="13" text-anchor="middle" fill="#1c1c1e">5</text>
+  <rect x="180" y="138" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="200" y="157.68" font-size="13" text-anchor="middle" fill="#1c1c1e">6</text>
+  <rect x="80" y="174" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="100" y="193.68" font-size="13" text-anchor="middle" fill="#1c1c1e">7</text>
+  <rect x="130" y="174" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="150" y="193.68" font-size="13" text-anchor="middle" fill="#1c1c1e">8</text>
+  <rect x="180" y="174" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="200" y="193.68" font-size="13" text-anchor="middle" fill="#1c1c1e">9</text>
+  <rect x="100" y="214" width="100" height="26" rx="10" fill="#007aff"/>
+  <text x="150" y="230.96" font-size="11" text-anchor="middle" font-weight="600" fill="#ffffff">Open Locker</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="410" y="81" font-size="13" text-anchor="middle" fill="#8e8e93">Enter your code</text>
+  <rect x="340" y="102" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="360" y="121.68" font-size="13" text-anchor="middle" fill="#1c1c1e">1</text>
+  <rect x="390" y="102" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="410" y="121.68" font-size="13" text-anchor="middle" fill="#1c1c1e">2</text>
+  <rect x="440" y="102" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="460" y="121.68" font-size="13" text-anchor="middle" fill="#1c1c1e">3</text>
+  <rect x="340" y="138" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="360" y="157.68" font-size="13" text-anchor="middle" fill="#1c1c1e">4</text>
+  <rect x="390" y="138" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="410" y="157.68" font-size="13" text-anchor="middle" fill="#1c1c1e">5</text>
+  <rect x="440" y="138" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="460" y="157.68" font-size="13" text-anchor="middle" fill="#1c1c1e">6</text>
+  <rect x="340" y="174" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="360" y="193.68" font-size="13" text-anchor="middle" fill="#1c1c1e">7</text>
+  <rect x="390" y="174" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="410" y="193.68" font-size="13" text-anchor="middle" fill="#1c1c1e">8</text>
+  <rect x="440" y="174" width="40" height="30" rx="8" fill="#f2f2f7"/>
+  <text x="460" y="193.68" font-size="13" text-anchor="middle" fill="#1c1c1e">9</text>
+  <rect x="360" y="214" width="100" height="26" rx="10" fill="#007aff"/>
+  <text x="410" y="230.96" font-size="11" text-anchor="middle" font-weight="600" fill="#ffffff">Open Locker</text>
+  <text x="150" y="276" text-anchor="middle" font-size="11" font-weight="600" fill="#248a3d">Pass: code on the same screen as the keypad</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#d70015">Fail: code was on the screen before</text>
+</svg>

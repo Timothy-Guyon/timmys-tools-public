@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Every action is answered at once: A shop&#x27;s product page, Add to Bag tapped</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A shop&#x27;s product page, Add to Bag tapped</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Trainers</text>
+  <text x="250" y="73" font-size="13" text-anchor="end" fill="#007aff">Bag</text>
+  <rect x="54" y="96" width="192" height="84" rx="8" fill="#f2f2f7"/>
+  <text x="150" y="144" font-size="12" text-anchor="middle" fill="#8e8e93">photo</text>
+  <rect x="54" y="194" width="192" height="36" rx="10" fill="#0060cc"/>
+  <text x="150" y="217.04" font-size="14" text-anchor="middle" font-weight="600" fill="#ffffff">Adding…</text>
+  <circle cx="252" cy="58" r="7" fill="#ff3b30"/>
+  <text x="252" y="62" font-size="10" text-anchor="middle" font-weight="600" fill="#fff">1</text>
+  <text x="150" y="242" font-size="10" text-anchor="middle" fill="#248a3d">0.1 s after the tap</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Trainers</text>
+  <text x="510" y="73" font-size="13" text-anchor="end" fill="#007aff">Bag</text>
+  <rect x="314" y="96" width="192" height="84" rx="8" fill="#f2f2f7"/>
+  <text x="410" y="144" font-size="12" text-anchor="middle" fill="#8e8e93">photo</text>
+  <rect x="314" y="194" width="192" height="36" rx="10" fill="#007aff"/>
+  <text x="410" y="217.04" font-size="14" text-anchor="middle" font-weight="600" fill="#ffffff">Add to Bag</text>
+  <text x="410" y="242" font-size="10" text-anchor="middle" fill="#d70015">2 s after the tap: unchanged</text>
+  <text x="150" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#248a3d">Pass: pressed and Adding… within 0.1 s</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#d70015">Fail: nothing shows for two seconds</text>
+</svg>

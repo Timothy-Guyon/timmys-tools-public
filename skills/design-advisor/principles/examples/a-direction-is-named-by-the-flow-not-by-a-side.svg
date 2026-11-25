@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A direction is named by the flow, not by a side: A mail app&#x27;s message screen in Arabic</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A mail app&#x27;s message screen in Arabic</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">البريد</text>
+  <text x="250" y="73" font-size="18" text-anchor="end" fill="#007aff">›</text>
+  <line x1="246" y1="110" x2="100" y2="110" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="246" y1="130" x2="120" y2="130" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="246" y1="150" x2="140" y2="150" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="246" y1="170" x2="160" y2="170" stroke="#d1d1d6" stroke-width="6"/>
+  <text x="150" y="230" font-size="11" text-anchor="middle" fill="#8e8e93">text reads right to left ←</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">البريد</text>
+  <text x="310" y="73" font-size="18" fill="#007aff">‹</text>
+  <line x1="506" y1="110" x2="360" y2="110" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="506" y1="130" x2="380" y2="130" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="506" y1="150" x2="400" y2="150" stroke="#d1d1d6" stroke-width="6"/>
+  <line x1="506" y1="170" x2="420" y2="170" stroke="#d1d1d6" stroke-width="6"/>
+  <text x="410" y="230" font-size="11" text-anchor="middle" fill="#8e8e93">text reads right to left ←</text>
+  <text x="150" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#248a3d">Pass: Back on the right, pointing right</text>
+  <text x="410" y="276" text-anchor="middle" font-size="13" font-weight="600" fill="#d70015">Fail: Back on the left, pointing left</text>
+</svg>

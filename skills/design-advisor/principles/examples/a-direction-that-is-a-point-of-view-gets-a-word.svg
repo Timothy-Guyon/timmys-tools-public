@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A direction that is a point of view gets a word: A calendar app&#x27;s week header</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A calendar app&#x27;s week header</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="150" y="80" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">3 – 9 Nov</text>
+  <text x="54" y="112" font-size="12" fill="#007aff">‹ Previous week</text>
+  <text x="246" y="112" font-size="12" text-anchor="end" fill="#007aff">Next week ›</text>
+  <rect x="50" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="79" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="108" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="137" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="166" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="195" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="224" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="410" y="80" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">3 – 9 Nov</text>
+  <text x="320" y="84" font-size="18" fill="#007aff">←</text>
+  <text x="500" y="84" font-size="18" text-anchor="end" fill="#007aff">→</text>
+  <rect x="310" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="339" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="368" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="397" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="426" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="455" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <rect x="484" y="130" width="25" height="80" rx="4" fill="#f2f2f7"/>
+  <text x="150" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#248a3d">Pass: Previous week and Next week</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: two bare arrows</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A tap acts when the finger lifts: A video call: End call pressed, thumb slid off</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A video call: End call pressed, thumb slid off</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#2c2c2e"/>
+  <rect x="120" y="190" width="60" height="36" rx="18" fill="#ff3b30"/>
+  <text x="150" y="212.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">End</text>
+  <circle cx="200" cy="200" r="14" fill="rgb(255 255 255 / 0.35)"/>
+  <path transform="translate(40 50)" d="M110 158 L150 150" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="150" y="110" font-size="14" text-anchor="middle" font-weight="600" fill="#ffffff">Call with Sam</text>
+  <text x="150" y="130" font-size="12" text-anchor="middle" fill="#aeaeb2">12:04</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#2c2c2e"/>
+  <rect x="380" y="190" width="60" height="36" rx="18" fill="#ff3b30"/>
+  <text x="410" y="212.32" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff">End</text>
+  <circle cx="460" cy="200" r="14" fill="rgb(255 255 255 / 0.35)"/>
+  <path transform="translate(300 50)" d="M110 158 L150 150" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="410" y="110" font-size="14" text-anchor="middle" font-weight="600" fill="#ff6961">Call ended</text>
+  <text x="410" y="130" font-size="12" text-anchor="middle" fill="#aeaeb2"></text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: call keeps running</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: call ended at first touch</text>
+</svg>

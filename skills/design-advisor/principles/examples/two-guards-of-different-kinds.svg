@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Two guards of different kinds: A cloud drive&#x27;s folder list</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A cloud drive&#x27;s folder list</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">My Drive</text>
+  <text x="54" y="113" font-size="14" fill="#1c1c1e">Taxes 2025</text>
+  <line x1="40" y1="126" x2="260" y2="126" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="149" font-size="14" fill="#1c1c1e">Photos</text>
+  <line x1="40" y1="162" x2="260" y2="162" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="140" y="110" width="112" height="58" rx="8" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="150" y="130" font-size="12" fill="#1c1c1e">Open</text>
+  <line x1="140" y1="138" x2="252" y2="138" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="156" font-size="12" fill="#ff3b30">Delete Folder</text>
+  <text x="54" y="200" font-size="11" fill="#248a3d">Bin keeps it 30 days</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">My Drive</text>
+  <text x="314" y="113" font-size="14" fill="#1c1c1e">Taxes 2025</text>
+  <line x1="300" y1="126" x2="520" y2="126" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="149" font-size="14" fill="#1c1c1e">Photos</text>
+  <line x1="300" y1="162" x2="520" y2="162" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <rect x="440" y="90" width="80" height="36" fill="#ff3b30"/>
+  <text x="480" y="113" font-size="12" text-anchor="middle" font-weight="600" fill="#fff">Delete</text>
+  <text x="314" y="200" font-size="11" fill="#d70015">Erased at once</text>
+  <text x="150" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#248a3d">Pass: Delete in a menu, and 30 days in Bin</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: one swipe erases at once</text>
+</svg>

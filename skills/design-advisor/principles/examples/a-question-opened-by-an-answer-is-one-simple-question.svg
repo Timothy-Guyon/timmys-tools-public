@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A question opened by an answer is one simple question: A parcel app: Leave with a neighbour chosen</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A parcel app: Leave with a neighbour chosen</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <circle cx="64" cy="70" r="9" fill="#007aff"/>
+  <path transform="translate(40 50)" d="M20 20 l3 3 l5 -6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="75" font-size="12" fill="#1c1c1e">Leave with a neighbour</text>
+  <text x="70" y="96" font-size="11" fill="#8e8e93">Neighbour&#x27;s house number</text>
+  <rect x="70" y="101" width="176" height="30" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <circle cx="324" cy="70" r="9" fill="#007aff"/>
+  <path transform="translate(300 50)" d="M20 20 l3 3 l5 -6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="340" y="75" font-size="12" fill="#1c1c1e">Leave with a neighbour</text>
+  <text x="330" y="92" font-size="11" fill="#8e8e93">Neighbour&#x27;s name</text>
+  <rect x="330" y="97" width="176" height="22" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="330" y="134" font-size="11" fill="#8e8e93">House number</text>
+  <rect x="330" y="139" width="176" height="22" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="330" y="176" font-size="11" fill="#8e8e93">Phone</text>
+  <rect x="330" y="181" width="176" height="22" rx="6" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <circle cx="338" cy="228" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="354" y="232" font-size="11" fill="#1c1c1e">I have their consent</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: one field, house number</text>
+  <text x="410" y="276" text-anchor="middle" font-size="13" font-weight="600" fill="#d70015">Fail: name, number, phone and consent</text>
+</svg>

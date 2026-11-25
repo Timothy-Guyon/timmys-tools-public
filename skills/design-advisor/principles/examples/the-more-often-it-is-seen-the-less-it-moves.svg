@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The more often it is seen, the less it moves: A calculator key pressed, animated</title>
+  <desc>Animated, 4-second loop. The 7 key is tapped. Left: the key darkens and 7 shows in the display at once. Right: the 7 floats from the key to the display over 0.4 s.</desc>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A calculator key pressed, animated</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#1c1c1e"/>
+  <rect x="60" y="170" width="52" height="52" rx="26" fill="#3a3a3c"><animate attributeName="fill" values="#3a3a3c;#3a3a3c;#8e8e93;#3a3a3c;#3a3a3c" keyTimes="0;0.25;0.26;0.32;1" dur="4s" repeatCount="indefinite"/></rect><text x="86" y="202" font-size="18" text-anchor="middle" fill="#fff">7</text>
+  <rect x="124" y="170" width="52" height="52" rx="26" fill="#3a3a3c"></rect><text x="150" y="202" font-size="18" text-anchor="middle" fill="#fff">8</text>
+  <rect x="188" y="170" width="52" height="52" rx="26" fill="#3a3a3c"></rect><text x="214" y="202" font-size="18" text-anchor="middle" fill="#fff">9</text>
+  <text x="246" y="110" font-size="36" text-anchor="end" fill="#fff" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.25;0.26;0.95;1" dur="4s" repeatCount="indefinite"/>7</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#1c1c1e"/>
+  <rect x="320" y="170" width="52" height="52" rx="26" fill="#3a3a3c"></rect><text x="346" y="202" font-size="18" text-anchor="middle" fill="#fff">7</text>
+  <rect x="384" y="170" width="52" height="52" rx="26" fill="#3a3a3c"></rect><text x="410" y="202" font-size="18" text-anchor="middle" fill="#fff">8</text>
+  <rect x="448" y="170" width="52" height="52" rx="26" fill="#3a3a3c"></rect><text x="474" y="202" font-size="18" text-anchor="middle" fill="#fff">9</text>
+  <text font-size="36" text-anchor="end" fill="#fff" opacity="0" x="506" y="110"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.25;0.26;0.95;1" dur="4s" repeatCount="indefinite"/><animate attributeName="x" values="356;356;506;506" keyTimes="0;0.25;0.35;1" dur="4s" repeatCount="indefinite"/><animate attributeName="y" values="208;208;110;110" keyTimes="0;0.25;0.35;1" dur="4s" repeatCount="indefinite"/>7</text>
+  <text x="150" y="276" text-anchor="middle" font-size="12" font-weight="600" fill="#248a3d">Pass: key darkens, digit appears at once</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: digit flies up over 0.4 s</text>
+</svg>

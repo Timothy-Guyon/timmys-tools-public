@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>No pair the colour-blind cannot split: A share-trading app&#x27;s price list</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A share-trading app&#x27;s price list</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Prices</text>
+  <text x="54" y="112" font-size="14" fill="#1c1c1e">Acme</text>
+  <text x="246" y="112" font-size="13" text-anchor="end" fill="#0a63c9">+2.1%</text>
+  <line x1="40" y1="124" x2="260" y2="124" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="146" font-size="14" fill="#1c1c1e">Birch</text>
+  <text x="246" y="146" font-size="13" text-anchor="end" fill="#e07b00">−1.4%</text>
+  <line x1="40" y1="158" x2="260" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="180" font-size="14" fill="#1c1c1e">Cobalt</text>
+  <text x="246" y="180" font-size="13" text-anchor="end" fill="#0a63c9">+0.6%</text>
+  <line x1="40" y1="192" x2="260" y2="192" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Prices</text>
+  <text x="314" y="112" font-size="14" fill="#1c1c1e">Acme</text>
+  <text x="506" y="112" font-size="13" text-anchor="end" fill="#1b6e2a">+2.1%</text>
+  <line x1="300" y1="124" x2="520" y2="124" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="146" font-size="14" fill="#1c1c1e">Birch</text>
+  <text x="506" y="146" font-size="13" text-anchor="end" fill="#8b1a1a">−1.4%</text>
+  <line x1="300" y1="158" x2="520" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="314" y="180" font-size="14" fill="#1c1c1e">Cobalt</text>
+  <text x="506" y="180" font-size="13" text-anchor="end" fill="#1b6e2a">+0.6%</text>
+  <line x1="300" y1="192" x2="520" y2="192" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#248a3d">Pass: rising blue, falling orange</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: dark green and dark red</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The machine&#x27;s objects stay inside: A notes app&#x27;s note menu</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A notes app&#x27;s note menu</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="70" y="70" width="160" height="68" rx="10" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="84" y="92" font-size="13" fill="#1c1c1e">Move to Folder</text>
+  <line x1="70" y1="104" x2="230" y2="104" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="84" y="126" font-size="13" fill="#1c1c1e">Share</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="330" y="70" width="160" height="136" rx="10" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="344" y="92" font-size="13" fill="#1c1c1e">Move to Folder</text>
+  <line x1="330" y1="104" x2="490" y2="104" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="344" y="126" font-size="13" fill="#1c1c1e">Share</text>
+  <line x1="330" y1="138" x2="490" y2="138" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="344" y="160" font-size="13" fill="#d70015">Reindex Database</text>
+  <line x1="330" y1="172" x2="490" y2="172" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="344" y="194" font-size="13" fill="#d70015">Flush Cache</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: Move to Folder and Share</text>
+  <text x="410" y="276" text-anchor="middle" font-size="12" font-weight="600" fill="#d70015">Fail: also Reindex Database, Flush Cache</text>
+</svg>

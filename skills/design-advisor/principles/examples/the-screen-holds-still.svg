@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The screen holds still: A to-do app, a task just ticked</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A to-do app, a task just ticked</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Today</text>
+  <circle cx="64" cy="107" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="82" y="112" font-size="13" fill="#1c1c1e">Call bank</text>
+  <line x1="40" y1="124" x2="260" y2="124" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="64" cy="141" r="9" fill="#8e8e93"/>
+  <path transform="translate(40 50)" d="M20 91 l3 3 l5 -6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="82" y="146" font-size="13" fill="#8e8e93">Buy stamps</text>
+  <line x1="82" y1="141" x2="148" y2="141" stroke="#8e8e93" stroke-width="1"/>
+  <line x1="40" y1="158" x2="260" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="64" cy="175" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="82" y="180" font-size="13" fill="#1c1c1e">Book dentist</text>
+  <line x1="40" y1="192" x2="260" y2="192" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="64" cy="209" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="82" y="214" font-size="13" fill="#1c1c1e">Water plants</text>
+  <line x1="40" y1="226" x2="260" y2="226" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Today</text>
+  <circle cx="324" cy="107" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="342" y="112" font-size="13" fill="#1c1c1e">Call bank</text>
+  <line x1="300" y1="124" x2="520" y2="124" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="324" cy="141" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="342" y="146" font-size="13" fill="#1c1c1e">Book dentist</text>
+  <line x1="300" y1="158" x2="520" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="324" cy="175" r="9" fill="none" stroke="#c7c7cc" stroke-width="1.5"/>
+  <text x="342" y="180" font-size="13" fill="#1c1c1e">Water plants</text>
+  <line x1="300" y1="192" x2="520" y2="192" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <circle cx="324" cy="209" r="9" fill="#8e8e93"/>
+  <path transform="translate(300 50)" d="M20 159 l3 3 l5 -6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="342" y="214" font-size="13" fill="#8e8e93">Buy stamps</text>
+  <line x1="342" y1="209" x2="408" y2="209" stroke="#8e8e93" stroke-width="1"/>
+  <line x1="300" y1="226" x2="520" y2="226" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="236" font-size="11" text-anchor="middle" fill="#d70015">↕ every row moved</text>
+  <text x="150" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#248a3d">Pass: struck through where it sits</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#d70015">Fail: the list re-sorts and jumps</text>
+</svg>

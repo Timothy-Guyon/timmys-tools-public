@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Motion follows the hand and shows where things went: A notification panel being closed, animated</title>
+  <desc>Animated, 4-second loop. Left: the panel slides up off the top. Right: the panel shrinks into the middle and fades.</desc>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A notification panel being closed, animated</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <clipPath id="cp221"><rect x="40" y="50" width="220" height="196" rx="14"/></clipPath>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#e5e5ea"/>
+  <g clip-path="url(#cp221)"><g transform="translate(150 148)"><g><animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -200;0 -200" keyTimes="0;0.3;0.45;1" dur="4s" repeatCount="indefinite"/><rect x="-110" y="-98" width="220" height="196" fill="rgb(60 60 67 / 0.88)"/><rect x="-98" y="-80" width="196" height="40" rx="10" fill="rgb(255 255 255 / 0.25)"/><rect x="-98" y="-32" width="196" height="40" rx="10" fill="rgb(255 255 255 / 0.25)"/></g></g></g>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <clipPath id="cf221"><rect x="300" y="50" width="220" height="196" rx="14"/></clipPath>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#e5e5ea"/>
+  <g clip-path="url(#cf221)"><g transform="translate(410 148)"><g><animateTransform attributeName="transform" type="scale" values="1;1;0.2;0.2" keyTimes="0;0.3;0.45;1" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.3;0.45;1" dur="4s" repeatCount="indefinite"/><rect x="-110" y="-98" width="220" height="196" fill="rgb(60 60 67 / 0.88)"/><rect x="-98" y="-80" width="196" height="40" rx="10" fill="rgb(255 255 255 / 0.25)"/><rect x="-98" y="-32" width="196" height="40" rx="10" fill="rgb(255 255 255 / 0.25)"/></g></g></g>
+  <text x="150" y="276" text-anchor="middle" font-size="13.5" font-weight="600" fill="#248a3d">Pass: slides back up the way it came</text>
+  <text x="410" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#d70015">Fail: shrinks into the centre and fades</text>
+</svg>

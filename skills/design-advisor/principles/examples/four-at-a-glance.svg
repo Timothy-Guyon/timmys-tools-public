@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Four at a glance: A pharmacy app&#x27;s tablet tracker, seven left</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A pharmacy app&#x27;s tablet tracker, seven left</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Tablets left</text>
+  <circle cx="70" cy="140" r="7" fill="#007aff"/>
+  <circle cx="90" cy="140" r="7" fill="#007aff"/>
+  <circle cx="110" cy="140" r="7" fill="#007aff"/>
+  <circle cx="130" cy="140" r="7" fill="#007aff"/>
+  <circle cx="164" cy="140" r="7" fill="#007aff"/>
+  <circle cx="184" cy="140" r="7" fill="#007aff"/>
+  <circle cx="204" cy="140" r="7" fill="#007aff"/>
+  <text x="246" y="146" font-size="18" text-anchor="end" font-weight="600" fill="#1c1c1e">7</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Tablets left</text>
+  <circle cx="330" cy="140" r="7" fill="#007aff"/>
+  <circle cx="350" cy="140" r="7" fill="#007aff"/>
+  <circle cx="370" cy="140" r="7" fill="#007aff"/>
+  <circle cx="390" cy="140" r="7" fill="#007aff"/>
+  <circle cx="410" cy="140" r="7" fill="#007aff"/>
+  <circle cx="430" cy="140" r="7" fill="#007aff"/>
+  <circle cx="450" cy="140" r="7" fill="#007aff"/>
+  <text x="150" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#248a3d">Pass: a group of four and three, with 7</text>
+  <text x="410" y="276" text-anchor="middle" font-size="13.5" font-weight="600" fill="#d70015">Fail: seven dots in a row, no number</text>
+</svg>

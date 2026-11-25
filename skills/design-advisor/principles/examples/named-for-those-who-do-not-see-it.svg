@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>Named for those who do not see it: A music app&#x27;s toolbar with a screen reader on</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A music app&#x27;s toolbar with a screen reader on</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="170" width="220" height="50" fill="#f2f2f7"/>
+  <circle cx="95" cy="195" r="16" fill="#fff"/>
+  <text x="95" y="201" font-size="14" text-anchor="middle" fill="#1c1c1e">▶</text>
+  <circle cx="150" cy="195" r="16" fill="#fff"/>
+  <text x="150" y="201" font-size="14" text-anchor="middle" fill="#1c1c1e">⏭</text>
+  <circle cx="205" cy="195" r="16" fill="#fff"/>
+  <text x="205" y="201" font-size="14" text-anchor="middle" fill="#1c1c1e">⤮</text>
+  <text x="95" y="146" font-size="11" text-anchor="middle" font-style="italic" fill="#248a3d">“Play”</text>
+  <text x="150" y="146" font-size="11" text-anchor="middle" font-style="italic" fill="#248a3d">“Next”</text>
+  <text x="205" y="146" font-size="11" text-anchor="middle" font-style="italic" fill="#248a3d">“Shuffle”</text>
+  <text x="150" y="90" font-size="12" text-anchor="middle" fill="#8e8e93">Screen reader on</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="170" width="220" height="50" fill="#f2f2f7"/>
+  <circle cx="355" cy="195" r="16" fill="#fff"/>
+  <text x="355" y="201" font-size="14" text-anchor="middle" fill="#1c1c1e">▶</text>
+  <circle cx="410" cy="195" r="16" fill="#fff"/>
+  <text x="410" y="201" font-size="14" text-anchor="middle" fill="#1c1c1e">⏭</text>
+  <circle cx="465" cy="195" r="16" fill="#fff"/>
+  <text x="465" y="201" font-size="14" text-anchor="middle" fill="#1c1c1e">⤮</text>
+  <text x="355" y="146" font-size="11" text-anchor="middle" font-style="italic" fill="#d70015">“button”</text>
+  <text x="410" y="146" font-size="11" text-anchor="middle" font-style="italic" fill="#d70015">“button”</text>
+  <text x="465" y="146" font-size="11" text-anchor="middle" font-style="italic" fill="#d70015">“button”</text>
+  <text x="410" y="90" font-size="12" text-anchor="middle" fill="#8e8e93">Screen reader on</text>
+  <text x="150" y="276" text-anchor="middle" font-size="14.5" font-weight="600" fill="#248a3d">Pass: read as Play, Next, Shuffle</text>
+  <text x="410" y="276" text-anchor="middle" font-size="13.5" font-weight="600" fill="#d70015">Fail: read as button, button, button</text>
+</svg>

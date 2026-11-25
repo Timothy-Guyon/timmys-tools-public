@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The answer lands at the tap: A clothing shop&#x27;s product page, Add to Bag tapped</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A clothing shop&#x27;s product page, Add to Bag tapped</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="54" y="64" width="192" height="80" rx="8" fill="#f2f2f7"/>
+  <text x="54" y="166" font-size="14" font-weight="600" fill="#1c1c1e">Linen shirt</text>
+  <text x="246" y="166" font-size="14" text-anchor="end" fill="#1c1c1e">£35</text>
+  <rect x="54" y="200" width="192" height="34" rx="10" fill="#34c759"/>
+  <text x="150" y="222.04" font-size="14" text-anchor="middle" font-weight="600" fill="#ffffff">✓ Added to Bag</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="314" y="64" width="192" height="80" rx="8" fill="#f2f2f7"/>
+  <text x="314" y="166" font-size="14" font-weight="600" fill="#1c1c1e">Linen shirt</text>
+  <text x="506" y="166" font-size="14" text-anchor="end" fill="#1c1c1e">£35</text>
+  <text x="314" y="184" font-size="11" fill="#248a3d">Added to bag</text>
+  <rect x="314" y="200" width="192" height="34" rx="10" fill="#007aff"/>
+  <text x="410" y="222.04" font-size="14" text-anchor="middle" font-weight="600" fill="#ffffff">Add to Bag</text>
+  <rect x="308" y="172" width="90" height="18" rx="4" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="150" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#248a3d">Pass: the button reads Added to Bag</text>
+  <text x="410" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#d70015">Fail: note appears far above, by the price</text>
+</svg>

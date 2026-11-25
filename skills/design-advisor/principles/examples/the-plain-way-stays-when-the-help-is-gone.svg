@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>The plain way stays when the help is gone: A photo app&#x27;s search on a phone that can&#x27;t run it</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A photo app&#x27;s search on a phone that can&#x27;t run it</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Search</text>
+  <text x="54" y="112" font-size="14" fill="#1c1c1e">By date</text>
+  <text x="246" y="112" font-size="13" text-anchor="end" fill="#8e8e93">›</text>
+  <line x1="40" y1="124" x2="260" y2="124" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="146" font-size="14" fill="#1c1c1e">By place</text>
+  <text x="246" y="146" font-size="13" text-anchor="end" fill="#8e8e93">›</text>
+  <line x1="40" y1="158" x2="260" y2="158" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="54" y="180" font-size="14" fill="#1c1c1e">By album</text>
+  <text x="246" y="180" font-size="13" text-anchor="end" fill="#8e8e93">›</text>
+  <line x1="40" y1="192" x2="260" y2="192" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Search</text>
+  <text x="410" y="160" font-size="12" text-anchor="middle" fill="#8e8e93">Not supported on this device</text>
+  <text x="150" y="276" text-anchor="middle" font-size="11.5" font-weight="600" fill="#248a3d">Pass: still finds by date, place and album</text>
+  <text x="410" y="276" text-anchor="middle" font-size="12.5" font-weight="600" fill="#d70015">Fail: just Not supported on this device</text>
+</svg>

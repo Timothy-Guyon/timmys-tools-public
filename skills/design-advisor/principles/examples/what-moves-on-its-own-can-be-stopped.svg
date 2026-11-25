@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>What moves on its own can be stopped: A shopping app&#x27;s offers carousel</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A shopping app&#x27;s offers carousel</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M40 86 V64 a14 14 0 0 1 14 -14 H246 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="40" y1="86" x2="260" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="150" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Home</text>
+  <rect x="54" y="96" width="192" height="100" rx="10" fill="#ffd60a"/>
+  <text x="150" y="150" font-size="16" text-anchor="middle" font-weight="600" fill="#1c1c1e">20% off shoes</text>
+  <circle cx="136" cy="210" r="4" fill="#1c1c1e"/>
+  <circle cx="150" cy="210" r="4" fill="#d1d1d6"/>
+  <circle cx="164" cy="210" r="4" fill="#d1d1d6"/>
+  <text x="150" y="230" font-size="10" text-anchor="middle" fill="#8e8e93">next in 4 s</text>
+  <circle cx="230" cy="180" r="11" fill="rgb(0 0 0 / 0.6)"/>
+  <text x="230" y="184" font-size="9" text-anchor="middle" fill="#fff">❚❚</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <path d="M300 86 V64 a14 14 0 0 1 14 -14 H506 a14 14 0 0 1 14 14 V86 Z" fill="#f9f9f9"/>
+  <line x1="300" y1="86" x2="520" y2="86" stroke="rgb(0 0 0 / 0.12)" stroke-width="1"/>
+  <text x="410" y="73" font-size="14" text-anchor="middle" font-weight="600" fill="#1c1c1e">Home</text>
+  <rect x="314" y="96" width="192" height="100" rx="10" fill="#ffd60a"/>
+  <text x="410" y="150" font-size="16" text-anchor="middle" font-weight="600" fill="#1c1c1e">20% off shoes</text>
+  <circle cx="396" cy="210" r="4" fill="#1c1c1e"/>
+  <circle cx="410" cy="210" r="4" fill="#d1d1d6"/>
+  <circle cx="424" cy="210" r="4" fill="#d1d1d6"/>
+  <text x="410" y="230" font-size="10" text-anchor="middle" fill="#8e8e93">next in 4 s</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: a Pause button on it</text>
+  <text x="410" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#d70015">Fail: keeps moving, no way to stop</text>
+</svg>

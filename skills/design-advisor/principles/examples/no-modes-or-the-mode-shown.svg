@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>No modes, or the mode shown: A drawing app with the eraser chosen</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A drawing app with the eraser chosen</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="200" width="220" height="46" fill="#f2f2f7"/>
+  <rect x="80" y="208" width="64" height="28" rx="10" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="112" y="226.32" font-size="12" text-anchor="middle" fill="#1c1c1e">Pen</text>
+  <rect x="160" y="208" width="64" height="28" rx="10" fill="#007aff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="192" y="226.32" font-size="12" text-anchor="middle" fill="#fff">Eraser</text>
+  <path transform="translate(40 50)" d="M20 60 C60 20 100 100 150 50" fill="none" stroke="#1c1c1e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="160" y="130" width="26" height="16" rx="3" fill="#ffb3c1" stroke="#1c1c1e" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="200" width="220" height="46" fill="#f2f2f7"/>
+  <rect x="340" y="208" width="64" height="28" rx="10" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="372" y="226.32" font-size="12" text-anchor="middle" fill="#1c1c1e">Pen</text>
+  <rect x="420" y="208" width="64" height="28" rx="10" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="452" y="226.32" font-size="12" text-anchor="middle" fill="#1c1c1e">Eraser</text>
+  <path transform="translate(300 50)" d="M20 60 C60 20 100 100 150 50" fill="none" stroke="#1c1c1e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="433" cy="138" r="3" fill="#1c1c1e"/>
+  <text x="150" y="276" text-anchor="middle" font-size="13" font-weight="600" fill="#248a3d">Pass: eraser lit, cursor is an eraser</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: looks the same as pen</text>
+</svg>

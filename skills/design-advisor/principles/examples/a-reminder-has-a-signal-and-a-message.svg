@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>A reminder has a signal and a message: A pharmacy app&#x27;s 8am medicine reminder</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A pharmacy app&#x27;s 8am medicine reminder</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#3a4a6b" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="150" y="90" font-size="30" text-anchor="middle" font-weight="600" fill="#fff">8:00</text>
+  <rect x="50" y="118" width="200" height="60" rx="12" fill="rgb(255 255 255 / 0.85)"/>
+  <text x="60" y="138" font-size="10" fill="#8e8e93">PHARMACY · now</text>
+  <text x="60" y="158" font-size="13" font-weight="600" fill="#1c1c1e">Take 1 blood pressure</text>
+  <text x="60" y="172" font-size="13" font-weight="600" fill="#1c1c1e">tablet</text>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#3a4a6b" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="410" y="90" font-size="30" text-anchor="middle" font-weight="600" fill="#fff">8:00</text>
+  <rect x="310" y="118" width="200" height="60" rx="12" fill="rgb(255 255 255 / 0.85)"/>
+  <text x="320" y="138" font-size="10" fill="#8e8e93">PHARMACY · now</text>
+  <text x="320" y="160" font-size="13" font-weight="600" fill="#1c1c1e">Reminder</text>
+  <text x="150" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#248a3d">Pass: says what to take</text>
+  <text x="410" y="276" text-anchor="middle" font-size="15" font-weight="600" fill="#d70015">Fail: says only Reminder</text>
+</svg>

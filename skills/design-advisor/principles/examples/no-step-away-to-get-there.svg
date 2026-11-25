@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <title>No step away to get there: A slideshow app: start slide numbers at 5</title>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#1c1c1e">A slideshow app: start slide numbers at 5</text>
+  <!-- Pass -->
+  <rect x="40" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="50" y="60" width="200" height="112" rx="6" fill="#f2f2f7"/>
+  <text x="150" y="120" font-size="16" text-anchor="middle" fill="#8e8e93">Slide</text>
+  <text x="236" y="162" font-size="12" text-anchor="end" fill="#8e8e93">1</text>
+  <rect x="136" y="176" width="114" height="58" rx="8" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <text x="144" y="196" font-size="11" font-weight="600" fill="#1c1c1e">Format numbers</text>
+  <text x="144" y="218" font-size="11" fill="#1c1c1e">Start at</text>
+  <rect x="198" y="205" width="42" height="20" rx="4" fill="#ffffff" stroke="#007aff" stroke-width="1"/>
+  <text x="219" y="219" font-size="12" text-anchor="middle" fill="#1c1c1e">5</text>
+  <line x1="236" y1="166" x2="220" y2="176" stroke="#007aff" stroke-width="1"/>
+  <!-- Fail -->
+  <rect x="300" y="50" width="220" height="196" rx="14" fill="#ffffff" stroke="#c7c7cc" stroke-width="1"/>
+  <rect x="310" y="60" width="200" height="112" rx="6" fill="#f2f2f7"/>
+  <text x="410" y="120" font-size="16" text-anchor="middle" fill="#8e8e93">Slide</text>
+  <text x="496" y="162" font-size="12" text-anchor="end" fill="#8e8e93">1</text>
+  <text x="314" y="196" font-size="12" font-weight="600" fill="#1c1c1e">Insert</text>
+  <text x="324" y="214" font-size="12" fill="#007aff">Insert Slide Numbers…</text>
+  <text x="324" y="232" font-size="12" fill="#8e8e93">Start at: 1</text>
+  <rect x="318" y="202" width="150" height="38" rx="8" fill="none" stroke="#d70015" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="150" y="276" text-anchor="middle" font-size="13" font-weight="600" fill="#248a3d">Pass: the setting sits by the numbers</text>
+  <text x="410" y="276" text-anchor="middle" font-size="13" font-weight="600" fill="#d70015">Fail: only under Insert Slide Numbers</text>
+</svg>
