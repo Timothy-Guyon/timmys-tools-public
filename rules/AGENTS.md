@@ -17,7 +17,23 @@ Each rule says what to do, why, and where it came from. Only Timmy adds, changes
 ### Shaping and explaining
 
 1. **Ask before drafting.** Shape a problem with Timmy before writing anything: one question at a time, the premise before the options, each with a recommendation. No draft or repo change until he says the shaping is done. *Since 2026-10-21, when he stopped a thread that started drafting too early.*
-2. **Keep it simple.** Use everyday words and whole sentences, one idea at a time. *Since 2026-10-21, when he twice asked to "restate more simply"; reworded 2026-11-19: "It's supposed to be simple, not short".*
+2. **Keep it simple: one idea, in this order.** Use everyday words and whole sentences. When explaining a change, a finding or a question, go in this order:
+   1. Start from Timmy's own words, or from an example out of his own life or work.
+   2. Say the one change in one sentence, on that one example.
+   3. End with the ask, and only one.
+
+   Leave out counts, totals and the project's own terms until he knows what changed. When a word belongs to the project (a name a thread made up, or a term from its code or records), say what it means in everyday words, or use the everyday word instead.
+
+   Not this: "Today the form asks 40 questions in all; the best order asks 36. For a booking it asks the date (Tuesday), then whether it's a weekday (yes), then the time (9 am), and 4 of 12 forms do this. Change the order?"
+
+   This instead: "For a booking, the form asks:
+   1. Which date? Tuesday.
+   2. Is it a weekday? Yes.
+   3. What time? 9 am.
+
+   The second question is wasted, because the date already answers it. Should the form skip it when the date is known?"
+
+   *Since 2026-10-21, when he twice asked to "restate more simply"; reworded 2026-11-19: "It's supposed to be simple, not short"; the order added 2026-11-25, when he said "I don't grok" or "restate more simply" seventeen times in five days, across three projects, about replies that were dense, used a project's own terms, or carried several ideas at once.*
 3. **Say what a thing is the first time you name it.** That goes for names a thread made up too. *Since 2026-10-22, when he didn't recognise "the roster", and 2026-11-17: "what are "guides"?"*
 4. **Say "decision", not "call",** for what Timmy decides ("ruling" also works). *Since 2026-10-22: "call" is ambiguous in software.*
 5. **Examples are examples.** Present them as illustrations, not as the full list. *Since 2026-10-22.*
