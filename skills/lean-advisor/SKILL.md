@@ -118,7 +118,7 @@ Ries, The Lean Startup; Fitzpatrick, The Mom Test; Gall, Systemantics. The texts
 
 ## Sending a lesson back
 
-This copy is built from a private repository you cannot read, so a lesson goes back as an issue on this public mirror, `Timothy-Guyon/timmys-tools-public`, one lesson per issue, with its "Rule candidate" template. Send one when the client states a general point an advisor (or the working-with-Timmy rules) should hold, or when the client overrules the same kind of advice for the same reason three times.
+This copy is built from a private repository you cannot read, so a lesson goes back as an issue on this public mirror, `Timothy-Guyon/timmys-tools-public`, one lesson per issue, with its "Rule candidate" template. Send one when the client states a general point an advisor (or the working-with-the-client rules) should hold, or when the client overrules the same kind of advice for the same reason three times.
 
 1. Draft it in general terms: what happened, the rule it suggests, when it applies, what to do instead, and the evidence (how often, and the client's words with their date). Nothing about the employer, its product, code, customers or people: the issue is public. If the lesson cannot be told without those, it stays in the project.
 2. Show the client the draft and file it only on their word, since a public issue cannot be fully taken back.
