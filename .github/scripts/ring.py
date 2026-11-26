@@ -15,7 +15,7 @@ Two Actions secrets on the repository name the task:
 No secrets, no ring: a copy or fork of the repository rings nobody.
 Knows no harness beyond one HTTP POST; swap ring() to ring something else.
 """
-import json, os, re, sys, urllib.request
+import json, os, re, sys, urllib.error, urllib.request
 
 FIRE = "https://api.anthropic.com/v1/claude_code/routines/%s/fire"
 
@@ -33,9 +33,30 @@ def message(event, repo):
 
 
 def ring(url, token, text):
+    """Fire the task with the line. On a 403, print why the API refused, then
+    fire once more without the text: the task then finds the new submission
+    itself (TASK.md). If that also fails, the key or URL is wrong."""
+    try:
+        fire(url, token, {"text": text})
+    except urllib.error.HTTPError as e:
+        if e.code != 403:
+            raise
+        print("ring: 403 with text: %s; ringing without it" % why(e))
+        fire(url, token, {})
+
+
+def why(e):
+    """The API's own reason for an HTTP error, cut short; it holds no secret."""
+    try:
+        return e.read(400).decode("utf-8", "replace").strip() or str(e)
+    except Exception:
+        return str(e)
+
+
+def fire(url, token, body):
     if url.startswith("trig_"):
         url = FIRE % url
-    req = urllib.request.Request(url, data=json.dumps({"text": text}).encode(), method="POST", headers={
+    req = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST", headers={
         "Authorization": "Bearer " + token,
         "anthropic-version": "2023-06-01",
         "anthropic-beta": "experimental-cc-routine-2026-04-01",
@@ -62,7 +83,8 @@ def main():
     try:
         ring(url, token, text)
     except Exception as e:  # never retried: a task can't tell a repeat ring apart
-        print("ring: %s" % e, file=sys.stderr)
+        detail = why(e) if isinstance(e, urllib.error.HTTPError) else e
+        print("ring: %s: %s" % (e, detail), file=sys.stderr)
         return 1
     print("ring: " + text)
     return 0
