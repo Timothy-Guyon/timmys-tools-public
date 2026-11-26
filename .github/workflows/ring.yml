@@ -1,0 +1,29 @@
+# Rings the maintainers' scheduled task when someone opens an issue or a pull
+# request here, so a submission is read the day it comes in. The ring is
+# .github/scripts/ring.py; it needs the Actions secrets SUBMISSIONS_URL and
+# SUBMISSIONS_TOKEN and does nothing without them, so a fork rings nobody.
+# Built from tools/public-submissions/ in the private source repository.
+name: Ring on submission
+on:
+  issues:
+    types: [opened]
+  # pull_request_target, so a pull request from a fork can use the secrets.
+  # Safe here because this job never checks out or runs the pull request's
+  # code: it checks out this repository's own default branch and reads only
+  # the event's text.
+  pull_request_target:
+    types: [opened]
+permissions: {}
+jobs:
+  ring:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
+          persist-credentials: false
+      - name: Ring the task
+        env:
+          SUBMISSIONS_URL: ${{ secrets.SUBMISSIONS_URL }}
+          SUBMISSIONS_TOKEN: ${{ secrets.SUBMISSIONS_TOKEN }}
+        run: python3 .github/scripts/ring.py
