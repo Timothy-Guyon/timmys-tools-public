@@ -70,7 +70,7 @@ Run `backlog.py daily` from whatever the project already runs each day, such as 
 
 ## Every week: the sweep
 
-Once a week, on Monday unless the client says otherwise:
+Once a week, on Monday unless the client says otherwise, and whenever the client asks for a stocktake of a project's threads, keeping to that project (rule 1 under "Rules learned"):
 
 1. Pull the mailbox.
 2. Get the project's full list of threads from the harness, with each thread's id, title, the day it opened, its last activity, whether it is resolved, and the state the app shows it in. Save it as JSON (a list of `{"id", "title", "opened", "last_activity", "resolved", "shows"}`, where `shows` is the app's word for its state, plus `"pinned"` where the app has pins and `"reminder_until"` (the date, or null for none) where it has reminders; a listing that uses `thread_id`, `created_at`, `last_activity_at` and `state` or `status_category` works as it is) and run `backlog.py sweep <file>`. The sweep adds new threads, notes threads resolved or reopened in the app, ends due snoozes, and prints a worksheet. A thread resolved in the record that the app still shows open stays resolved unless something happened in it since; the worksheet lists it to resolve in the app.
@@ -100,4 +100,4 @@ An account that can't read the mailbox repo, such as a work account using the pu
 
 ## Rules learned
 
-None yet.
+1. **A sweep or stocktake stays inside the project that asked for it.** Whether it is the weekly sweep or a stocktake the client asks for at any time, it reads, nudges, resolves and records only that project's threads. It writes nothing to another project's inbox, threads or lists to tidy up after them, not even a small step such as ticking off a to-do that is already done. Anything it finds that belongs to another project is left for that project's own sweep, or named to the client in one line. The only mail a sweep sends out is the kind point 5 asks for: a new action for the client's to-do list. (The client, 2026-11-27: "when asked to do a backlog or general stocktake, probably keep it scoped to the project that's solicited"; log note 3.)
