@@ -37,14 +37,16 @@ the product today (PRODUCT.md, RULES.md, REPLAY.md), edited in place; history/ h
     python3 team.py due
     python3 team.py move
 
-coin     writes one "Words coined" line into bet N's entry in LOG.md, in the fixed shape, and refuses a word
-         already coined in any entry unless --replaces names the word it supersedes.
+coin     writes one "Words coined" line into bet N's entry in LOG.md, in the fixed shape, or, for the open bet,
+         which has no entry until its retro, into the "Words coined" section of BET.md. A word already coined
+         needs --replaces: the word itself, to redefine a live word, or the word it supersedes, to bring back a
+         word a later line retired. A live word coined again under another word's --replaces is refused.
 park     appends a complete row to the parking lot, LATER.md; a missing trigger or date is refused.
 prove    appends a line to the canon, PRODUCT.md; "earned by" must name the bet.
 entry    writes a new entry's skeleton at the top of the log, every section present and PENDING.
 glossary projects every coined word, alphabetically, with the bet that coined it, the open bet's from the "Words
          coined" section of BET.md, and prints the conflicts:
-         a word coined twice, a replaced word that was never coined, a line not in the shape, a "defined in"
+         a word coined twice while still live, a replaced word that was never coined, a line not in the shape, a "defined in"
          that names a file that does not exist. Nothing it prints is committed; the entries are the record.
 idea     adds an idea to IDEAS.md with every triage answer; a missing answer is refused, craft is sent to the
          parking lot, a fix goes ahead, an idea the bet needs goes into the bet, one that depends on what the bet
@@ -232,16 +234,39 @@ def coined(lines):
 def open_coined():
     """The open bet's words, written in BET.md's "Words coined" section in the log's line shape until the bet's retro
     moves them into its entry (Timmy, 2026-10-18); the bet is the one BET.md's status line names."""
-    if not os.path.exists(path('BET.md')):
+    found = open_bet_words()
+    if not found or found[1] is None:
+        if os.path.exists(path('BET.md')):
+            print(f"note: BET.md has no {'status line naming its bet' if not found else WORDS + ' section'}, so the open bet's words are not read", file=sys.stderr)
         return []
+    bet, start, end = found
+    return [dict(c, file='BET.md') for c in words_in(read('BET.md'), start, end, bet)]
+
+
+def open_bet_words():
+    """(open bet, "Words coined" heading index or None, section end) from BET.md; None without a bet named."""
+    if not os.path.exists(path('BET.md')):
+        return None
     lines = read('BET.md')
     bet = next((int(m.group(1)) for m in map(OPEN.match, lines) if m), None)
+    if bet is None:
+        return None
     start = next((i for i, line in enumerate(lines) if line.strip() == '## ' + WORDS), None)
-    if bet is None or start is None:
-        print(f"note: BET.md has no {'status line naming its bet' if bet is None else WORDS + ' section'}, so the open bet's words are not read", file=sys.stderr)
-        return []
+    if start is None:
+        return bet, None, len(lines)
     end = next((i for i in range(start + 1, len(lines)) if lines[i].startswith('## ')), len(lines))
-    return [dict(c, file='BET.md') for c in words_in(lines, start, end, bet)]
+    return bet, start, end
+
+
+def order(c):
+    """Where a coined line stands in time: by bet, the open bet's BET.md lines after the log's, then by line."""
+    return (c['bet'], 1 if c.get('file') == 'BET.md' else 0, c['index'])
+
+
+def replaced_by(c, words):
+    """The first later line that replaces c's word, or None while c is live."""
+    later = [r for r in words if (r.get('replaces') or '').casefold() == c['word'].casefold() and order(r) > order(c)]
+    return min(later, key=order) if later else None
 
 
 def defined_file(where):
@@ -287,23 +312,45 @@ def cmd_coin(a):
     if token and not file_exists(token):
         fail('"defined in" names %s, and no such file exists under product/ or the repo' % token)
     found = [e for e in entries(lines) if e[0] == a.bet]
-    if not found:
-        fail('no entry for bet %d in LOG.md; write it first with "entry"' % a.bet)
-    bet, start, end = found[0]
-    on_record = {c['word'].casefold(): c for c in coined(lines) if 'word' in c}
-    if word.casefold() in on_record and not a.replaces:
-        c = on_record[word.casefold()]
-        fail('"%s" is already coined in bet %d (LOG.md line %d); pass --replaces if this one supersedes it'
-             % (word, c['bet'], c['index'] + 1))
+    open_bet = open_bet_words()
+    if found:
+        name, target = 'LOG.md', lines
+        bet, start, end = found[0]
+    elif open_bet and open_bet[0] == a.bet:
+        name, target = 'BET.md', read('BET.md')
+        bet, start, end = a.bet, open_bet[1], open_bet[2]
+    else:
+        fail('no entry for bet %d in LOG.md, and BET.md does not name it as the open bet; write its entry first '
+             'with "entry"' % a.bet)
+    words = [c for c in coined(lines) + (open_coined() if open_bet and open_bet[1] is not None else []) if 'word' in c]
+    same = sorted((c for c in words if c['word'].casefold() == word.casefold()), key=order)
+    if same:
+        last = same[-1]
+        at = '%s line %d' % (last.get('file', 'LOG.md'), last['index'] + 1)
+        if not a.replaces:
+            fail('"%s" is already coined in bet %d (%s); pass --replaces with the word itself to redefine it, or '
+                 'with the word it supersedes if it comes back' % (word, last['bet'], at))
+        if not replaced_by(last, words) and a.replaces.casefold() != word.casefold():
+            fail('"%s" is still live (bet %d, %s), so it cannot come back in place of "%s"; pass --replaces "%s" '
+                 'to redefine it' % (word, last['bet'], at, a.replaces, last['word']))
     tail = ''
     if a.replaces:
-        old = on_record.get(a.replaces.casefold())
-        if not old:
+        olds = sorted((c for c in words if c['word'].casefold() == a.replaces.casefold()), key=order)
+        if not olds:
             fail('--replaces names "%s", which no entry has coined' % a.replaces)
-        tail = ' Replaces **%s** (bet %d).' % (old['word'], old['bet'])
+        tail = ' Replaces **%s** (bet %d).' % (olds[-1]['word'], olds[-1]['bet'])
     line = '  - **%s**: %s Defined in %s; %s.%s' % (word, meaning, where, when, tail)
     if not COINED.match(line):
         fail('the line would not read back in the shape; check the meaning and where for stray markup: %s' % line)
+    lines = target
+    if start is None:
+        while lines and not lines[-1].strip():
+            lines.pop()
+        lines += ['', '## ' + WORDS, '', "The open bet's words, in the writer's line shape; they move into the bet's "
+                  "entry in `LOG.md` at its retro.", '', '- **%s:**' % WORDS, line, '']
+        write(name, lines, line)
+        print('coined in bet %d (%s): %s' % (bet, name, line.strip()))
+        return
     secs = sections(lines, start, end)
     names = [s[0] for s in secs]
     if WORDS in names:
@@ -317,8 +364,8 @@ def cmd_coin(a):
         at = end_of_entry(lines, start, end)
         lines.insert(at, '- **%s:**' % WORDS)
         lines.insert(at + 1, line)
-    write('LOG.md', lines, line)
-    print('coined in bet %d: %s' % (bet, line.strip()))
+    write(name, lines, line)
+    print('coined in bet %d (%s): %s' % (bet, name, line.strip()))
 
 
 def table_end(lines, name):
@@ -393,22 +440,23 @@ def cmd_glossary(a):
     by_word = {}
     for c in good:
         by_word.setdefault(c['word'].casefold(), []).append(c)
-    replaced = {c['replaces'].casefold(): c for c in good if c.get('replaces')}
-    for c in sorted(good, key=lambda c: (sort_key(c['word']), c['bet'])):
+    for c in sorted(good, key=lambda c: (sort_key(c['word']), order(c))):
         line = '- **%s**: %s Bet %d, %s. Defined in %s.' % (c['word'], c['meaning'], c['bet'], c['date'], c['where'])
         if c.get('replaces'):
             line += ' Replaces **%s** (bet %s).' % (c['replaces'], c['rbet'])
-        r = replaced.get(c['word'].casefold())
-        if r and r is not c:
+        r = replaced_by(c, good)
+        if r:
             line += ' Replaced by **%s** (bet %d).' % (r['word'], r['bet'])
         out.append(line)
     conflicts = []
     for key, cs in by_word.items():
-        cs = sorted(cs, key=lambda c: (c['bet'], c['index']))
+        cs = sorted(cs, key=order)
         for earlier, later in zip(cs, cs[1:]):
-            if (later.get('replaces') or '').casefold() != key:
-                conflicts.append('"%s" is coined twice, in bet %d (%s) and bet %d (%s), and the later one '
-                                 'does not say it replaces the earlier' % (earlier['word'], earlier['bet'], at(earlier),
+            r = replaced_by(earlier, good)
+            if not r or order(r) > order(later):
+                conflicts.append('"%s" is coined twice, in bet %d (%s) and bet %d (%s), and the earlier one '
+                                 'is still live: nothing between them retires it, and the later one does not '
+                                 'say it replaces it' % (earlier['word'], earlier['bet'], at(earlier),
                                                                             later['bet'], at(later)))
     for c in good:
         if c.get('replaces') and c['replaces'].casefold() not in by_word:
